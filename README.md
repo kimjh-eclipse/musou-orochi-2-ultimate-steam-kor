@@ -4,6 +4,18 @@
 
 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(무쌍 오로치 2 얼티메이트, App 1879330)용 비공식 한국어 패치의 소스입니다. 게임 파일·추출 데이터·게임 원문 텍스트는 이 저장소에 포함하지 않습니다.
 
+## 최신 배포
+
+**v20260927 — 2026-09-27 첫 배포**
+
+[패치 ZIP 다운로드](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260927/WO3U_Steam_KR_v20260927.zip) · [릴리즈 설명](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260927) · [문서 사이트](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-steam-kor/)
+
+1. Steam 게임 속성 → 언어를 **简体中文(중국어 간체)** 로 바꾸고 게임을 종료합니다.
+2. ZIP을 풀고 `WO3U_Steam_KR_Patch.exe`를 실행합니다(`WO3U_Steam_KR.pack`과 같은 폴더).
+3. 자동으로 채워진 설치 폴더를 확인하고 [상태 검사] → [한국어 패치 적용]을 누릅니다.
+
+[자세한 설치·갱신·복구](docs/install.md) · [알려진 문제](docs/known-issues.md) · [해시](docs/hashes.md)
+
 ## 방식
 
 - 게임의 **중국어 간체 슬롯**(`LINKIDX_CHS.BIN` / `LINKFILE_CHS.BIN`)을 한국어로 교체합니다. 게임 언어를 简体中文으로 두고 플레이합니다.
