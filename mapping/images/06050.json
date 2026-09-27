@@ -1,0 +1,395 @@
+{
+"entry": 6050,
+"textures": [
+{
+"tex": 0,
+"labels": [
+{
+"box": [
+4,
+10,
+253,
+82
+],
+"ko": "표시 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 626
+},
+{
+"box": [
+4,
+83,
+253,
+166
+],
+"ko": "조작 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 626
+},
+{
+"box": [
+637,
+2,
+839,
+57
+],
+"ko": "표시 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1407
+},
+{
+"box": [
+637,
+57,
+839,
+117
+],
+"ko": "조작 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1407
+},
+{
+"box": [
+637,
+117,
+839,
+175
+],
+"ko": "사운드 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1407
+},
+{
+"box": [
+3,
+177,
+253,
+240
+],
+"ko": "사운드 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 627
+},
+{
+"box": [
+637,
+176,
+851,
+233
+],
+"ko": "세이브/로드",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1407
+},
+{
+"box": [
+5,
+262,
+273,
+326
+],
+"ko": "세이브/로드",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 625
+},
+{
+"box": [
+639,
+362,
+741,
+412
+],
+"ko": "세이브",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1405
+},
+{
+"box": [
+639,
+422,
+737,
+473
+],
+"ko": "로드",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1405
+},
+{
+"box": [
+8,
+514,
+134,
+595
+],
+"ko": "세이브",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 622
+},
+{
+"box": [
+638,
+478,
+880,
+537
+],
+"ko": "1P 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1406
+},
+{
+"box": [
+638,
+538,
+880,
+595
+],
+"ko": "2P 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1406
+},
+{
+"box": [
+8,
+597,
+129,
+659
+],
+"ko": "로드",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 622
+},
+{
+"box": [
+637,
+596,
+895,
+660
+],
+"ko": "성장 초기화",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1407
+},
+{
+"box": [
+6,
+671,
+308,
+754
+],
+"ko": "1P 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 624
+},
+{
+"box": [
+6,
+755,
+308,
+834
+],
+"ko": "2P 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 624
+},
+{
+"box": [
+636,
+661,
+979,
+717
+],
+"ko": "개별 무장 초기화",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1408
+},
+{
+"box": [
+636,
+717,
+979,
+777
+],
+"ko": "전체 무장 초기화",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1408
+},
+{
+"box": [
+4,
+850,
+314,
+911
+],
+"ko": "성장 초기화",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 626
+},
+{
+"box": [
+636,
+842,
+981,
+893
+],
+"ko": "이계 강자 영입",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1408
+},
+{
+"box": [
+5,
+932,
+432,
+994
+],
+"ko": "개별 무장 초기화",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 625
+},
+{
+"box": [
+5,
+1017,
+372,
+1079
+],
+"ko": "전체 무장 초기화",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 625
+},
+{
+"box": [
+1,
+1185,
+431,
+1247
+],
+"ko": "이계 강자 영입",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 629
+},
+{
+"box": [
+636,
+1322,
+1068,
+1373
+],
+"ko": "키・마우스 조작 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1408
+},
+{
+"box": [
+638,
+1382,
+837,
+1433
+],
+"ko": "그래픽 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 1406
+},
+{
+"box": [
+2,
+1857,
+539,
+1919
+],
+"ko": "키・마우스 조작 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 628
+},
+{
+"box": [
+4,
+1942,
+251,
+2003
+],
+"ko": "그래픽 설정",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 626
+}
+]
+},
+{
+"tex": 1,
+"labels": [
+{
+"box": [
+771,
+8,
+901,
+92
+],
+"ko": "옵션",
+"first_big": true,
+"extend_w": 249
+},
+{
+"box": [
+534,
+94,
+911,
+188
+],
+"ko": "이계 강자 영입",
+"first_big": true,
+"extend_w": 486
+},
+{
+"box": [
+371,
+190,
+620,
+283
+],
+"ko": "세이브/로드",
+"first_big": true,
+"extend_w": 649
+},
+{
+"box": [
+712,
+198,
+995,
+283
+],
+"ko": "성장 초기화",
+"first_big": true,
+"extend_w": 308
+}
+]
+}
+]
+}

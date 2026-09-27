@@ -1,0 +1,34 @@
+{
+"entry": 6036,
+"textures": [
+{
+"tex": 1,
+"labels": [
+{
+"box": [
+229,
+14,
+544,
+84
+],
+"ko": "시작 버튼을 누르십시오",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.14,
+"extend_w": 791
+}
+]
+},
+{
+"tex": 2,
+"logo": {
+"src": "C:\\Emul\\Switch\\패치유틸.xdeltaUI\\work_wo3u\\title_icon_v20260910b\\logo_generated.png",
+"rect": [
+173,
+24,
+1128,
+709
+]
+}
+}
+]
+}

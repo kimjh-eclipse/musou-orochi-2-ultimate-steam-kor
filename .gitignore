@@ -1,0 +1,18 @@
+# game data, extracted resources and build outputs are never committed
+backup/
+build/
+extract/
+inventory/
+release/
+translation_memory/
+patcher/out/
+patcher/_testgame/
+mapping/*.jsonl
+*.BIN
+*.pack
+*.wo3u-backup
+*.exe
+*.zip
+__pycache__/
+*.pyc
+.env
