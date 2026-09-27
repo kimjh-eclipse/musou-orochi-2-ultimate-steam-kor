@@ -6,12 +6,12 @@ Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(무쌍 오로치 2 �
 
 ## 최신 배포
 
-**v20260927 — 2026-09-27 첫 배포**
+**v20260927b — 2026-09-27**
 
-[패치 ZIP 다운로드](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260927/WO3U_Steam_KR_v20260927.zip) · [릴리즈 설명](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260927) · [문서 사이트](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-steam-kor/)
+[패치 ZIP 다운로드](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260927b/WO3U_Steam_KR_v20260927b.zip) · [릴리즈 설명](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260927b) · [문서 사이트](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-steam-kor/)
 
 1. Steam 게임 속성 → 언어를 **简体中文(중국어 간체)** 로 바꾸고 게임을 종료합니다.
-2. ZIP을 풀고 `WO3U_Steam_KR_Patch.exe`를 실행합니다(`WO3U_Steam_KR.pack`과 같은 폴더).
+2. ZIP을 풀고 `WO3U_Steam_KR_Patch.exe`를 실행합니다(`WO3U_Steam_KR.pack`과 같은 폴더). 데이터 두 파일을 교체하고 `dinput8.dll`을 추가합니다.
 3. 자동으로 채워진 설치 폴더를 확인하고 [상태 검사] → [한국어 패치 적용]을 누릅니다.
 
 [자세한 설치·갱신·복구](docs/install.md) · [알려진 문제](docs/known-issues.md) · [해시](docs/hashes.md)

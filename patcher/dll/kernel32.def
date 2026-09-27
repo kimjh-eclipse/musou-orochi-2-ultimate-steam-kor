@@ -1,0 +1,14 @@
+LIBRARY kernel32.dll
+EXPORTS
+    GetSystemDirectoryA
+    LoadLibraryA
+    GetProcAddress
+    GetModuleHandleA
+    GetModuleFileNameA
+    VirtualProtect
+    VirtualQuery
+    DisableThreadLibraryCalls
+    CreateFileA
+    ReadFile
+    WriteFile
+    CloseHandle

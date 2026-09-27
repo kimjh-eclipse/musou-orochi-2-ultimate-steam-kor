@@ -33,14 +33,14 @@ T = {
     120: ("무장 정보", I), 121: ("우호도 정보", I), 122: ("스톡 경험치 분배", I), 123: ("세이브", I),
     124: ("편집 내용 확인", I), 126: ("참가", I), 129: ("모집", I), 130: ("진군 개시", I),
     131: ("출격 예정 멤버 설정", I), 132: ("표시 설정", I), 133: ("조작 설정", I), 134: ("사운드 설정", I),
-    136: ("진지로 돌아가기", I), 137: ("성장 구슬 분배", I), 138: ("테스트 플레이 종료", I),
+    136: ("진지 귀환", I), 137: ("성장 구슬 분배", I), 138: ("테스트 플레이 종료", I),
     139: ("키・마우스 조작 설정", I), 140: ("전투 준비", I), 141: ("임무 수락", I), 142: ("군단 정보", I),
     143: ("팀 정보", I), 144: ("옵션", I), 145: ("2P 이탈", I), 147: ("메인 메뉴로", I), 148: ("전투 개시", I),
     149: ("정보 이력", I), 150: ("임무 수락 확인", I), 151: ("중간 저장", I), 152: ("전투 재개", I),
     153: ("조작 무장 변경", I), 154: ("무장 정보", I), 155: ("우호도 정보", I), 156: ("스톡 경험치 분배", I),
     157: ("세이브", I), 158: ("편집 내용 확인", I), 160: ("참가", I), 163: ("모집", I), 164: ("진군 개시", I),
     165: ("출격 예정 멤버 설정", I), 166: ("표시 설정", I), 167: ("조작 설정", I), 168: ("사운드 설정", I),
-    170: ("진지로 돌아가기", I), 171: ("성장 구슬 분배", I), 172: ("테스트 플레이 종료", I),
+    170: ("진지 귀환", I), 171: ("성장 구슬 분배", I), 172: ("테스트 플레이 종료", I),
     173: ("키・마우스 조작 설정", I), 174: ("난이도 선택", I), 175: ("장비 변경", I), 176: ("무기 구입", I),
     177: ("무기 연성", I), 178: ("편집 내용 확인", I), 179: ("변경 항목 선택", I), 180: ("교체 항목 선택", I),
     181: ("초대", I), 182: ("모집", I), 183: ("참가", I), 184: ("연회 선택", I), 185: ("초대 무장 선택", I),
@@ -117,5 +117,10 @@ for ti, (kos, st, aligns) in sorted(MULTI.items()):
             l["grow"] = 3.2
         labs.append(l)
     spec["textures"].append({"tex": ti, "labels": labs})
-(ROOT / "mapping/images/00037.json").write_text(json.dumps(spec, ensure_ascii=False, indent=0), encoding="utf-8")
+# keep textures owned by other generators (spec_37.py: tags, gears, stamps, JPN copies); only ours are replaced
+p = ROOT / "mapping/images/00037.json"
+mine = {x["tex"] for x in spec["textures"]}
+if p.exists():
+    spec["textures"] += [x for x in json.loads(p.read_text(encoding="utf-8"))["textures"] if x["tex"] not in mine]
+p.write_text(json.dumps(spec, ensure_ascii=False, indent=0), encoding="utf-8")
 print("textures", len(spec["textures"]), "problems", problems)

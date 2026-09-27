@@ -22,7 +22,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-MAGIC, FORMAT = b"WO3USTM1", 1
+MAGIC, FORMAT = b"WO3USTM1", 2
+DLL = HERE / "dll/out/mode3/dinput8.dll"
+DLL_TABLE = HERE / "dll/strings_table.h"
 NAMES = ("LINKIDX_CHS.BIN", "LINKFILE_CHS.BIN")
 
 
@@ -87,6 +89,14 @@ def main():
                 if fo.read(o[2]) == new:
                     continue
             blobs[i] = new
+    # the dinput8 proxy must carry the string table generated for this very build (font index CRC)
+    import re, zlib
+    crc = int(re.search(r"KR_IDX_CRC32 0x([0-9a-f]+)u", DLL_TABLE.read_text()).group(1), 16)
+    if crc != zlib.crc32(ti_b):
+        sys.exit(f"dll table is for idx crc {crc:08x}, build idx is {zlib.crc32(ti_b):08x}: run gen_dll_patch.py + build_dll.cmd")
+    dll = DLL.read_bytes()
+    if b"WO3U_KR dinput8 proxy, mode " not in dll or DLL.stat().st_mtime < DLL_TABLE.stat().st_mtime:
+        sys.exit("dinput8.dll is not the mode 3 build of the current table")
     files = []
     for name in NAMES:
         files.append((name, (orig / name).stat().st_size, sha(orig / name), (build / name).stat().st_size, sha(build / name)))
@@ -100,6 +110,9 @@ def main():
             nb = name.encode()
             f.write(struct.pack("<H", len(nb)) + nb + struct.pack("<Q", ssz) + ssh + struct.pack("<Q", tsz) + tsh)
         f.write(struct.pack("<I", len(ti_b)) + ti_b)
+        f.write(struct.pack("<I", 1))
+        nb = b"dinput8.dll"
+        f.write(struct.pack("<H", len(nb)) + nb + hashlib.sha256(dll).digest() + struct.pack("<I", len(dll)) + dll)
         f.write(struct.pack("<I", len(blobs)))
         for i in sorted(blobs):
             f.write(struct.pack("<IQ", i, len(blobs[i])) + blobs[i])
@@ -112,6 +125,8 @@ def main():
                 "pack_size": pack.stat().st_size, "pack_sha256": sha(pack).hex().upper(),
                 "files": [{"name": n, "source_size": a, "source_sha256": b.hex().upper(), "target_size": c,
                            "target_sha256": d.hex().upper()} for n, a, b, c, d in files],
+                "dll": {"name": "dinput8.dll", "size": len(dll), "sha256": hashlib.sha256(dll).hexdigest().upper(),
+                        "table_idx_crc32": f"{crc:08x}"},
                 "reconstruct_ok": ok}
     (out / "WO3U_Steam_KR.manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     print(json.dumps({k: v for k, v in manifest.items() if k != "files"}, indent=1))

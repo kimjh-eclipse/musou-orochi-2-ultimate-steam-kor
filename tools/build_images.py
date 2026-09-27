@@ -20,7 +20,10 @@ def build_all(preview=False):
         for ts in spec["textures"]:
             t = g["tex"][ts["tex"]]
             im = decode(d, t)
-            if "copy" in ts:
+            if "boot_notice" in ts:
+                from boot_notice import render_notice
+                new, rep = render_notice(im, ts["boot_notice"])
+            elif "copy" in ts:
                 # the source slot already shows language-neutral art (e.g. JPN "Clear!" where CHS drew 通关!)
                 se, sti = ts.get("src", [e, ts["tex"]])
                 sd = Archive(ts["copy"]).read(se)

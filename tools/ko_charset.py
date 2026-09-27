@@ -5,7 +5,8 @@ Chinese glyph disappears. Kept = symbols (A1-A9 rows incl. kana/full-width forms
 Chosen glyphs, in priority order until the donors run out:
   1. Hangul used by the translation   2. KS X 1001 (2,350)   3. compatibility jamo ㄱ-ㅣ
   4. symbols missing from the table (・ ＊ ♪)   5. remaining syllables, common finals first
-All chosen characters are sorted by code point and given to donors in ascending code order.
+Chosen characters retain priority order; GB2312 donors are allocated before GBK extensions.
+The used Hangul plus KS X 1001 must fit entirely in GB2312 donor slots.
 Output mapping/ko_charset.json: {"version", "donor_count", "chars": {char: "gbk hex"}}.
 """
 import json, struct
@@ -65,15 +66,33 @@ def build(used_hangul):
     add(EXTRA_SYMBOLS)
     rest = sorted((chr(c) for c in range(0xAC00, 0xD7A4) if chr(c) not in seen), key=extra_rank)
     add(rest)
-    ordered = sorted(chosen)
-    assign = {ch: f"{code:04x}" for ch, code in zip(ordered, sorted(donors))}
+    # Priority order meets the safest codes first. GB2312 hanzi (both bytes >= A1) are what the Chinese text
+    # actually uses. GBK extension codes (trail 40-A0, trail < 80 looks like ASCII) are suspected in
+    # subtitle/help corruption; the runtime cause is not yet proven. Used + KS X 1001 fit in GB2312.
+    def safety(c):
+        lead, trail = c >> 8, c & 0xFF
+        if 0xB0 <= lead <= 0xF7 and trail >= 0xA1:
+            return 0
+        return 1 if trail >= 0x80 else 2
+    safe_donors = sorted(donors, key=lambda c: (safety(c), c))
+    n_gb = sum(1 for c in donors if safety(c) == 0)
+    assert len(set(used_hangul) | set(ksx1001())) <= n_gb, "used Hangul + KS X 1001 exceed GB2312 donors"
+    assign = {ch: f"{code:04x}" for ch, code in zip(chosen, safe_donors)}
     return {"version": 1, "donor_count": len(donors), "chosen": len(chosen),
             "syllables": sum(1 for c in chosen if 0xAC00 <= ord(c) <= 0xD7A3), "chars": assign}
 
 
 if __name__ == "__main__":
     audit = json.loads((ROOT / "mapping/charset_audit.json").read_text(encoding="utf-8"))
-    res = build(audit["hangul"])
+    used = set(audit["hangul"])
+    # every Hangul in the current Korean text (PS3 matches + new translations), not only the first audit
+    for l in (ROOT / "mapping/pc_match.jsonl").open(encoding="utf-8"):
+        used.update(c for c in (json.loads(l).get("ko") or "") if "가" <= c <= "힣")
+    for p in (ROOT / "translation_memory").glob("pc_ko_*.jsonl"):
+        for l in p.open(encoding="utf-8"):
+            if l.strip():
+                used.update(c for c in json.loads(l)["ko"] if "가" <= c <= "힣")
+    res = build(sorted(used))
     (ROOT / "mapping/ko_charset.json").write_text(json.dumps(res, ensure_ascii=False, indent=0), encoding="utf-8")
     print({k: v for k, v in res.items() if k != "chars"})
     missing_used = [c for c in audit["hangul"] if c not in res["chars"]]

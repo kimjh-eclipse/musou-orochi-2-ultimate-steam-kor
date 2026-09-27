@@ -1,16 +1,18 @@
 # 무쌍 오로치 2 얼티메이트 Steam판 한국어 패치
 
-Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20260927 (2026-09-27)** 입니다.
+Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20260927b (2026-09-27)** 입니다.
 
-[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260927) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
+[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260927b) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
 
 ## 이번 릴리즈
 
-첫 배포입니다. 게임의 **중국어 간체(简体中文) 언어 슬롯**을 한국어로 바꿉니다. 대사·이벤트·메뉴·도움말·비기 카드 등 텍스트 전체와, 메뉴·스테이지 타이틀·무장 이름·로딩 화면·로고 등 글자가 들어간 이미지가 한국어로 표시됩니다.
+v20260927b는 게임 실행 파일 안에 있던 문장(언리미티드 모드 알림, 전생 도움말 등 27개)을 함께 설치되는 `dinput8.dll`로 한국어화하고, 시작 저작권 경고 화면을 한국어로 바꿨습니다. `WO3U.exe` 파일은 수정하지 않습니다.
+
+게임의 **중국어 간체(简体中文) 언어 슬롯**을 한국어로 바꿉니다. 대사·이벤트·메뉴·도움말·비기 카드 등 텍스트 전체와, 메뉴·스테이지 타이틀·무장 이름·로딩 화면·로고 등 글자가 들어간 이미지가 한국어로 표시됩니다.
 
 번역은 PS3판 한국어 패치의 번역을 PC판 항목에 대응시켜 옮기고, PC판에만 있는 항목(듀얼 모드 비기 카드, 추가 시리즈 작품명, 도움말 등)은 새로 번역했습니다.
 
-> 게임 언어를 **중국어 간체**로 설정해야 한국어가 나옵니다. 다른 언어(일본어·영어·중국어 번체) 파일은 바꾸지 않습니다.
+게임 언어를 **중국어 간체**로 설정해야 한국어가 나옵니다. 다른 언어(일본어·영어·중국어 번체) 파일은 바꾸지 않습니다.
 
 ## 처음 사용한다면
 
@@ -36,7 +38,7 @@ LINKIDX/LINKFILE에서 리소스 추출 → 블록 압축 해제 → LX 텍스�
 - [한글 인코딩·폰트](font-text.md): 한글이 GBK 기반 중문 폰트 슬롯에서 표시되는 방식.
 - [번역 대응·텍스트 빌드](text-build.md): PS3 번역을 PC판에 옮기는 방법과 신규 번역 병합.
 - [이미지 처리](images.md): 메뉴·타이틀·이름·로딩 화면 이미지의 한국어화.
-- [패처·재구성·백업](patcher.md): 배포·갱신·복구의 구현.
+- [패처·재구성·백업](patcher.md): 배포·갱신·복구의 구현과 `dinput8.dll`.
 - [빌드·검증·조사 범위](validation.md): 완료 판정의 기준과 재현 가능한 범위.
 
 ## 이 문서의 범위

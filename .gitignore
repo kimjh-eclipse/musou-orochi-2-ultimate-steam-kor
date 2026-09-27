@@ -16,3 +16,6 @@ mapping/*.jsonl
 __pycache__/
 *.pyc
 .env
+# generated from game exe bytes (gen_dll_patch.py)
+patcher/dll/strings_table.h
+patcher/dll/out/

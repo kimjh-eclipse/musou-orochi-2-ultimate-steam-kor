@@ -11,8 +11,8 @@ from pc_idx import Archive, compress, used_ids, decompress
 ALIGN = 0x100
 
 
-def write_part(part, replacements, out_dir: Path):
-    a = Archive(part)
+def write_part(part, replacements, out_dir: Path, source_dir=None):
+    a = Archive(part, game=source_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     idx = list(a.idx)
     ids = set(used_ids(idx))

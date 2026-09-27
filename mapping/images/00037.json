@@ -1,1 +1,11656 @@
-{"entry": 37, "textures": [{"tex": 49, "labels": [{"box": [3, 6, 237, 92], "ko": "무장 선택", "align": "left", "first_big": true, "extend_w": 251}]}, {"tex": 50, "labels": [{"box": [3, 6, 237, 92], "ko": "전장 선택", "align": "left", "first_big": true, "extend_w": 251}]}, {"tex": 51, "labels": [{"box": [6, 6, 238, 92], "ko": "전투 준비", "align": "left", "first_big": true, "extend_w": 248}]}, {"tex": 52, "labels": [{"box": [7, 6, 238, 91], "ko": "무기 장비", "align": "left", "first_big": true, "extend_w": 247}]}, {"tex": 53, "labels": [{"box": [6, 6, 234, 91], "ko": "아이템 장비", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 54, "labels": [{"box": [7, 6, 238, 92], "ko": "임무 수락", "align": "left", "first_big": true, "extend_w": 503}]}, {"tex": 55, "labels": [{"box": [9, 7, 239, 92], "ko": "군단 정보", "align": "left", "first_big": true, "extend_w": 245}]}, {"tex": 56, "labels": [{"box": [7, 7, 239, 93], "ko": "팀 정보", "align": "left", "first_big": true, "extend_w": 503}]}, {"tex": 57, "labels": [{"box": [11, 8, 141, 92], "ko": "옵션", "align": "left", "first_big": true, "extend_w": 499}]}, {"tex": 58, "labels": [{"box": [7, 6, 333, 92], "ko": "임무 수락 확인", "align": "left", "first_big": true, "extend_w": 503}]}, {"tex": 59, "labels": [{"box": [10, 6, 241, 92], "ko": "정보 이력", "align": "left", "first_big": true, "extend_w": 244}]}, {"tex": 60, "labels": [{"box": [7, 6, 240, 92], "ko": "무장 정보", "align": "left", "first_big": true, "extend_w": 247}]}, {"tex": 61, "labels": [{"box": [6, 6, 290, 92], "ko": "우호도 목록", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 62, "labels": [{"box": [6, 6, 287, 91], "ko": "경험치 분배", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 63, "labels": [{"box": [5, 6, 319, 92], "ko": "진・무쌍의 전장", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 64, "labels": [{"box": [6, 6, 241, 93], "ko": "대사 변경", "align": "left", "first_big": true, "extend_w": 248}]}, {"tex": 65, "labels": [{"box": [6, 6, 239, 93], "ko": "무장 변경", "align": "left", "first_big": true, "extend_w": 248}]}, {"tex": 66, "labels": [{"box": [7, 8, 139, 91], "ko": "온라인", "align": "left", "first_big": true, "extend_w": 503}]}, {"tex": 67, "labels": [{"box": [6, 6, 238, 91], "ko": "오로치 세계", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 68, "labels": [{"box": [4, 8, 238, 90], "ko": "표시 설정", "align": "left", "first_big": true, "extend_w": 250}]}, {"tex": 69, "labels": [{"box": [6, 6, 239, 92], "ko": "조작 설정", "align": "left", "first_big": true, "extend_w": 248}]}, {"tex": 70, "labels": [{"box": [3, 6, 234, 91], "ko": "사운드 설정", "align": "left", "first_big": true, "extend_w": 507}]}, {"tex": 71, "labels": [{"box": [7, 6, 256, 92], "ko": "세이브/로드", "align": "left", "first_big": true, "extend_w": 503}]}, {"tex": 73, "labels": [{"box": [12, 6, 247, 93], "ko": "모델 변경", "align": "left", "first_big": true, "extend_w": 498}]}, {"tex": 75, "labels": [{"box": [5, 6, 331, 91], "ko": "편집 내용 확인", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 76, "labels": [{"box": [6, 6, 234, 91], "ko": "듀얼 모드", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 77, "labels": [{"box": [6, 6, 135, 91], "ko": "듀얼", "align": "left", "first_big": true, "extend_w": 248}]}, {"tex": 78, "labels": [{"box": [2, 5, 186, 89], "ko": "서바이벌", "align": "left", "first_big": true, "extend_w": 508}]}, {"tex": 79, "labels": [{"box": [5, 9, 137, 95], "ko": "프리셋", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 80, "labels": [{"box": [9, 6, 285, 92], "ko": "정보 타임라인", "align": "left", "first_big": true, "extend_w": 501}]}, {"tex": 81, "labels": [{"box": [9, 6, 331, 92], "ko": "전황 정보 작성", "align": "left", "first_big": true, "extend_w": 501}]}, {"tex": 82, "labels": [{"box": [11, 6, 241, 92], "ko": "대사 교체", "align": "left", "first_big": true, "extend_w": 243}]}, {"tex": 83, "labels": [{"box": [10, 6, 240, 92], "ko": "대사 작성", "align": "left", "first_big": true, "extend_w": 244}]}, {"tex": 84, "labels": [{"box": [5, 6, 239, 92], "ko": "시나리오 선택", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 85, "labels": [{"box": [9, 6, 237, 92], "ko": "출격 준비", "align": "left", "first_big": true, "extend_w": 501}]}, {"tex": 86, "labels": [{"box": [6, 6, 236, 91], "ko": "컬러 에디트", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 87, "labels": [{"box": [8, 6, 142, 92], "ko": "세이브", "align": "left", "first_big": true, "extend_w": 246}]}, {"tex": 88, "labels": [{"box": [5, 6, 139, 92], "ko": "진지", "align": "left", "first_big": true, "extend_w": 249}]}, {"tex": 90, "labels": [{"box": [5, 6, 190, 92], "ko": "무기점", "align": "left", "first_big": true, "extend_w": 249}]}, {"tex": 91, "labels": [{"box": [9, 7, 144, 92], "ko": "식당", "align": "left", "first_big": true, "extend_w": 245}]}, {"tex": 92, "labels": [{"box": [5, 6, 336, 93], "ko": "조작 무장 변경", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 93, "labels": [{"box": [7, 6, 138, 92], "ko": "전생", "align": "left", "first_big": true, "extend_w": 247}]}, {"tex": 94, "labels": [{"box": [6, 6, 287, 91], "ko": "성장 구슬 분배", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 95, "labels": [{"box": [5, 6, 241, 92], "ko": "비경 선택", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 96, "labels": [{"box": [15, 6, 233, 92], "ko": "프리 모드", "align": "left", "first_big": true, "extend_w": 495}]}, {"tex": 97, "labels": [{"box": [8, 7, 240, 91], "ko": "그래픽 설정", "align": "left", "first_big": true, "extend_w": 246}]}, {"tex": 98, "labels": [{"box": [7, 6, 466, 92], "ko": "키・마우스 조작 설정", "align": "left", "first_big": true, "extend_w": 503}]}, {"tex": 99, "labels": [{"box": [149, 12, 306, 75], "ko": "스토리 모드", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 361}]}, {"tex": 100, "labels": [{"box": [151, 13, 306, 76], "ko": "프리 모드", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 359}]}, {"tex": 101, "labels": [{"box": [149, 12, 306, 76], "ko": "에디트 모드", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 361}]}, {"tex": 102, "labels": [{"box": [183, 13, 307, 76], "ko": "갤러리", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 327}]}, {"tex": 103, "labels": [{"box": [218, 12, 308, 76], "ko": "옵션", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 292}]}, {"tex": 104, "labels": [{"box": [153, 13, 306, 75], "ko": "듀얼 모드", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 357}]}, {"tex": 105, "labels": [{"box": [152, 12, 306, 76], "ko": "언리미티드 모드", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.12, "extend_w": 358}]}, {"tex": 106, "labels": [{"box": [5, 9, 251, 71], "ko": "전투 준비", "align": "left", "extend_w": 505}]}, {"tex": 107, "labels": [{"box": [4, 9, 252, 71], "ko": "임무 수락", "align": "left", "extend_w": 506}]}, {"tex": 108, "labels": [{"box": [6, 9, 251, 71], "ko": "군단 정보", "align": "left", "extend_w": 504}]}, {"tex": 109, "labels": [{"box": [6, 9, 251, 72], "ko": "팀 정보", "align": "left", "extend_w": 504}]}, {"tex": 110, "labels": [{"box": [11, 10, 132, 71], "ko": "옵션", "align": "left", "extend_w": 499}]}, {"tex": 111, "labels": [{"box": [3, 10, 307, 71], "ko": "2P 이탈", "align": "left", "extend_w": 507}]}, {"tex": 113, "labels": [{"box": [2, 11, 308, 73], "ko": "메인 메뉴로", "align": "left", "extend_w": 1020}]}, {"tex": 114, "labels": [{"box": [5, 12, 249, 73], "ko": "전투 개시", "align": "left", "extend_w": 505}]}, {"tex": 115, "labels": [{"box": [8, 11, 254, 73], "ko": "정보 이력", "align": "left", "extend_w": 502}]}, {"tex": 116, "labels": [{"box": [1, 11, 367, 74], "ko": "임무 수락 확인", "align": "left", "extend_w": 1021}]}, {"tex": 117, "labels": [{"box": [11, 11, 253, 73], "ko": "중간 저장", "align": "left", "extend_w": 499}]}, {"tex": 118, "labels": [{"box": [4, 11, 249, 73], "ko": "전투 재개", "align": "left", "extend_w": 506}]}, {"tex": 119, "labels": [{"box": [0, 11, 372, 73], "ko": "조작 무장 변경", "align": "left", "extend_w": 510}]}, {"tex": 120, "labels": [{"box": [5, 11, 251, 73], "ko": "무장 정보", "align": "left", "extend_w": 505}]}, {"tex": 121, "labels": [{"box": [2, 11, 311, 73], "ko": "우호도 정보", "align": "left", "extend_w": 508}]}, {"tex": 122, "labels": [{"box": [0, 11, 431, 74], "ko": "스톡 경험치 분배", "align": "left", "extend_w": 1022}]}, {"tex": 123, "labels": [{"box": [8, 12, 134, 73], "ko": "세이브", "align": "left", "extend_w": 246}]}, {"tex": 124, "labels": [{"box": [2, 11, 367, 74], "ko": "편집 내용 확인", "align": "left", "extend_w": 508}]}, {"tex": 126, "labels": [{"box": [8, 11, 133, 73], "ko": "참가", "align": "left", "extend_w": 246}]}, {"tex": 129, "labels": [{"box": [6, 11, 131, 73], "ko": "모집", "align": "left", "extend_w": 248}]}, {"tex": 130, "labels": [{"box": [5, 12, 254, 73], "ko": "진군 개시", "align": "left", "extend_w": 505}]}, {"tex": 131, "labels": [{"box": [1, 11, 492, 73], "ko": "출격 예정 멤버 설정", "align": "left", "extend_w": 1021}]}, {"tex": 132, "labels": [{"box": [4, 12, 253, 73], "ko": "표시 설정", "align": "left", "extend_w": 506}]}, {"tex": 133, "labels": [{"box": [6, 10, 251, 71], "ko": "조작 설정", "align": "left", "extend_w": 504}]}, {"tex": 134, "labels": [{"box": [3, 11, 253, 74], "ko": "사운드 설정", "align": "left", "extend_w": 507}]}, {"tex": 136, "labels": [{"box": [3, 11, 250, 73], "ko": "진지로 돌아가기", "align": "left", "extend_w": 507}]}, {"tex": 137, "labels": [{"box": [2, 10, 313, 71], "ko": "성장 구슬 분배", "align": "left", "extend_w": 508}]}, {"tex": 138, "labels": [{"box": [6, 9, 377, 72], "ko": "테스트 플레이 종료", "align": "left", "extend_w": 504}]}, {"tex": 139, "labels": [{"box": [7, 9, 560, 71], "ko": "키・마우스 조작 설정", "align": "left", "extend_w": 1015}]}, {"tex": 140, "labels": [{"box": [1, 2, 201, 52], "ko": "전투 준비", "align": "left", "extend_w": 253}]}, {"tex": 141, "labels": [{"box": [1, 2, 201, 53], "ko": "임무 수락", "align": "left", "extend_w": 509}]}, {"tex": 142, "labels": [{"box": [2, 2, 200, 53], "ko": "군단 정보", "align": "left", "extend_w": 252}]}, {"tex": 143, "labels": [{"box": [2, 2, 200, 53], "ko": "팀 정보", "align": "left", "extend_w": 252}]}, {"tex": 144, "labels": [{"box": [5, 3, 103, 52], "ko": "옵션", "align": "left", "extend_w": 249}]}, {"tex": 145, "labels": [{"box": [1, 2, 245, 53], "ko": "2P 이탈", "align": "left", "extend_w": 253}]}, {"tex": 147, "labels": [{"box": [1, 2, 247, 52], "ko": "메인 메뉴로", "align": "left", "extend_w": 509}]}, {"tex": 148, "labels": [{"box": [2, 2, 199, 52], "ko": "전투 개시", "align": "left", "extend_w": 252}]}, {"tex": 149, "labels": [{"box": [3, 2, 202, 53], "ko": "정보 이력", "align": "left", "extend_w": 251}]}, {"tex": 150, "labels": [{"box": [0, 2, 294, 53], "ko": "임무 수락 확인", "align": "left", "extend_w": 510}]}, {"tex": 151, "labels": [{"box": [4, 2, 201, 52], "ko": "중간 저장", "align": "left", "extend_w": 250}]}, {"tex": 152, "labels": [{"box": [1, 2, 200, 52], "ko": "전투 재개", "align": "left", "extend_w": 253}]}, {"tex": 153, "labels": [{"box": [0, 2, 298, 53], "ko": "조작 무장 변경", "align": "left", "extend_w": 510}]}, {"tex": 154, "labels": [{"box": [2, 2, 201, 53], "ko": "무장 정보", "align": "left", "extend_w": 252}]}, {"tex": 155, "labels": [{"box": [1, 2, 249, 53], "ko": "우호도 정보", "align": "left", "extend_w": 253}]}, {"tex": 156, "labels": [{"box": [1, 2, 348, 53], "ko": "스톡 경험치 분배", "align": "left", "extend_w": 509}]}, {"tex": 157, "labels": [{"box": [3, 2, 105, 52], "ko": "세이브", "align": "left", "extend_w": 251}]}, {"tex": 158, "labels": [{"box": [2, 2, 295, 53], "ko": "편집 내용 확인", "align": "left", "extend_w": 508}]}, {"tex": 160, "labels": [{"box": [2, 2, 104, 53], "ko": "참가", "align": "left", "extend_w": 124}]}, {"tex": 163, "labels": [{"box": [2, 2, 103, 52], "ko": "모집", "align": "left", "extend_w": 124}]}, {"tex": 164, "labels": [{"box": [1, 2, 202, 52], "ko": "진군 개시", "align": "left", "extend_w": 253}]}, {"tex": 165, "labels": [{"box": [3, 2, 398, 53], "ko": "출격 예정 멤버 설정", "align": "left", "extend_w": 507}]}, {"tex": 166, "labels": [{"box": [1, 2, 202, 53], "ko": "표시 설정", "align": "left", "extend_w": 253}]}, {"tex": 167, "labels": [{"box": [1, 2, 201, 53], "ko": "조작 설정", "align": "left", "extend_w": 253}]}, {"tex": 168, "labels": [{"box": [0, 2, 202, 53], "ko": "사운드 설정", "align": "left", "extend_w": 510}]}, {"tex": 170, "labels": [{"box": [1, 2, 200, 52], "ko": "진지로 돌아가기", "align": "left", "extend_w": 253}]}, {"tex": 171, "labels": [{"box": [0, 2, 250, 53], "ko": "성장 구슬 분배", "align": "left", "extend_w": 254}]}, {"tex": 172, "labels": [{"box": [2, 2, 299, 53], "ko": "테스트 플레이 종료", "align": "left", "extend_w": 508}]}, {"tex": 173, "labels": [{"box": [1, 2, 445, 53], "ko": "키・마우스 조작 설정", "align": "left", "extend_w": 509}]}, {"tex": 174, "labels": [{"box": [0, 2, 250, 53], "ko": "난이도 선택", "align": "left", "extend_w": 254}]}, {"tex": 175, "labels": [{"box": [2, 4, 203, 55], "ko": "장비 변경", "align": "left", "extend_w": 252}]}, {"tex": 176, "labels": [{"box": [1, 4, 201, 54], "ko": "무기 구입", "align": "left", "extend_w": 253}]}, {"tex": 177, "labels": [{"box": [3, 4, 201, 54], "ko": "무기 연성", "align": "left", "extend_w": 251}]}, {"tex": 178, "labels": [{"box": [3, 4, 295, 55], "ko": "편집 내용 확인", "align": "left", "extend_w": 507}]}, {"tex": 179, "labels": [{"box": [1, 4, 251, 55], "ko": "변경 항목 선택", "align": "left", "extend_w": 253}]}, {"tex": 180, "labels": [{"box": [1, 4, 251, 55], "ko": "교체 항목 선택", "align": "left", "extend_w": 253}]}, {"tex": 181, "labels": [{"box": [3, 4, 106, 55], "ko": "초대", "align": "left", "extend_w": 123}]}, {"tex": 182, "labels": [{"box": [3, 4, 103, 54], "ko": "모집", "align": "left", "extend_w": 123}]}, {"tex": 183, "labels": [{"box": [4, 4, 105, 55], "ko": "참가", "align": "left", "extend_w": 122}]}, {"tex": 184, "labels": [{"box": [1, 4, 201, 54], "ko": "연회 선택", "align": "left", "extend_w": 253}]}, {"tex": 185, "labels": [{"box": [1, 4, 298, 55], "ko": "초대 무장 선택", "align": "left", "extend_w": 509}]}, {"tex": 186, "labels": [{"box": [3, 4, 199, 54], "ko": "연회 결과", "align": "left", "extend_w": 251}]}, {"tex": 187, "labels": [{"box": [1, 4, 201, 54], "ko": "분류 선택", "align": "left", "extend_w": 253}]}, {"tex": 188, "labels": [{"box": [3, 4, 203, 55], "ko": "무장 선택", "align": "left", "extend_w": 251}]}, {"tex": 189, "labels": [{"box": [2, 4, 201, 54], "ko": "전장 선택", "align": "left", "extend_w": 252}]}, {"tex": 190, "labels": [{"box": [4, 4, 105, 55], "ko": "추첨", "align": "left", "extend_w": 250}]}, {"tex": 191, "labels": [{"box": [3, 4, 345, 55], "ko": "개별 무장 초기화", "align": "left", "extend_w": 507}]}, {"tex": 192, "labels": [{"box": [1, 4, 298, 55], "ko": "조작 무장 선택", "align": "left", "extend_w": 509}]}, {"tex": 193, "labels": [{"box": [2, 4, 250, 54], "ko": "비기 카드 선택", "align": "left", "extend_w": 508}]}, {"tex": 194, "labels": [{"box": [4, 4, 204, 54], "ko": "스테이지 선택", "align": "left", "extend_w": 506}]}, {"tex": 195, "labels": [{"box": [1, 5, 250, 56], "ko": "랭킹 표시", "align": "left", "extend_w": 509}]}, {"tex": 196, "labels": [{"box": [4, 4, 204, 55], "ko": "무장 설정", "align": "left", "extend_w": 250}]}, {"tex": 197, "labels": [{"box": [0, 4, 249, 54], "ko": "비기 카드 설정", "align": "left", "extend_w": 510}]}, {"tex": 198, "labels": [{"box": [2, 4, 246, 55], "ko": "비기 카드 확인", "align": "left", "extend_w": 508}]}, {"tex": 199, "labels": [{"box": [1, 4, 202, 55], "ko": "표시 설정", "align": "left", "extend_w": 253}]}, {"tex": 200, "labels": [{"box": [4, 2, 202, 52], "ko": "컨트롤러 설정", "align": "left", "extend_w": 506}]}, {"tex": 201, "labels": [{"box": [0, 2, 202, 53], "ko": "사운드 설정", "align": "left", "extend_w": 510}]}, {"tex": 202, "labels": [{"box": [2, 2, 202, 52], "ko": "버튼 설정", "align": "left", "extend_w": 252}]}, {"tex": 203, "labels": [{"box": [1, 4, 297, 55], "ko": "작성 위치 선택", "align": "left", "extend_w": 509}]}, {"tex": 205, "labels": [{"box": [3, 4, 203, 54], "ko": "아이템 연금", "align": "left", "extend_w": 507}]}, {"tex": 206, "labels": [{"box": [6, 4, 105, 54], "ko": "판매", "align": "left", "extend_w": 120}]}, {"tex": 207, "labels": [{"box": [4, 4, 200, 54], "ko": "무기 판매", "align": "left", "extend_w": 250}]}, {"tex": 208, "labels": [{"box": [4, 4, 203, 54], "ko": "무기 연금", "align": "left", "extend_w": 250}]}, {"tex": 209, "labels": [{"box": [4, 4, 199, 54], "ko": "보주 판매", "align": "left", "extend_w": 250}]}, {"tex": 210, "labels": [{"box": [2, 4, 201, 54], "ko": "보주 연금", "align": "left", "extend_w": 252}]}, {"tex": 211, "labels": [{"box": [0, 4, 396, 55], "ko": "서바이벌 랭킹 표시", "align": "left", "extend_w": 510}]}, {"tex": 212, "labels": [{"box": [4, 4, 202, 55], "ko": "소재 판매", "align": "left", "extend_w": 250}]}, {"tex": 213, "labels": [{"box": [0, 4, 201, 55], "ko": "소재 연금", "align": "left", "extend_w": 254}]}, {"tex": 214, "labels": [{"box": [2, 4, 349, 55], "ko": "대전 랭킹 표시", "align": "left", "extend_w": 508}]}, {"tex": 215, "labels": [{"box": [1, 4, 152, 54], "ko": "제1층", "align": "left", "extend_w": 253}]}, {"tex": 216, "labels": [{"box": [1, 4, 152, 54], "ko": "제2층", "align": "left", "extend_w": 253}]}, {"tex": 217, "labels": [{"box": [1, 4, 152, 54], "ko": "제3층", "align": "left", "extend_w": 253}]}, {"tex": 218, "labels": [{"box": [1, 4, 152, 54], "ko": "제4층", "align": "left", "extend_w": 253}]}, {"tex": 219, "labels": [{"box": [5, 6, 236, 92], "ko": "전투 결과", "align": "left", "first_big": true, "extend_w": 249}]}, {"tex": 220, "labels": [{"box": [5, 6, 237, 92], "ko": "진형 정보", "align": "left", "first_big": true, "extend_w": 249}]}, {"tex": 221, "labels": [{"box": [5, 6, 238, 92], "ko": "진형 설정", "align": "left", "first_big": true, "extend_w": 249}]}, {"tex": 222, "labels": [{"box": [8, 6, 235, 92], "ko": "모델 확인", "align": "left", "first_big": true, "extend_w": 502}]}, {"tex": 223, "labels": [{"box": [6, 7, 237, 92], "ko": "팀 정보", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 224, "labels": [{"box": [6, 6, 283, 92], "ko": "팀 이름 입력", "align": "left", "first_big": true, "extend_w": 504}]}, {"tex": 225, "labels": [{"box": [10, 6, 141, 92], "ko": "선녀", "align": "left", "first_big": true, "extend_w": 244}]}, {"tex": 226, "labels": [{"box": [5, 6, 337, 92], "ko": "정형문 선택", "align": "left", "first_big": true, "extend_w": 505}]}, {"tex": 227, "labels": [{"box": [1, 9, 423, 71], "ko": "전장 선택 화면으로", "align": "left", "extend_w": 509}]}, {"tex": 228, "labels": [{"box": [8, 9, 130, 71], "ko": "전생", "align": "left", "extend_w": 246}]}, {"tex": 229, "labels": [{"box": [6, 9, 251, 71], "ko": "진형 정보", "align": "left", "extend_w": 504}]}, {"tex": 230, "labels": [{"box": [6, 10, 253, 71], "ko": "진형 설정", "align": "left", "extend_w": 504}]}, {"tex": 231, "labels": [{"box": [5, 9, 313, 72], "ko": "정보 타임라인", "align": "left", "extend_w": 1017}]}, {"tex": 234, "labels": [{"box": [7, 9, 251, 72], "ko": "팀 정보", "align": "left", "extend_w": 503}]}, {"tex": 236, "labels": [{"box": [8, 9, 251, 71], "ko": "출격 준비", "align": "left", "extend_w": 502}]}, {"tex": 238, "labels": [{"box": [3, 9, 336, 71], "ko": "진형 스킬 설정", "align": "left", "extend_w": 507}]}, {"tex": 239, "labels": [{"box": [3, 10, 252, 71], "ko": "진형 변경", "align": "left", "extend_w": 507}]}, {"tex": 240, "labels": [{"box": [3, 10, 251, 71], "ko": "배치 변경", "align": "left", "extend_w": 507}]}, {"tex": 241, "labels": [{"box": [0, 2, 331, 52], "ko": "전장 선택 화면으로", "align": "left", "extend_w": 510}]}, {"tex": 242, "labels": [{"box": [3, 2, 102, 52], "ko": "전생", "align": "left", "extend_w": 123}]}, {"tex": 243, "labels": [{"box": [1, 2, 200, 53], "ko": "진형 정보", "align": "left", "extend_w": 253}]}, {"tex": 244, "labels": [{"box": [1, 2, 201, 52], "ko": "진형 설정", "align": "left", "extend_w": 253}]}, {"tex": 245, "labels": [{"box": [4, 4, 252, 55], "ko": "정보 타임라인", "align": "left", "extend_w": 506}]}, {"tex": 248, "labels": [{"box": [3, 2, 200, 53], "ko": "팀 정보", "align": "left", "extend_w": 507}]}, {"tex": 250, "labels": [{"box": [3, 2, 200, 52], "ko": "출격 준비", "align": "left", "extend_w": 251}]}, {"tex": 252, "labels": [{"box": [1, 2, 265, 52], "ko": "진형 스킬 설정", "align": "left", "extend_w": 509}]}, {"tex": 253, "labels": [{"box": [0, 2, 203, 52], "ko": "진형 변경", "align": "left", "extend_w": 254}]}, {"tex": 254, "labels": [{"box": [0, 2, 201, 52], "ko": "배치 변경", "align": "left", "extend_w": 254}]}, {"tex": 255, "labels": [{"box": [10, 10, 255, 71], "ko": "대사 작성", "align": "left", "extend_w": 500}]}, {"tex": 256, "labels": [{"box": [10, 9, 372, 71], "ko": "전황 정보 작성", "align": "left", "extend_w": 1012}]}, {"tex": 257, "labels": [{"box": [10, 9, 256, 71], "ko": "대사 교체", "align": "left", "extend_w": 500}]}, {"tex": 258, "labels": [{"box": [5, 9, 581, 71], "ko": "진・무쌍의 전장 메뉴로", "align": "left", "extend_w": 1017}]}, {"tex": 259, "labels": [{"box": [4, 2, 202, 53], "ko": "대사 작성", "align": "left", "extend_w": 250}]}, {"tex": 260, "labels": [{"box": [4, 2, 295, 53], "ko": "전황 정보 작성", "align": "left", "extend_w": 506}]}, {"tex": 261, "labels": [{"box": [4, 2, 202, 53], "ko": "대사 교체", "align": "left", "extend_w": 250}]}, {"tex": 262, "labels": [{"box": [2, 2, 463, 53], "ko": "진・무쌍의 전장 메뉴로", "align": "left", "extend_w": 1020}]}, {"tex": 284, "labels": [{"box": [21, 17, 241, 80], "ko": "저장 중……", "align": "left", "extend_w": 233}]}, {"tex": 300, "labels": [{"box": [70, 21, 357, 92], "ko": "불러오는 중……", "align": "left", "extend_w": 952}]}, {"tex": 322, "labels": [{"box": [6, 3, 79, 44], "ko": "아이템", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 504}]}, {"tex": 323, "labels": [{"box": [9, 3, 147, 44], "ko": "무기 판매", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 245}]}, {"tex": 324, "labels": [{"box": [9, 3, 147, 44], "ko": "보주 판매", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 245}]}, {"tex": 325, "labels": [{"box": [7, 3, 79, 44], "ko": "무기", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 503}]}, {"tex": 326, "labels": [{"box": [8, 3, 114, 44], "ko": "변경 후", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 502}]}, {"tex": 327, "labels": [{"box": [8, 3, 114, 44], "ko": "변경 전", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 502}]}, {"tex": 328, "labels": [{"box": [7, 3, 147, 44], "ko": "필요 소재", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 329, "labels": [{"box": [7, 3, 147, 44], "ko": "의뢰 보수", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 330, "labels": [{"box": [7, 3, 147, 44], "ko": "아이템 연금", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 331, "labels": [{"box": [7, 3, 147, 44], "ko": "보주 연금", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 332, "labels": [{"box": [6, 3, 147, 44], "ko": "진형 선택", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 248}]}, {"tex": 333, "labels": [{"box": [7, 3, 166, 44], "ko": "장비 아이템 1", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 334, "labels": [{"box": [7, 3, 171, 44], "ko": "장비 아이템 2", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 335, "labels": [{"box": [7, 3, 171, 44], "ko": "장비 아이템 3", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 336, "labels": [{"box": [7, 3, 172, 44], "ko": "장비 아이템 4", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 337, "labels": [{"box": [7, 3, 171, 44], "ko": "장비 아이템 5", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 338, "labels": [{"box": [7, 3, 171, 44], "ko": "장비 아이템 6", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 342, "labels": [{"box": [6, 3, 147, 44], "ko": "획득 아이템", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 248}]}, {"tex": 343, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 구입", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 344, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 강화", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 345, "labels": [{"box": [6, 3, 147, 44], "ko": "소지 무기", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 248}]}, {"tex": 347, "labels": [{"box": [2, 3, 206, 44], "ko": "출격 예정 멤버", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 508}]}, {"tex": 348, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 장비", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 503}]}, {"tex": 349, "labels": [{"box": [7, 3, 180, 44], "ko": "장비 중인 무기", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 503}]}, {"tex": 350, "labels": [{"box": [7, 3, 147, 44], "ko": "아이템 장비", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 351, "labels": [{"box": [3, 3, 143, 44], "ko": "스킬 효과", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 507}]}, {"tex": 352, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 융합", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 353, "labels": [{"box": [6, 3, 147, 44], "ko": "획득 무기", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 248}]}, {"tex": 354, "labels": [{"box": [6, 3, 145, 44], "ko": "아이템 변경", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 248}]}, {"tex": 355, "labels": [{"box": [6, 3, 145, 44], "ko": "무기 변경", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 248}]}, {"tex": 356, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 연성", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 357, "labels": [{"box": [2, 3, 208, 44], "ko": "특수 관계 무장", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 508}]}, {"tex": 358, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 버리기", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 359, "labels": [{"box": [9, 3, 147, 44], "ko": "소재 판매", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 245}]}, {"tex": 360, "labels": [{"box": [7, 3, 147, 44], "ko": "무기 연금", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 247}]}, {"tex": 204, "labels": [{"box": [9, 4, 367, 55], "ko": "『무쌍 오로치』 개요", "align": "left", "extend_w": 1013}, {"box": [5, 64, 573, 115], "ko": "『무쌍 오로치 마왕재림』 개요", "align": "left", "extend_w": 1017}, {"box": [8, 124, 409, 175], "ko": "『무쌍 오로치 2』 개요", "align": "left", "extend_w": 1014}]}, {"tex": 302, "labels": [{"box": [5, 6, 154, 50], "ko": "최고 기록", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 249}, {"box": [4, 66, 154, 110], "ko": "누적 기록", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 250}]}, {"tex": 306, "labels": [{"box": [44, 0, 378, 48], "ko": "2P 메뉴 버튼을 누르십시오", "align": "left", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0, "extend_w": 466}, {"box": [187, 49, 375, 95], "ko": "2P 참가", "align": "right", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.0}]}, {"tex": 445, "labels": [{"box": [43, 4, 116, 80], "ko": "예", "align": "center"}, {"box": [56, 100, 104, 148], "ko": "예", "align": "center"}]}, {"tex": 446, "labels": [{"box": [68, 4, 140, 79], "ko": "아니오", "align": "center", "grow": 3.2}, {"box": [80, 99, 128, 147], "ko": "아니오", "align": "center", "grow": 3.2}]}, {"tex": 265, "labels": [{"box": [3, 5, 124, 101], "ko": "공격", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 266, "labels": [{"box": [3, 5, 124, 101], "ko": "방어", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 267, "labels": [{"box": [3, 5, 124, 101], "ko": "이동", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 268, "labels": [{"box": [3, 5, 124, 101], "ko": "전장", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 269, "labels": [{"box": [1, 5, 130, 101], "ko": "아군 세력", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 270, "labels": [{"box": [2, 5, 130, 101], "ko": "적 세력", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 271, "labels": [{"box": [0, 5, 131, 101], "ko": "제3세력", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 272, "labels": [{"box": [3, 5, 124, 101], "ko": "SE", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 273, "labels": [{"box": [3, 5, 124, 101], "ko": "능력", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 274, "labels": [{"box": [3, 5, 124, 101], "ko": "플레이어", "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center", "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 43, "border": 2}}]}, {"tex": 276, "labels": [{"box": [13, 7, 98, 40], "ko": "염", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 53, 98, 88], "ko": "빙", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 101, 98, 136], "ko": "뇌", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 149, 98, 184], "ko": "풍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 197, 98, 232], "ko": "참", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 245, 98, 280], "ko": "신속", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 293, 98, 328], "ko": "신장", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 341, 98, 376], "ko": "연쇄", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 389, 98, 424], "ko": "지격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 437, 98, 472], "ko": "천격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 485, 98, 520], "ko": "난격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 533, 98, 568], "ko": "기격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 581, 98, 616], "ko": "극격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 629, 98, 664], "ko": "파천", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 677, 98, 712], "ko": "파격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 725, 98, 760], "ko": "용맹", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 773, 98, 808], "ko": "흡생", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 821, 98, 856], "ko": "흡활", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 869, 98, 904], "ko": "속공", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 917, 98, 952], "ko": "수집", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 965, 98, 1000], "ko": "탈취", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1013, 98, 1048], "ko": "보장", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1061, 98, 1096], "ko": "무훈", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1109, 98, 1144], "ko": "연마", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1157, 98, 1192], "ko": "습숙", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1205, 98, 1240], "ko": "조화", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1253, 98, 1288], "ko": "천무", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1301, 98, 1336], "ko": "유폭", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1349, 98, 1384], "ko": "선풍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1397, 98, 1432], "ko": "수렴", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1445, 98, 1480], "ko": "분신", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1493, 98, 1525], "ko": "천활", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}]}, {"tex": 277, "labels": [{"box": [13, 7, 98, 40], "ko": "염뢰", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 53, 98, 88], "ko": "빙뢰", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 101, 98, 136], "ko": "염풍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 149, 98, 184], "ko": "빙풍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 197, 98, 232], "ko": "뇌풍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 245, 98, 280], "ko": "염참", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 293, 98, 328], "ko": "빙참", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 341, 98, 376], "ko": "뇌참", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 389, 98, 424], "ko": "풍참", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 437, 98, 472], "ko": "삼극", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 485, 98, 520], "ko": "공격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 533, 98, 568], "ko": "혜석", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 581, 98, 616], "ko": "혜도", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 629, 98, 664], "ko": "혜주", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 677, 98, 712], "ko": "진격", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 725, 98, 760], "ko": "견갑", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 773, 98, 808], "ko": "쾌유", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 821, 98, 856], "ko": "기염", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 869, 98, 904], "ko": "중붕", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 917, 98, 952], "ko": "중쇄", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 965, 98, 1000], "ko": "맹붕", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1013, 98, 1048], "ko": "맹쇄", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1061, 98, 1096], "ko": "조달", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1109, 98, 1145], "ko": "열풍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1158, 98, 1193], "ko": "천공", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}, {"box": [13, 1206, 98, 1238], "ko": "천우", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250], [226, 250, 250]], "glow": [8, 26, 30], "glow_a": 0.5, "outline": [8, 26, 30], "has_outline": true, "fill_a": 1.0, "ink_h": 30, "border": 2}}]}, {"tex": 278, "labels": [{"box": [15, 5, 151, 35], "ko": "체력 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 46, 151, 77], "ko": "무쌍 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 88, 151, 119], "ko": "공격 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 130, 151, 161], "ko": "방어 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 172, 151, 203], "ko": "속도 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 214, 151, 245], "ko": "파워형 강화", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 256, 151, 287], "ko": "스피드형 강화", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 298, 151, 329], "ko": "테크닉형 강화", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 340, 151, 371], "ko": "원더형 강화", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 382, 151, 413], "ko": "무장 공격 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 424, 151, 455], "ko": "연속 공격 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 466, 151, 497], "ko": "교대 공격 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 508, 151, 539], "ko": "무쌍 경감", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 550, 151, 581], "ko": "무장 방어 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 592, 151, 623], "ko": "피격 경감", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 634, 151, 665], "ko": "경험치 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 676, 151, 707], "ko": "숙련도 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 718, 151, 749], "ko": "숙달도 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 760, 151, 791], "ko": "귀석 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 802, 151, 833], "ko": "운 증가", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 844, 151, 875], "ko": "대기 체력", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 886, 151, 917], "ko": "대기 무쌍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 928, 151, 959], "ko": "백격 체력", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 970, 151, 1001], "ko": "백격 무쌍", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 1012, 151, 1043], "ko": "백격 합력", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}, {"box": [15, 1054, 151, 1083], "ko": "임사 부활", "erase": "rowfill", "lum": 175, "ink_grow": 2, "kx": 10, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236], [252, 236, 236]], "glow": [18, 10, 14], "glow_a": 0.5, "outline": [18, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 24, "border": 2}}]}, {"tex": 264, "labels": [{"box": [5, 9, 97, 82], "ko": "장착 완료", "angle": 30, "pad": 2, "line_h": 34, "len_frac": 1.05}, {"box": [1, 99, 98, 172], "ko": "장착 불가", "angle": 30, "pad": 2, "line_h": 34, "len_frac": 1.05}]}, {"tex": 439, "labels": [{"box": [4, 7, 100, 83], "ko": "수락 완료", "angle": 30, "pad": 2, "line_h": 36, "len_frac": 1.05}, {"box": [9, 102, 93, 171], "ko": "달성!!", "angle": 30, "pad": 2, "line_h": 36, "len_frac": 1.05}, {"box": [24, 195, 87, 257], "ko": "실패", "angle": 30, "pad": 2, "line_h": 36, "len_frac": 1.05}]}, {"tex": 317, "labels": [{"box": [18, 0, 179, 46], "ko": "리더", "erase": "rowfill", "lum": 150, "kx": 30, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0.1, "style": {"grad": [[150, 220, 235], [150, 220, 235], [150, 220, 235], [150, 220, 235], [150, 220, 235], [150, 220, 235], [150, 220, 235], [150, 220, 235]], "glow": [5, 10, 14], "glow_a": 0.5, "outline": [5, 10, 14], "has_outline": true, "fill_a": 1.0, "ink_h": 32, "border": 2}}]}, {"tex": 321, "labels": [{"box": [6, 3, 46, 43], "ko": "갑", "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0}]}, {"tex": 380, "labels": [{"box": [20, 0, 182, 28], "ko": "숙련도", "pad": 0, "lum": 150, "kx": 20, "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 26, "border": 2}}]}, {"tex": 382, "labels": [{"box": [21, 0, 182, 28], "ko": "숙련도", "pad": 0, "lum": 150, "kx": 20, "style": {"grad": [[245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245], [245, 245, 245]], "glow": [10, 10, 12], "glow_a": 0.5, "outline": [10, 10, 12], "has_outline": true, "fill_a": 1.0, "ink_h": 26, "border": 2}}]}, {"tex": 438, "labels": [{"box": [6, 7, 108, 40], "ko": "쉬움", "erase": "rowfill", "lum": 150, "kx": 20, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250]], "glow": [10, 12, 10], "glow_a": 0.5, "outline": [10, 12, 10], "has_outline": true, "fill_a": 1.0, "ink_h": 28, "border": 2}}, {"box": [6, 55, 108, 88], "ko": "보통", "erase": "rowfill", "lum": 150, "kx": 20, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250]], "glow": [10, 12, 10], "glow_a": 0.5, "outline": [10, 12, 10], "has_outline": true, "fill_a": 1.0, "ink_h": 28, "border": 2}}, {"box": [6, 103, 108, 136], "ko": "어려움", "erase": "rowfill", "lum": 150, "kx": 20, "align": "center", "font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf", "shear": 0, "style": {"grad": [[250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250], [250, 250, 250]], "glow": [10, 12, 10], "glow_a": 0.5, "outline": [10, 12, 10], "has_outline": true, "fill_a": 1.0, "ink_h": 28, "border": 2}}]}, {"tex": 314, "copy": "JPN"}, {"tex": 369, "copy": "JPN"}, {"tex": 370, "copy": "JPN"}, {"tex": 371, "copy": "JPN"}, {"tex": 372, "copy": "JPN"}, {"tex": 390, "copy": "JPN"}, {"tex": 400, "copy": "JPN"}, {"tex": 401, "copy": "JPN"}, {"tex": 402, "copy": "JPN"}, {"tex": 403, "copy": "JPN"}, {"tex": 440, "copy": "JPN"}, {"tex": 441, "copy": "JPN"}, {"tex": 457, "copy": "JPN"}]}
+{
+"entry": 37,
+"textures": [
+{
+"tex": 49,
+"labels": [
+{
+"box": [
+3,
+6,
+237,
+92
+],
+"ko": "무장 선택",
+"align": "left",
+"first_big": true,
+"extend_w": 251
+}
+]
+},
+{
+"tex": 50,
+"labels": [
+{
+"box": [
+3,
+6,
+237,
+92
+],
+"ko": "전장 선택",
+"align": "left",
+"first_big": true,
+"extend_w": 251
+}
+]
+},
+{
+"tex": 51,
+"labels": [
+{
+"box": [
+6,
+6,
+238,
+92
+],
+"ko": "전투 준비",
+"align": "left",
+"first_big": true,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 52,
+"labels": [
+{
+"box": [
+7,
+6,
+238,
+91
+],
+"ko": "무기 장비",
+"align": "left",
+"first_big": true,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 53,
+"labels": [
+{
+"box": [
+6,
+6,
+234,
+91
+],
+"ko": "아이템 장비",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 54,
+"labels": [
+{
+"box": [
+7,
+6,
+238,
+92
+],
+"ko": "임무 수락",
+"align": "left",
+"first_big": true,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 55,
+"labels": [
+{
+"box": [
+9,
+7,
+239,
+92
+],
+"ko": "군단 정보",
+"align": "left",
+"first_big": true,
+"extend_w": 245
+}
+]
+},
+{
+"tex": 56,
+"labels": [
+{
+"box": [
+7,
+7,
+239,
+93
+],
+"ko": "팀 정보",
+"align": "left",
+"first_big": true,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 57,
+"labels": [
+{
+"box": [
+11,
+8,
+141,
+92
+],
+"ko": "옵션",
+"align": "left",
+"first_big": true,
+"extend_w": 499
+}
+]
+},
+{
+"tex": 58,
+"labels": [
+{
+"box": [
+7,
+6,
+333,
+92
+],
+"ko": "임무 수락 확인",
+"align": "left",
+"first_big": true,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 59,
+"labels": [
+{
+"box": [
+10,
+6,
+241,
+92
+],
+"ko": "정보 이력",
+"align": "left",
+"first_big": true,
+"extend_w": 244
+}
+]
+},
+{
+"tex": 60,
+"labels": [
+{
+"box": [
+7,
+6,
+240,
+92
+],
+"ko": "무장 정보",
+"align": "left",
+"first_big": true,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 61,
+"labels": [
+{
+"box": [
+6,
+6,
+290,
+92
+],
+"ko": "우호도 목록",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 62,
+"labels": [
+{
+"box": [
+6,
+6,
+287,
+91
+],
+"ko": "경험치 분배",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 63,
+"labels": [
+{
+"box": [
+5,
+6,
+319,
+92
+],
+"ko": "진・무쌍의 전장",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 64,
+"labels": [
+{
+"box": [
+6,
+6,
+241,
+93
+],
+"ko": "대사 변경",
+"align": "left",
+"first_big": true,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 65,
+"labels": [
+{
+"box": [
+6,
+6,
+239,
+93
+],
+"ko": "무장 변경",
+"align": "left",
+"first_big": true,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 66,
+"labels": [
+{
+"box": [
+7,
+8,
+139,
+91
+],
+"ko": "온라인",
+"align": "left",
+"first_big": true,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 67,
+"labels": [
+{
+"box": [
+6,
+6,
+238,
+91
+],
+"ko": "오로치 세계",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 68,
+"labels": [
+{
+"box": [
+4,
+8,
+238,
+90
+],
+"ko": "표시 설정",
+"align": "left",
+"first_big": true,
+"extend_w": 250
+}
+]
+},
+{
+"tex": 69,
+"labels": [
+{
+"box": [
+6,
+6,
+239,
+92
+],
+"ko": "조작 설정",
+"align": "left",
+"first_big": true,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 70,
+"labels": [
+{
+"box": [
+3,
+6,
+234,
+91
+],
+"ko": "사운드 설정",
+"align": "left",
+"first_big": true,
+"extend_w": 507
+}
+]
+},
+{
+"tex": 71,
+"labels": [
+{
+"box": [
+7,
+6,
+256,
+92
+],
+"ko": "세이브/로드",
+"align": "left",
+"first_big": true,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 73,
+"labels": [
+{
+"box": [
+12,
+6,
+247,
+93
+],
+"ko": "모델 변경",
+"align": "left",
+"first_big": true,
+"extend_w": 498
+}
+]
+},
+{
+"tex": 75,
+"labels": [
+{
+"box": [
+5,
+6,
+331,
+91
+],
+"ko": "편집 내용 확인",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 76,
+"labels": [
+{
+"box": [
+6,
+6,
+234,
+91
+],
+"ko": "듀얼 모드",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 77,
+"labels": [
+{
+"box": [
+6,
+6,
+135,
+91
+],
+"ko": "듀얼",
+"align": "left",
+"first_big": true,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 78,
+"labels": [
+{
+"box": [
+2,
+5,
+186,
+89
+],
+"ko": "서바이벌",
+"align": "left",
+"first_big": true,
+"extend_w": 508
+}
+]
+},
+{
+"tex": 79,
+"labels": [
+{
+"box": [
+5,
+9,
+137,
+95
+],
+"ko": "프리셋",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 80,
+"labels": [
+{
+"box": [
+9,
+6,
+285,
+92
+],
+"ko": "정보 타임라인",
+"align": "left",
+"first_big": true,
+"extend_w": 501
+}
+]
+},
+{
+"tex": 81,
+"labels": [
+{
+"box": [
+9,
+6,
+331,
+92
+],
+"ko": "전황 정보 작성",
+"align": "left",
+"first_big": true,
+"extend_w": 501
+}
+]
+},
+{
+"tex": 82,
+"labels": [
+{
+"box": [
+11,
+6,
+241,
+92
+],
+"ko": "대사 교체",
+"align": "left",
+"first_big": true,
+"extend_w": 243
+}
+]
+},
+{
+"tex": 83,
+"labels": [
+{
+"box": [
+10,
+6,
+240,
+92
+],
+"ko": "대사 작성",
+"align": "left",
+"first_big": true,
+"extend_w": 244
+}
+]
+},
+{
+"tex": 84,
+"labels": [
+{
+"box": [
+5,
+6,
+239,
+92
+],
+"ko": "시나리오 선택",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 85,
+"labels": [
+{
+"box": [
+9,
+6,
+237,
+92
+],
+"ko": "출격 준비",
+"align": "left",
+"first_big": true,
+"extend_w": 501
+}
+]
+},
+{
+"tex": 86,
+"labels": [
+{
+"box": [
+6,
+6,
+236,
+91
+],
+"ko": "컬러 에디트",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 87,
+"labels": [
+{
+"box": [
+8,
+6,
+142,
+92
+],
+"ko": "세이브",
+"align": "left",
+"first_big": true,
+"extend_w": 246
+}
+]
+},
+{
+"tex": 88,
+"labels": [
+{
+"box": [
+5,
+6,
+139,
+92
+],
+"ko": "진지",
+"align": "left",
+"first_big": true,
+"extend_w": 249
+}
+]
+},
+{
+"tex": 90,
+"labels": [
+{
+"box": [
+5,
+6,
+190,
+92
+],
+"ko": "무기점",
+"align": "left",
+"first_big": true,
+"extend_w": 249
+}
+]
+},
+{
+"tex": 91,
+"labels": [
+{
+"box": [
+9,
+7,
+144,
+92
+],
+"ko": "식당",
+"align": "left",
+"first_big": true,
+"extend_w": 245
+}
+]
+},
+{
+"tex": 92,
+"labels": [
+{
+"box": [
+5,
+6,
+336,
+93
+],
+"ko": "조작 무장 변경",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 93,
+"labels": [
+{
+"box": [
+7,
+6,
+138,
+92
+],
+"ko": "전생",
+"align": "left",
+"first_big": true,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 94,
+"labels": [
+{
+"box": [
+6,
+6,
+287,
+91
+],
+"ko": "성장 구슬 분배",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 95,
+"labels": [
+{
+"box": [
+5,
+6,
+241,
+92
+],
+"ko": "비경 선택",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 96,
+"labels": [
+{
+"box": [
+15,
+6,
+233,
+92
+],
+"ko": "프리 모드",
+"align": "left",
+"first_big": true,
+"extend_w": 495
+}
+]
+},
+{
+"tex": 97,
+"labels": [
+{
+"box": [
+8,
+7,
+240,
+91
+],
+"ko": "그래픽 설정",
+"align": "left",
+"first_big": true,
+"extend_w": 246
+}
+]
+},
+{
+"tex": 98,
+"labels": [
+{
+"box": [
+7,
+6,
+466,
+92
+],
+"ko": "키・마우스 조작 설정",
+"align": "left",
+"first_big": true,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 99,
+"labels": [
+{
+"box": [
+149,
+12,
+306,
+75
+],
+"ko": "스토리 모드",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 361
+}
+]
+},
+{
+"tex": 100,
+"labels": [
+{
+"box": [
+151,
+13,
+306,
+76
+],
+"ko": "프리 모드",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 359
+}
+]
+},
+{
+"tex": 101,
+"labels": [
+{
+"box": [
+149,
+12,
+306,
+76
+],
+"ko": "에디트 모드",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 361
+}
+]
+},
+{
+"tex": 102,
+"labels": [
+{
+"box": [
+183,
+13,
+307,
+76
+],
+"ko": "갤러리",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 327
+}
+]
+},
+{
+"tex": 103,
+"labels": [
+{
+"box": [
+218,
+12,
+308,
+76
+],
+"ko": "옵션",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 292
+}
+]
+},
+{
+"tex": 104,
+"labels": [
+{
+"box": [
+153,
+13,
+306,
+75
+],
+"ko": "듀얼 모드",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 357
+}
+]
+},
+{
+"tex": 105,
+"labels": [
+{
+"box": [
+152,
+12,
+306,
+76
+],
+"ko": "언리미티드 모드",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.12,
+"extend_w": 358
+}
+]
+},
+{
+"tex": 106,
+"labels": [
+{
+"box": [
+5,
+9,
+251,
+71
+],
+"ko": "전투 준비",
+"align": "left",
+"extend_w": 505
+}
+]
+},
+{
+"tex": 107,
+"labels": [
+{
+"box": [
+4,
+9,
+252,
+71
+],
+"ko": "임무 수락",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 108,
+"labels": [
+{
+"box": [
+6,
+9,
+251,
+71
+],
+"ko": "군단 정보",
+"align": "left",
+"extend_w": 504
+}
+]
+},
+{
+"tex": 109,
+"labels": [
+{
+"box": [
+6,
+9,
+251,
+72
+],
+"ko": "팀 정보",
+"align": "left",
+"extend_w": 504
+}
+]
+},
+{
+"tex": 110,
+"labels": [
+{
+"box": [
+11,
+10,
+132,
+71
+],
+"ko": "옵션",
+"align": "left",
+"extend_w": 499
+}
+]
+},
+{
+"tex": 111,
+"labels": [
+{
+"box": [
+3,
+10,
+307,
+71
+],
+"ko": "2P 이탈",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 113,
+"labels": [
+{
+"box": [
+2,
+11,
+308,
+73
+],
+"ko": "메인 메뉴로",
+"align": "left",
+"extend_w": 1020
+}
+]
+},
+{
+"tex": 114,
+"labels": [
+{
+"box": [
+5,
+12,
+249,
+73
+],
+"ko": "전투 개시",
+"align": "left",
+"extend_w": 505
+}
+]
+},
+{
+"tex": 115,
+"labels": [
+{
+"box": [
+8,
+11,
+254,
+73
+],
+"ko": "정보 이력",
+"align": "left",
+"extend_w": 502
+}
+]
+},
+{
+"tex": 116,
+"labels": [
+{
+"box": [
+1,
+11,
+367,
+74
+],
+"ko": "임무 수락 확인",
+"align": "left",
+"extend_w": 1021
+}
+]
+},
+{
+"tex": 117,
+"labels": [
+{
+"box": [
+11,
+11,
+253,
+73
+],
+"ko": "중간 저장",
+"align": "left",
+"extend_w": 499
+}
+]
+},
+{
+"tex": 118,
+"labels": [
+{
+"box": [
+4,
+11,
+249,
+73
+],
+"ko": "전투 재개",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 119,
+"labels": [
+{
+"box": [
+0,
+11,
+372,
+73
+],
+"ko": "조작 무장 변경",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 120,
+"labels": [
+{
+"box": [
+5,
+11,
+251,
+73
+],
+"ko": "무장 정보",
+"align": "left",
+"extend_w": 505
+}
+]
+},
+{
+"tex": 121,
+"labels": [
+{
+"box": [
+2,
+11,
+311,
+73
+],
+"ko": "우호도 정보",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 122,
+"labels": [
+{
+"box": [
+0,
+11,
+431,
+74
+],
+"ko": "스톡 경험치 분배",
+"align": "left",
+"extend_w": 1022
+}
+]
+},
+{
+"tex": 123,
+"labels": [
+{
+"box": [
+8,
+12,
+134,
+73
+],
+"ko": "세이브",
+"align": "left",
+"extend_w": 246
+}
+]
+},
+{
+"tex": 124,
+"labels": [
+{
+"box": [
+2,
+11,
+367,
+74
+],
+"ko": "편집 내용 확인",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 126,
+"labels": [
+{
+"box": [
+8,
+11,
+133,
+73
+],
+"ko": "참가",
+"align": "left",
+"extend_w": 246
+}
+]
+},
+{
+"tex": 129,
+"labels": [
+{
+"box": [
+6,
+11,
+131,
+73
+],
+"ko": "모집",
+"align": "left",
+"extend_w": 248
+}
+]
+},
+{
+"tex": 130,
+"labels": [
+{
+"box": [
+5,
+12,
+254,
+73
+],
+"ko": "진군 개시",
+"align": "left",
+"extend_w": 505
+}
+]
+},
+{
+"tex": 131,
+"labels": [
+{
+"box": [
+1,
+11,
+492,
+73
+],
+"ko": "출격 예정 멤버 설정",
+"align": "left",
+"extend_w": 1021
+}
+]
+},
+{
+"tex": 132,
+"labels": [
+{
+"box": [
+4,
+12,
+253,
+73
+],
+"ko": "표시 설정",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 133,
+"labels": [
+{
+"box": [
+6,
+10,
+251,
+71
+],
+"ko": "조작 설정",
+"align": "left",
+"extend_w": 504
+}
+]
+},
+{
+"tex": 134,
+"labels": [
+{
+"box": [
+3,
+11,
+253,
+74
+],
+"ko": "사운드 설정",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 136,
+"labels": [
+{
+"box": [
+3,
+11,
+250,
+73
+],
+"ko": "진지 귀환",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 137,
+"labels": [
+{
+"box": [
+2,
+10,
+313,
+71
+],
+"ko": "성장 구슬 분배",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 138,
+"labels": [
+{
+"box": [
+6,
+9,
+377,
+72
+],
+"ko": "테스트 플레이 종료",
+"align": "left",
+"extend_w": 504
+}
+]
+},
+{
+"tex": 139,
+"labels": [
+{
+"box": [
+7,
+9,
+560,
+71
+],
+"ko": "키・마우스 조작 설정",
+"align": "left",
+"extend_w": 1015
+}
+]
+},
+{
+"tex": 140,
+"labels": [
+{
+"box": [
+1,
+2,
+201,
+52
+],
+"ko": "전투 준비",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 141,
+"labels": [
+{
+"box": [
+1,
+2,
+201,
+53
+],
+"ko": "임무 수락",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 142,
+"labels": [
+{
+"box": [
+2,
+2,
+200,
+53
+],
+"ko": "군단 정보",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 143,
+"labels": [
+{
+"box": [
+2,
+2,
+200,
+53
+],
+"ko": "팀 정보",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 144,
+"labels": [
+{
+"box": [
+5,
+3,
+103,
+52
+],
+"ko": "옵션",
+"align": "left",
+"extend_w": 249
+}
+]
+},
+{
+"tex": 145,
+"labels": [
+{
+"box": [
+1,
+2,
+245,
+53
+],
+"ko": "2P 이탈",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 147,
+"labels": [
+{
+"box": [
+1,
+2,
+247,
+52
+],
+"ko": "메인 메뉴로",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 148,
+"labels": [
+{
+"box": [
+2,
+2,
+199,
+52
+],
+"ko": "전투 개시",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 149,
+"labels": [
+{
+"box": [
+3,
+2,
+202,
+53
+],
+"ko": "정보 이력",
+"align": "left",
+"extend_w": 251
+}
+]
+},
+{
+"tex": 150,
+"labels": [
+{
+"box": [
+0,
+2,
+294,
+53
+],
+"ko": "임무 수락 확인",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 151,
+"labels": [
+{
+"box": [
+4,
+2,
+201,
+52
+],
+"ko": "중간 저장",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 152,
+"labels": [
+{
+"box": [
+1,
+2,
+200,
+52
+],
+"ko": "전투 재개",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 153,
+"labels": [
+{
+"box": [
+0,
+2,
+298,
+53
+],
+"ko": "조작 무장 변경",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 154,
+"labels": [
+{
+"box": [
+2,
+2,
+201,
+53
+],
+"ko": "무장 정보",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 155,
+"labels": [
+{
+"box": [
+1,
+2,
+249,
+53
+],
+"ko": "우호도 정보",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 156,
+"labels": [
+{
+"box": [
+1,
+2,
+348,
+53
+],
+"ko": "스톡 경험치 분배",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 157,
+"labels": [
+{
+"box": [
+3,
+2,
+105,
+52
+],
+"ko": "세이브",
+"align": "left",
+"extend_w": 251
+}
+]
+},
+{
+"tex": 158,
+"labels": [
+{
+"box": [
+2,
+2,
+295,
+53
+],
+"ko": "편집 내용 확인",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 160,
+"labels": [
+{
+"box": [
+2,
+2,
+104,
+53
+],
+"ko": "참가",
+"align": "left",
+"extend_w": 124
+}
+]
+},
+{
+"tex": 163,
+"labels": [
+{
+"box": [
+2,
+2,
+103,
+52
+],
+"ko": "모집",
+"align": "left",
+"extend_w": 124
+}
+]
+},
+{
+"tex": 164,
+"labels": [
+{
+"box": [
+1,
+2,
+202,
+52
+],
+"ko": "진군 개시",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 165,
+"labels": [
+{
+"box": [
+3,
+2,
+398,
+53
+],
+"ko": "출격 예정 멤버 설정",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 166,
+"labels": [
+{
+"box": [
+1,
+2,
+202,
+53
+],
+"ko": "표시 설정",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 167,
+"labels": [
+{
+"box": [
+1,
+2,
+201,
+53
+],
+"ko": "조작 설정",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 168,
+"labels": [
+{
+"box": [
+0,
+2,
+202,
+53
+],
+"ko": "사운드 설정",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 170,
+"labels": [
+{
+"box": [
+1,
+2,
+200,
+52
+],
+"ko": "진지 귀환",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 171,
+"labels": [
+{
+"box": [
+0,
+2,
+250,
+53
+],
+"ko": "성장 구슬 분배",
+"align": "left",
+"extend_w": 254
+}
+]
+},
+{
+"tex": 172,
+"labels": [
+{
+"box": [
+2,
+2,
+299,
+53
+],
+"ko": "테스트 플레이 종료",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 173,
+"labels": [
+{
+"box": [
+1,
+2,
+445,
+53
+],
+"ko": "키・마우스 조작 설정",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 174,
+"labels": [
+{
+"box": [
+0,
+2,
+250,
+53
+],
+"ko": "난이도 선택",
+"align": "left",
+"extend_w": 254
+}
+]
+},
+{
+"tex": 175,
+"labels": [
+{
+"box": [
+2,
+4,
+203,
+55
+],
+"ko": "장비 변경",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 176,
+"labels": [
+{
+"box": [
+1,
+4,
+201,
+54
+],
+"ko": "무기 구입",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 177,
+"labels": [
+{
+"box": [
+3,
+4,
+201,
+54
+],
+"ko": "무기 연성",
+"align": "left",
+"extend_w": 251
+}
+]
+},
+{
+"tex": 178,
+"labels": [
+{
+"box": [
+3,
+4,
+295,
+55
+],
+"ko": "편집 내용 확인",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 179,
+"labels": [
+{
+"box": [
+1,
+4,
+251,
+55
+],
+"ko": "변경 항목 선택",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 180,
+"labels": [
+{
+"box": [
+1,
+4,
+251,
+55
+],
+"ko": "교체 항목 선택",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 181,
+"labels": [
+{
+"box": [
+3,
+4,
+106,
+55
+],
+"ko": "초대",
+"align": "left",
+"extend_w": 123
+}
+]
+},
+{
+"tex": 182,
+"labels": [
+{
+"box": [
+3,
+4,
+103,
+54
+],
+"ko": "모집",
+"align": "left",
+"extend_w": 123
+}
+]
+},
+{
+"tex": 183,
+"labels": [
+{
+"box": [
+4,
+4,
+105,
+55
+],
+"ko": "참가",
+"align": "left",
+"extend_w": 122
+}
+]
+},
+{
+"tex": 184,
+"labels": [
+{
+"box": [
+1,
+4,
+201,
+54
+],
+"ko": "연회 선택",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 185,
+"labels": [
+{
+"box": [
+1,
+4,
+298,
+55
+],
+"ko": "초대 무장 선택",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 186,
+"labels": [
+{
+"box": [
+3,
+4,
+199,
+54
+],
+"ko": "연회 결과",
+"align": "left",
+"extend_w": 251
+}
+]
+},
+{
+"tex": 187,
+"labels": [
+{
+"box": [
+1,
+4,
+201,
+54
+],
+"ko": "분류 선택",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 188,
+"labels": [
+{
+"box": [
+3,
+4,
+203,
+55
+],
+"ko": "무장 선택",
+"align": "left",
+"extend_w": 251
+}
+]
+},
+{
+"tex": 189,
+"labels": [
+{
+"box": [
+2,
+4,
+201,
+54
+],
+"ko": "전장 선택",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 190,
+"labels": [
+{
+"box": [
+4,
+4,
+105,
+55
+],
+"ko": "추첨",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 191,
+"labels": [
+{
+"box": [
+3,
+4,
+345,
+55
+],
+"ko": "개별 무장 초기화",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 192,
+"labels": [
+{
+"box": [
+1,
+4,
+298,
+55
+],
+"ko": "조작 무장 선택",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 193,
+"labels": [
+{
+"box": [
+2,
+4,
+250,
+54
+],
+"ko": "비기 카드 선택",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 194,
+"labels": [
+{
+"box": [
+4,
+4,
+204,
+54
+],
+"ko": "스테이지 선택",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 195,
+"labels": [
+{
+"box": [
+1,
+5,
+250,
+56
+],
+"ko": "랭킹 표시",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 196,
+"labels": [
+{
+"box": [
+4,
+4,
+204,
+55
+],
+"ko": "무장 설정",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 197,
+"labels": [
+{
+"box": [
+0,
+4,
+249,
+54
+],
+"ko": "비기 카드 설정",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 198,
+"labels": [
+{
+"box": [
+2,
+4,
+246,
+55
+],
+"ko": "비기 카드 확인",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 199,
+"labels": [
+{
+"box": [
+1,
+4,
+202,
+55
+],
+"ko": "표시 설정",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 200,
+"labels": [
+{
+"box": [
+4,
+2,
+202,
+52
+],
+"ko": "컨트롤러 설정",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 201,
+"labels": [
+{
+"box": [
+0,
+2,
+202,
+53
+],
+"ko": "사운드 설정",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 202,
+"labels": [
+{
+"box": [
+2,
+2,
+202,
+52
+],
+"ko": "버튼 설정",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 203,
+"labels": [
+{
+"box": [
+1,
+4,
+297,
+55
+],
+"ko": "작성 위치 선택",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 205,
+"labels": [
+{
+"box": [
+3,
+4,
+203,
+54
+],
+"ko": "아이템 연금",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 206,
+"labels": [
+{
+"box": [
+6,
+4,
+105,
+54
+],
+"ko": "판매",
+"align": "left",
+"extend_w": 120
+}
+]
+},
+{
+"tex": 207,
+"labels": [
+{
+"box": [
+4,
+4,
+200,
+54
+],
+"ko": "무기 판매",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 208,
+"labels": [
+{
+"box": [
+4,
+4,
+203,
+54
+],
+"ko": "무기 연금",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 209,
+"labels": [
+{
+"box": [
+4,
+4,
+199,
+54
+],
+"ko": "보주 판매",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 210,
+"labels": [
+{
+"box": [
+2,
+4,
+201,
+54
+],
+"ko": "보주 연금",
+"align": "left",
+"extend_w": 252
+}
+]
+},
+{
+"tex": 211,
+"labels": [
+{
+"box": [
+0,
+4,
+396,
+55
+],
+"ko": "서바이벌 랭킹 표시",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 212,
+"labels": [
+{
+"box": [
+4,
+4,
+202,
+55
+],
+"ko": "소재 판매",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 213,
+"labels": [
+{
+"box": [
+0,
+4,
+201,
+55
+],
+"ko": "소재 연금",
+"align": "left",
+"extend_w": 254
+}
+]
+},
+{
+"tex": 214,
+"labels": [
+{
+"box": [
+2,
+4,
+349,
+55
+],
+"ko": "대전 랭킹 표시",
+"align": "left",
+"extend_w": 508
+}
+]
+},
+{
+"tex": 215,
+"labels": [
+{
+"box": [
+1,
+4,
+152,
+54
+],
+"ko": "제1층",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 216,
+"labels": [
+{
+"box": [
+1,
+4,
+152,
+54
+],
+"ko": "제2층",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 217,
+"labels": [
+{
+"box": [
+1,
+4,
+152,
+54
+],
+"ko": "제3층",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 218,
+"labels": [
+{
+"box": [
+1,
+4,
+152,
+54
+],
+"ko": "제4층",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 219,
+"labels": [
+{
+"box": [
+5,
+6,
+236,
+92
+],
+"ko": "전투 결과",
+"align": "left",
+"first_big": true,
+"extend_w": 249
+}
+]
+},
+{
+"tex": 220,
+"labels": [
+{
+"box": [
+5,
+6,
+237,
+92
+],
+"ko": "진형 정보",
+"align": "left",
+"first_big": true,
+"extend_w": 249
+}
+]
+},
+{
+"tex": 221,
+"labels": [
+{
+"box": [
+5,
+6,
+238,
+92
+],
+"ko": "진형 설정",
+"align": "left",
+"first_big": true,
+"extend_w": 249
+}
+]
+},
+{
+"tex": 222,
+"labels": [
+{
+"box": [
+8,
+6,
+235,
+92
+],
+"ko": "모델 확인",
+"align": "left",
+"first_big": true,
+"extend_w": 502
+}
+]
+},
+{
+"tex": 223,
+"labels": [
+{
+"box": [
+6,
+7,
+237,
+92
+],
+"ko": "팀 정보",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 224,
+"labels": [
+{
+"box": [
+6,
+6,
+283,
+92
+],
+"ko": "팀 이름 입력",
+"align": "left",
+"first_big": true,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 225,
+"labels": [
+{
+"box": [
+10,
+6,
+141,
+92
+],
+"ko": "선녀",
+"align": "left",
+"first_big": true,
+"extend_w": 244
+}
+]
+},
+{
+"tex": 226,
+"labels": [
+{
+"box": [
+5,
+6,
+337,
+92
+],
+"ko": "정형문 선택",
+"align": "left",
+"first_big": true,
+"extend_w": 505
+}
+]
+},
+{
+"tex": 227,
+"labels": [
+{
+"box": [
+1,
+9,
+423,
+71
+],
+"ko": "전장 선택 화면으로",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 228,
+"labels": [
+{
+"box": [
+8,
+9,
+130,
+71
+],
+"ko": "전생",
+"align": "left",
+"extend_w": 246
+}
+]
+},
+{
+"tex": 229,
+"labels": [
+{
+"box": [
+6,
+9,
+251,
+71
+],
+"ko": "진형 정보",
+"align": "left",
+"extend_w": 504
+}
+]
+},
+{
+"tex": 230,
+"labels": [
+{
+"box": [
+6,
+10,
+253,
+71
+],
+"ko": "진형 설정",
+"align": "left",
+"extend_w": 504
+}
+]
+},
+{
+"tex": 231,
+"labels": [
+{
+"box": [
+5,
+9,
+313,
+72
+],
+"ko": "정보 타임라인",
+"align": "left",
+"extend_w": 1017
+}
+]
+},
+{
+"tex": 234,
+"labels": [
+{
+"box": [
+7,
+9,
+251,
+72
+],
+"ko": "팀 정보",
+"align": "left",
+"extend_w": 503
+}
+]
+},
+{
+"tex": 236,
+"labels": [
+{
+"box": [
+8,
+9,
+251,
+71
+],
+"ko": "출격 준비",
+"align": "left",
+"extend_w": 502
+}
+]
+},
+{
+"tex": 238,
+"labels": [
+{
+"box": [
+3,
+9,
+336,
+71
+],
+"ko": "진형 스킬 설정",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 239,
+"labels": [
+{
+"box": [
+3,
+10,
+252,
+71
+],
+"ko": "진형 변경",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 240,
+"labels": [
+{
+"box": [
+3,
+10,
+251,
+71
+],
+"ko": "배치 변경",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 241,
+"labels": [
+{
+"box": [
+0,
+2,
+331,
+52
+],
+"ko": "전장 선택 화면으로",
+"align": "left",
+"extend_w": 510
+}
+]
+},
+{
+"tex": 242,
+"labels": [
+{
+"box": [
+3,
+2,
+102,
+52
+],
+"ko": "전생",
+"align": "left",
+"extend_w": 123
+}
+]
+},
+{
+"tex": 243,
+"labels": [
+{
+"box": [
+1,
+2,
+200,
+53
+],
+"ko": "진형 정보",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 244,
+"labels": [
+{
+"box": [
+1,
+2,
+201,
+52
+],
+"ko": "진형 설정",
+"align": "left",
+"extend_w": 253
+}
+]
+},
+{
+"tex": 245,
+"labels": [
+{
+"box": [
+4,
+4,
+252,
+55
+],
+"ko": "정보 타임라인",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 248,
+"labels": [
+{
+"box": [
+3,
+2,
+200,
+53
+],
+"ko": "팀 정보",
+"align": "left",
+"extend_w": 507
+}
+]
+},
+{
+"tex": 250,
+"labels": [
+{
+"box": [
+3,
+2,
+200,
+52
+],
+"ko": "출격 준비",
+"align": "left",
+"extend_w": 251
+}
+]
+},
+{
+"tex": 252,
+"labels": [
+{
+"box": [
+1,
+2,
+265,
+52
+],
+"ko": "진형 스킬 설정",
+"align": "left",
+"extend_w": 509
+}
+]
+},
+{
+"tex": 253,
+"labels": [
+{
+"box": [
+0,
+2,
+203,
+52
+],
+"ko": "진형 변경",
+"align": "left",
+"extend_w": 254
+}
+]
+},
+{
+"tex": 254,
+"labels": [
+{
+"box": [
+0,
+2,
+201,
+52
+],
+"ko": "배치 변경",
+"align": "left",
+"extend_w": 254
+}
+]
+},
+{
+"tex": 255,
+"labels": [
+{
+"box": [
+10,
+10,
+255,
+71
+],
+"ko": "대사 작성",
+"align": "left",
+"extend_w": 500
+}
+]
+},
+{
+"tex": 256,
+"labels": [
+{
+"box": [
+10,
+9,
+372,
+71
+],
+"ko": "전황 정보 작성",
+"align": "left",
+"extend_w": 1012
+}
+]
+},
+{
+"tex": 257,
+"labels": [
+{
+"box": [
+10,
+9,
+256,
+71
+],
+"ko": "대사 교체",
+"align": "left",
+"extend_w": 500
+}
+]
+},
+{
+"tex": 258,
+"labels": [
+{
+"box": [
+5,
+9,
+581,
+71
+],
+"ko": "진・무쌍의 전장 메뉴로",
+"align": "left",
+"extend_w": 1017
+}
+]
+},
+{
+"tex": 259,
+"labels": [
+{
+"box": [
+4,
+2,
+202,
+53
+],
+"ko": "대사 작성",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 260,
+"labels": [
+{
+"box": [
+4,
+2,
+295,
+53
+],
+"ko": "전황 정보 작성",
+"align": "left",
+"extend_w": 506
+}
+]
+},
+{
+"tex": 261,
+"labels": [
+{
+"box": [
+4,
+2,
+202,
+53
+],
+"ko": "대사 교체",
+"align": "left",
+"extend_w": 250
+}
+]
+},
+{
+"tex": 262,
+"labels": [
+{
+"box": [
+2,
+2,
+463,
+53
+],
+"ko": "진・무쌍의 전장 메뉴로",
+"align": "left",
+"extend_w": 1020
+}
+]
+},
+{
+"tex": 284,
+"labels": [
+{
+"box": [
+21,
+17,
+241,
+80
+],
+"ko": "저장 중……",
+"align": "left",
+"extend_w": 233
+}
+]
+},
+{
+"tex": 300,
+"labels": [
+{
+"box": [
+70,
+21,
+357,
+92
+],
+"ko": "불러오는 중……",
+"align": "left",
+"extend_w": 952
+}
+]
+},
+{
+"tex": 322,
+"labels": [
+{
+"box": [
+6,
+3,
+79,
+44
+],
+"ko": "아이템",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 504
+}
+]
+},
+{
+"tex": 323,
+"labels": [
+{
+"box": [
+9,
+3,
+147,
+44
+],
+"ko": "무기 판매",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 245
+}
+]
+},
+{
+"tex": 324,
+"labels": [
+{
+"box": [
+9,
+3,
+147,
+44
+],
+"ko": "보주 판매",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 245
+}
+]
+},
+{
+"tex": 325,
+"labels": [
+{
+"box": [
+7,
+3,
+79,
+44
+],
+"ko": "무기",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 326,
+"labels": [
+{
+"box": [
+8,
+3,
+114,
+44
+],
+"ko": "변경 후",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 502
+}
+]
+},
+{
+"tex": 327,
+"labels": [
+{
+"box": [
+8,
+3,
+114,
+44
+],
+"ko": "변경 전",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 502
+}
+]
+},
+{
+"tex": 328,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "필요 소재",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 329,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "의뢰 보수",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 330,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "아이템 연금",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 331,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "보주 연금",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 332,
+"labels": [
+{
+"box": [
+6,
+3,
+147,
+44
+],
+"ko": "진형 선택",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 333,
+"labels": [
+{
+"box": [
+7,
+3,
+166,
+44
+],
+"ko": "장비 아이템 1",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 334,
+"labels": [
+{
+"box": [
+7,
+3,
+171,
+44
+],
+"ko": "장비 아이템 2",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 335,
+"labels": [
+{
+"box": [
+7,
+3,
+171,
+44
+],
+"ko": "장비 아이템 3",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 336,
+"labels": [
+{
+"box": [
+7,
+3,
+172,
+44
+],
+"ko": "장비 아이템 4",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 337,
+"labels": [
+{
+"box": [
+7,
+3,
+171,
+44
+],
+"ko": "장비 아이템 5",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 338,
+"labels": [
+{
+"box": [
+7,
+3,
+171,
+44
+],
+"ko": "장비 아이템 6",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 342,
+"labels": [
+{
+"box": [
+6,
+3,
+147,
+44
+],
+"ko": "획득 아이템",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 343,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 구입",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 344,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 강화",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 345,
+"labels": [
+{
+"box": [
+6,
+3,
+147,
+44
+],
+"ko": "소지 무기",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 347,
+"labels": [
+{
+"box": [
+2,
+3,
+206,
+44
+],
+"ko": "출격 예정 멤버",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 508
+}
+]
+},
+{
+"tex": 348,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 장비",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 349,
+"labels": [
+{
+"box": [
+7,
+3,
+180,
+44
+],
+"ko": "장비 중인 무기",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 503
+}
+]
+},
+{
+"tex": 350,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "아이템 장비",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 351,
+"labels": [
+{
+"box": [
+3,
+3,
+143,
+44
+],
+"ko": "스킬 효과",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 507
+}
+]
+},
+{
+"tex": 352,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 융합",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 353,
+"labels": [
+{
+"box": [
+6,
+3,
+147,
+44
+],
+"ko": "획득 무기",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 354,
+"labels": [
+{
+"box": [
+6,
+3,
+145,
+44
+],
+"ko": "아이템 변경",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 355,
+"labels": [
+{
+"box": [
+6,
+3,
+145,
+44
+],
+"ko": "무기 변경",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 248
+}
+]
+},
+{
+"tex": 356,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 연성",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 357,
+"labels": [
+{
+"box": [
+2,
+3,
+208,
+44
+],
+"ko": "특수 관계 무장",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 508
+}
+]
+},
+{
+"tex": 358,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 버리기",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 359,
+"labels": [
+{
+"box": [
+9,
+3,
+147,
+44
+],
+"ko": "소재 판매",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 245
+}
+]
+},
+{
+"tex": 360,
+"labels": [
+{
+"box": [
+7,
+3,
+147,
+44
+],
+"ko": "무기 연금",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 247
+}
+]
+},
+{
+"tex": 204,
+"labels": [
+{
+"box": [
+9,
+4,
+367,
+55
+],
+"ko": "『무쌍 오로치』 개요",
+"align": "left",
+"extend_w": 1013
+},
+{
+"box": [
+5,
+64,
+573,
+115
+],
+"ko": "『무쌍 오로치 마왕재림』 개요",
+"align": "left",
+"extend_w": 1017
+},
+{
+"box": [
+8,
+124,
+409,
+175
+],
+"ko": "『무쌍 오로치 2』 개요",
+"align": "left",
+"extend_w": 1014
+}
+]
+},
+{
+"tex": 302,
+"labels": [
+{
+"box": [
+5,
+6,
+154,
+50
+],
+"ko": "최고 기록",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 249
+},
+{
+"box": [
+4,
+66,
+154,
+110
+],
+"ko": "누적 기록",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 250
+}
+]
+},
+{
+"tex": 306,
+"labels": [
+{
+"box": [
+44,
+0,
+378,
+48
+],
+"ko": "2P 메뉴 버튼을 누르십시오",
+"align": "left",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0,
+"extend_w": 466
+},
+{
+"box": [
+187,
+49,
+375,
+95
+],
+"ko": "2P 참가",
+"align": "right",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.0
+}
+]
+},
+{
+"tex": 445,
+"labels": [
+{
+"box": [
+43,
+4,
+116,
+80
+],
+"ko": "예",
+"align": "center"
+},
+{
+"box": [
+56,
+100,
+104,
+148
+],
+"ko": "예",
+"align": "center"
+}
+]
+},
+{
+"tex": 446,
+"labels": [
+{
+"box": [
+68,
+4,
+140,
+79
+],
+"ko": "아니오",
+"align": "center",
+"grow": 3.2
+},
+{
+"box": [
+80,
+99,
+128,
+147
+],
+"ko": "아니오",
+"align": "center",
+"grow": 3.2
+}
+]
+},
+{
+"tex": 265,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "공격",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 266,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "방어",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 267,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "이동",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 268,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "전장",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 269,
+"labels": [
+{
+"box": [
+1,
+5,
+130,
+101
+],
+"ko": "아군 세력",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 270,
+"labels": [
+{
+"box": [
+2,
+5,
+130,
+101
+],
+"ko": "적 세력",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 271,
+"labels": [
+{
+"box": [
+0,
+5,
+131,
+101
+],
+"ko": "제3세력",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 272,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "SE",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 273,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "능력",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 274,
+"labels": [
+{
+"box": [
+3,
+5,
+124,
+101
+],
+"ko": "플레이어",
+"erase": "bright",
+"lum": 150,
+"ink_grow": 3,
+"kx": 8,
+"align": "center",
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 43,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 276,
+"labels": [
+{
+"box": [
+13,
+7,
+98,
+40
+],
+"ko": "염",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+53,
+98,
+88
+],
+"ko": "빙",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+101,
+98,
+136
+],
+"ko": "뇌",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+149,
+98,
+184
+],
+"ko": "풍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+197,
+98,
+232
+],
+"ko": "참",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+245,
+98,
+280
+],
+"ko": "신속",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+293,
+98,
+328
+],
+"ko": "신장",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+341,
+98,
+376
+],
+"ko": "연쇄",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+389,
+98,
+424
+],
+"ko": "지격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+437,
+98,
+472
+],
+"ko": "천격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+485,
+98,
+520
+],
+"ko": "난격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+533,
+98,
+568
+],
+"ko": "기격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+581,
+98,
+616
+],
+"ko": "극격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+629,
+98,
+664
+],
+"ko": "파천",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+677,
+98,
+712
+],
+"ko": "파격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+725,
+98,
+760
+],
+"ko": "용맹",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+773,
+98,
+808
+],
+"ko": "흡생",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+821,
+98,
+856
+],
+"ko": "흡활",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+869,
+98,
+904
+],
+"ko": "속공",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+917,
+98,
+952
+],
+"ko": "수집",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+965,
+98,
+1000
+],
+"ko": "탈취",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1013,
+98,
+1048
+],
+"ko": "보장",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1061,
+98,
+1096
+],
+"ko": "무훈",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1109,
+98,
+1144
+],
+"ko": "연마",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1157,
+98,
+1192
+],
+"ko": "습숙",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1205,
+98,
+1240
+],
+"ko": "조화",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1253,
+98,
+1288
+],
+"ko": "천무",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1301,
+98,
+1336
+],
+"ko": "유폭",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1349,
+98,
+1384
+],
+"ko": "선풍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1397,
+98,
+1432
+],
+"ko": "수렴",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1445,
+98,
+1480
+],
+"ko": "분신",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1493,
+98,
+1525
+],
+"ko": "천활",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 277,
+"labels": [
+{
+"box": [
+13,
+7,
+98,
+40
+],
+"ko": "염뢰",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+53,
+98,
+88
+],
+"ko": "빙뢰",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+101,
+98,
+136
+],
+"ko": "염풍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+149,
+98,
+184
+],
+"ko": "빙풍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+197,
+98,
+232
+],
+"ko": "뇌풍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+245,
+98,
+280
+],
+"ko": "염참",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+293,
+98,
+328
+],
+"ko": "빙참",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+341,
+98,
+376
+],
+"ko": "뇌참",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+389,
+98,
+424
+],
+"ko": "풍참",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+437,
+98,
+472
+],
+"ko": "삼극",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+485,
+98,
+520
+],
+"ko": "공격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+533,
+98,
+568
+],
+"ko": "혜석",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+581,
+98,
+616
+],
+"ko": "혜도",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+629,
+98,
+664
+],
+"ko": "혜주",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+677,
+98,
+712
+],
+"ko": "진격",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+725,
+98,
+760
+],
+"ko": "견갑",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+773,
+98,
+808
+],
+"ko": "쾌유",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+821,
+98,
+856
+],
+"ko": "기염",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+869,
+98,
+904
+],
+"ko": "중붕",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+917,
+98,
+952
+],
+"ko": "중쇄",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+965,
+98,
+1000
+],
+"ko": "맹붕",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1013,
+98,
+1048
+],
+"ko": "맹쇄",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1061,
+98,
+1096
+],
+"ko": "조달",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1109,
+98,
+1145
+],
+"ko": "열풍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1158,
+98,
+1193
+],
+"ko": "천공",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+},
+{
+"box": [
+13,
+1206,
+98,
+1238
+],
+"ko": "천우",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+],
+[
+226,
+250,
+250
+]
+],
+"glow": [
+8,
+26,
+30
+],
+"glow_a": 0.5,
+"outline": [
+8,
+26,
+30
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 30,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 278,
+"labels": [
+{
+"box": [
+15,
+5,
+151,
+35
+],
+"ko": "체력 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+46,
+151,
+77
+],
+"ko": "무쌍 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+88,
+151,
+119
+],
+"ko": "공격 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+130,
+151,
+161
+],
+"ko": "방어 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+172,
+151,
+203
+],
+"ko": "속도 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+214,
+151,
+245
+],
+"ko": "파워형 강화",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+256,
+151,
+287
+],
+"ko": "스피드형 강화",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+298,
+151,
+329
+],
+"ko": "테크닉형 강화",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+340,
+151,
+371
+],
+"ko": "원더형 강화",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+382,
+151,
+413
+],
+"ko": "무장 공격 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+424,
+151,
+455
+],
+"ko": "연속 공격 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+466,
+151,
+497
+],
+"ko": "교대 공격 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+508,
+151,
+539
+],
+"ko": "무쌍 경감",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+550,
+151,
+581
+],
+"ko": "무장 방어 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+592,
+151,
+623
+],
+"ko": "피격 경감",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+634,
+151,
+665
+],
+"ko": "경험치 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+676,
+151,
+707
+],
+"ko": "숙련도 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+718,
+151,
+749
+],
+"ko": "숙달도 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+760,
+151,
+791
+],
+"ko": "귀석 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+802,
+151,
+833
+],
+"ko": "운 증가",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+844,
+151,
+875
+],
+"ko": "대기 체력",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+886,
+151,
+917
+],
+"ko": "대기 무쌍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+928,
+151,
+959
+],
+"ko": "백격 체력",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+970,
+151,
+1001
+],
+"ko": "백격 무쌍",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+1012,
+151,
+1043
+],
+"ko": "백격 합력",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+},
+{
+"box": [
+15,
+1054,
+151,
+1083
+],
+"ko": "임사 부활",
+"erase": "rowfill",
+"lum": 175,
+"ink_grow": 2,
+"kx": 10,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+],
+[
+252,
+236,
+236
+]
+],
+"glow": [
+18,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+18,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 24,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 264,
+"labels": [
+{
+"box": [
+5,
+9,
+97,
+82
+],
+"ko": "장착 완료",
+"angle": 30,
+"pad": 2,
+"line_h": 34,
+"len_frac": 1.05
+},
+{
+"box": [
+1,
+99,
+98,
+172
+],
+"ko": "장착 불가",
+"angle": 30,
+"pad": 2,
+"line_h": 34,
+"len_frac": 1.05
+}
+]
+},
+{
+"tex": 439,
+"labels": [
+{
+"box": [
+4,
+7,
+100,
+83
+],
+"ko": "수락 완료",
+"angle": 30,
+"pad": 2,
+"line_h": 36,
+"len_frac": 1.05
+},
+{
+"box": [
+9,
+102,
+93,
+171
+],
+"ko": "달성!!",
+"angle": 30,
+"pad": 2,
+"line_h": 36,
+"len_frac": 1.05
+},
+{
+"box": [
+24,
+195,
+87,
+257
+],
+"ko": "실패",
+"angle": 30,
+"pad": 2,
+"line_h": 36,
+"len_frac": 1.05
+}
+]
+},
+{
+"tex": 317,
+"labels": [
+{
+"box": [
+18,
+0,
+179,
+46
+],
+"ko": "리더",
+"erase": "rowfill",
+"lum": 150,
+"kx": 30,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0.1,
+"style": {
+"grad": [
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+],
+[
+150,
+220,
+235
+]
+],
+"glow": [
+5,
+10,
+14
+],
+"glow_a": 0.5,
+"outline": [
+5,
+10,
+14
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 32,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 321,
+"labels": [
+{
+"box": [
+6,
+3,
+46,
+43
+],
+"ko": "갑",
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0
+}
+]
+},
+{
+"tex": 380,
+"labels": [
+{
+"box": [
+20,
+0,
+182,
+28
+],
+"ko": "숙련도",
+"pad": 0,
+"lum": 150,
+"kx": 20,
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 26,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 382,
+"labels": [
+{
+"box": [
+21,
+0,
+182,
+28
+],
+"ko": "숙련도",
+"pad": 0,
+"lum": 150,
+"kx": 20,
+"style": {
+"grad": [
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+],
+[
+245,
+245,
+245
+]
+],
+"glow": [
+10,
+10,
+12
+],
+"glow_a": 0.5,
+"outline": [
+10,
+10,
+12
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 26,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 438,
+"labels": [
+{
+"box": [
+6,
+7,
+108,
+40
+],
+"ko": "쉬움",
+"erase": "rowfill",
+"lum": 150,
+"kx": 20,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+]
+],
+"glow": [
+10,
+12,
+10
+],
+"glow_a": 0.5,
+"outline": [
+10,
+12,
+10
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 28,
+"border": 2
+}
+},
+{
+"box": [
+6,
+55,
+108,
+88
+],
+"ko": "보통",
+"erase": "rowfill",
+"lum": 150,
+"kx": 20,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+]
+],
+"glow": [
+10,
+12,
+10
+],
+"glow_a": 0.5,
+"outline": [
+10,
+12,
+10
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 28,
+"border": 2
+}
+},
+{
+"box": [
+6,
+103,
+108,
+136
+],
+"ko": "어려움",
+"erase": "rowfill",
+"lum": 150,
+"kx": 20,
+"align": "center",
+"font": "C:\\Windows\\Fonts\\NotoSansKR-VF.ttf",
+"shear": 0,
+"style": {
+"grad": [
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+],
+[
+250,
+250,
+250
+]
+],
+"glow": [
+10,
+12,
+10
+],
+"glow_a": 0.5,
+"outline": [
+10,
+12,
+10
+],
+"has_outline": true,
+"fill_a": 1.0,
+"ink_h": 28,
+"border": 2
+}
+}
+]
+},
+{
+"tex": 314,
+"copy": "JPN"
+},
+{
+"tex": 369,
+"copy": "JPN"
+},
+{
+"tex": 370,
+"copy": "JPN"
+},
+{
+"tex": 371,
+"copy": "JPN"
+},
+{
+"tex": 372,
+"copy": "JPN"
+},
+{
+"tex": 390,
+"copy": "JPN"
+},
+{
+"tex": 400,
+"copy": "JPN"
+},
+{
+"tex": 401,
+"copy": "JPN"
+},
+{
+"tex": 402,
+"copy": "JPN"
+},
+{
+"tex": 403,
+"copy": "JPN"
+},
+{
+"tex": 440,
+"copy": "JPN"
+},
+{
+"tex": 441,
+"copy": "JPN"
+},
+{
+"tex": 457,
+"copy": "JPN"
+}
+]
+}

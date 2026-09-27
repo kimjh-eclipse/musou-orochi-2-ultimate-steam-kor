@@ -1,30 +1,31 @@
 # 설치·갱신·복구
 
-대상은 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`), 기준 버전은 **v20260927**입니다. Windows와 .NET Framework 4.x가 필요합니다.
+대상은 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`), 기준 버전은 **v20260927b**입니다. Windows와 .NET Framework 4.x가 필요합니다.
 
 ## 1. 준비와 다운로드
 
 1. Steam 라이브러리에서 게임을 우클릭 → **속성 → 언어**를 **简体中文(중국어 간체)** 로 바꿉니다. 다운로드가 끝날 때까지 기다립니다.
 2. 게임을 완전히 종료합니다.
-3. [WO3U_Steam_KR_v20260927.zip](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260927/WO3U_Steam_KR_v20260927.zip)을 내려받아 압축을 풉니다.
+3. [WO3U_Steam_KR_v20260927b.zip](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260927b/WO3U_Steam_KR_v20260927b.zip)을 내려받아 압축을 풉니다.
 
 ZIP에는 `WO3U_Steam_KR_Patch.exe`, `WO3U_Steam_KR.pack`, `README_사용법.txt`, `SHA256SUMS.txt`가 들어 있습니다. 패치 데이터가 커서 EXE와 `.pack`을 나눠 두었으므로 **두 파일을 같은 폴더에 두고 실행**합니다.
 
 ```powershell
-Get-FileHash .\WO3U_Steam_KR_v20260927.zip -Algorithm SHA256
+Get-FileHash .\WO3U_Steam_KR_v20260927b.zip -Algorithm SHA256
 ```
 
 예상 값은 [전체 해시 목록](hashes.md)을 참고하세요.
 
 ## 2. 적용 대상
 
-패처가 바꾸는 파일은 설치 폴더의 두 파일뿐입니다.
+패처는 설치 폴더의 데이터 두 파일을 교체하고 `dinput8.dll`을 추가합니다.
 
 ```text
 ...\steamapps\common\WARRIORS OROCHI 3 Ultimate\
   WO3U.exe
   LINKIDX_CHS.BIN     ← 교체
   LINKFILE_CHS.BIN    ← 교체
+  dinput8.dll         ← 추가 (실행 파일 속 문장을 실행 중에 한국어로 바꿈)
   (다른 언어·공통 데이터는 그대로)
 ```
 
@@ -40,7 +41,7 @@ Get-FileHash .\WO3U_Steam_KR_v20260927.zip -Algorithm SHA256
 
 Program Files 아래(Steam 기본 위치)에 설치했다면 쓰기 권한이 없어 **관리자 권한으로 다시 실행할지** 묻습니다. 작업 중 약 1.1GB의 여유 공간이 필요합니다.
 
-이미 같은 버전이 적용되어 있으면 다시 쓰지 않습니다. 세이브·영상·음성·다른 언어 파일은 패처의 수정 대상이 아닙니다.
+설치 폴더에 다른 프로그램의 `dinput8.dll`이 이미 있으면 덮어쓰지 않고 중단합니다. 이미 같은 버전이 적용되어 있으면 다시 쓰지 않습니다. 세이브·영상·음성·다른 언어 파일은 패처의 수정 대상이 아닙니다.
 
 ## 4. 이전 버전에서 갱신
 
@@ -48,7 +49,7 @@ Program Files 아래(Steam 기본 위치)에 설치했다면 쓰기 권한이 �
 
 ## 5. Steam 무결성 검사·게임 업데이트
 
-Steam의 **게임 파일 무결성 검사**나 게임 업데이트는 두 파일을 원본으로 되돌립니다. 그 뒤에는 패처를 다시 실행하면 됩니다. 게임 업데이트로 원본 자체가 바뀌면 패처가 "알 수 없는 상태"로 안내하고 중단합니다. 이때는 새 버전 패치를 기다려 주세요.
+Steam의 **게임 파일 무결성 검사**나 게임 업데이트는 데이터 파일을 원본으로 되돌립니다. 그 뒤에는 패처를 다시 실행하면 됩니다. 게임 업데이트로 원본 자체가 바뀌면 패처가 "알 수 없는 상태"로 안내하고 중단합니다. 이때는 새 버전 패치를 기다려 주세요.
 
 ## 6. 명령줄 사용
 
@@ -62,7 +63,7 @@ Steam의 **게임 파일 무결성 검사**나 게임 업데이트는 두 파일
 
 ## 7. 복구
 
-패처의 [원본 복구] 또는 `--restore`에 백업을 지정합니다. 백업으로 원본 파일을 재구성하고 원본 해시가 맞을 때만 교체합니다. 복구 후에도 백업은 남습니다.
+패처의 [원본 복구] 또는 `--restore`에 백업을 지정합니다. 백업으로 원본 파일을 재구성하고 원본 해시가 맞을 때만 교체하며, `dinput8.dll`도 지웁니다. 복구 후에도 백업은 남습니다.
 
 백업이 없어도 Steam **게임 파일 무결성 검사**로 원본을 다시 받을 수 있습니다.
 

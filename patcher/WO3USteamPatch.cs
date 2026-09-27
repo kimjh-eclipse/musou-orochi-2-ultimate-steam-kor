@@ -27,7 +27,9 @@ internal static class WO3USteamPatch
     private const string GameExe = "WO3U.exe";
     private const string PackFileName = "WO3U_Steam_KR.pack";
     private const string PackMagic = "WO3USTM1";
-    private const int PackFormatVersion = 1;
+    private const int PackFormatVersion = 2;
+    private const string ProxyDllName = "dinput8.dll";
+    private static readonly byte[] ProxyMarker = Encoding.ASCII.GetBytes("WO3U_KR dinput8 proxy, mode ");
     private const string BackupMagic = "WO3USBK1";
     private const int BackupFormatVersion = 1;
     private const string BackupExtension = ".wo3u-backup";
@@ -58,6 +60,8 @@ internal static class WO3USteamPatch
         public string Path;
         public List<FileRecord> Files = new List<FileRecord>();
         public byte[] TargetIdx;
+        public byte[] Dll;      // dinput8.dll proxy (format 2), replaces the exe's own Chinese strings in memory
+        public byte[] DllHash;
         public SortedDictionary<int, long> BlobOffsets = new SortedDictionary<int, long>();
         public Dictionary<int, long> BlobLengths = new Dictionary<int, long>();
     }
@@ -239,11 +243,11 @@ internal static class WO3USteamPatch
             warnings.SetBounds(18, 28, 820, 124);
             warnings.Text =
                 "1. Steam판 WARRIORS OROCHI 3 Ultimate Definitive Edition 전용입니다. 게임 언어를 중국어 간체(简体中文)로 설정해야 한국어가 나옵니다.\r\n" +
-                "2. 설치 폴더의 LINKIDX_CHS.BIN / LINKFILE_CHS.BIN 두 파일만 교체합니다. 다른 언어·음성·영상·세이브는 건드리지 않습니다.\r\n" +
+                "2. LINKIDX·LINKFILE_CHS.BIN 교체, dinput8.dll(실행 파일 속 문장 한국어화) 추가. WO3U.exe·세이브는 그대로입니다.\r\n" +
                 "3. 작업 중 게임(" + GameExe + ")을 완전히 종료하세요. 실행 중이면 패처가 중단합니다.\r\n" +
                 "4. 쓰기 전 원본에서 교체되는 부분을 백업 파일(" + BackupExtension + ")에 저장합니다. 이 파일로 복구·다음 버전 갱신을 합니다.\r\n" +
                 "5. 작업 중 여유 공간이 약 1.1GB 필요합니다. Program Files 아래 설치라면 관리자 권한을 요청합니다.\r\n" +
-                "6. Steam '게임 파일 무결성 검사'나 게임 업데이트는 두 파일을 원본으로 되돌립니다. 그 뒤에는 패처를 다시 실행하세요.";
+                "6. Steam '게임 파일 무결성 검사'나 게임 업데이트는 데이터 파일을 원본으로 되돌립니다. 그 뒤에는 패처를 다시 실행하세요.";
             warningGroup.Controls.Add(warnings);
 
             warningCheck = new CheckBox();
@@ -933,6 +937,17 @@ internal static class WO3USteamPatch
         if (options.Restore)
             return RestoreMode(dir, pack, backup, backupPath, options.Yes);
 
+        if (pack.Dll != null && DllState(dir, pack) == 3)
+            throw new InvalidOperationException("설치 폴더에 다른 프로그램의 " + ProxyDllName + " 이 있습니다. 덮어쓰지 않고 중단합니다.\r\n" +
+                "다른 모드를 쓰는 중이라면 그 파일을 옮긴 뒤 다시 실행하세요: " + Path.Combine(dir, ProxyDllName));
+
+        if (state == FileState.Target && pack.Dll != null && DllState(dir, pack) != 1)
+        {
+            InstallDll(dir, pack);
+            WriteOk("한국어 데이터는 이미 적용되어 있어 " + ProxyDllName + " 만 설치했습니다.");
+            return 0;
+        }
+
         if (state == FileState.Target)
         {
             WriteOk("이미 이 버전(" + pack.Version + ")의 한국어 패치가 적용된 상태입니다.");
@@ -975,6 +990,7 @@ internal static class WO3USteamPatch
             ApplyPack(dir, pack);
             if (DetectState(dir, pack.Files) != FileState.Target)
                 throw new InvalidDataException("패치 후 최종 해시가 일치하지 않습니다.");
+            InstallDll(dir, pack);
         }
         catch
         {
@@ -982,6 +998,7 @@ internal static class WO3USteamPatch
             Console.WriteLine("[!] 적용 실패. 원본 상태를 확인합니다.");
             ResetConsoleColor();
             CleanupTemp(dir);
+            RemoveDll(dir, pack);
             FileState now = DetectState(dir, pack.Files);
             if (now == FileState.Target)
             {
@@ -996,7 +1013,7 @@ internal static class WO3USteamPatch
         }
 
         Console.WriteLine();
-        WriteOk("한국어 패치 적용 및 최종 해시 검증 2/2 완료 (" + pack.Version + ")");
+        WriteOk("한국어 패치 적용 및 최종 해시 검증 완료 (" + pack.Version + ", 데이터 2/2" + (pack.Dll != null ? " + " + ProxyDllName : "") + ")");
         Console.WriteLine("게임 언어를 중국어 간체(简体中文)로 설정하면 한국어로 표시됩니다.");
         Console.WriteLine("복구하려면: WO3U_Steam_KR_Patch.exe --restore --backup \"" + backupPath + "\" --folder \"" + dir + "\"");
         Console.WriteLine("복구 백업은 삭제하지 않는 것을 권장합니다: " + backupPath);
@@ -1007,6 +1024,8 @@ internal static class WO3USteamPatch
     {
         if (DetectState(dir, pack.Files) == FileState.Source)
         {
+            if (RemoveDll(dir, pack))
+                WriteOk(ProxyDllName + " 제거 완료");
             WriteOk("이미 원본 상태입니다.");
             return 0;
         }
@@ -1019,6 +1038,8 @@ internal static class WO3USteamPatch
         RestoreFromBackup(dir, backup);
         if (DetectState(dir, backup.Files) != FileState.Source)
             throw new InvalidDataException("복구 후 원본 해시 검증에 실패했습니다. 백업을 삭제하지 마세요.");
+        if (RemoveDll(dir, pack))
+            WriteOk(ProxyDllName + " 제거 완료");
         WriteOk("원본 복구 및 해시 검증 2/2 완료");
         Console.WriteLine("백업은 재적용에 대비해 그대로 보존했습니다: " + backupPath);
         return 0;
@@ -1030,7 +1051,15 @@ internal static class WO3USteamPatch
         if (state == FileState.Source)
             WriteOk("원본 상태입니다. 한국어 패치(" + pack.Version + ")를 적용할 수 있습니다.");
         else if (state == FileState.Target)
+        {
             WriteOk("한국어 패치(" + pack.Version + ")가 적용된 상태입니다.");
+            if (pack.Dll != null && DllState(dir, pack) != 1)
+            {
+                SetConsoleColor(ConsoleColor.Yellow);
+                Console.WriteLine("[!] " + ProxyDllName + " 이 없거나 다른 버전입니다. 패치 적용을 누르면 설치합니다.");
+                ResetConsoleColor();
+            }
+        }
         else if (backup != null && DetectState(dir, backup.Files) == FileState.Target)
         {
             SetConsoleColor(ConsoleColor.Yellow);
@@ -1044,6 +1073,61 @@ internal static class WO3USteamPatch
             Console.WriteLine("    Steam '게임 파일 무결성 검사' 후 다시 검사하세요.");
             ResetConsoleColor();
         }
+    }
+
+    // 0 = no dinput8.dll, 1 = ours and current, 2 = ours but another version, 3 = someone else's
+    private static int DllState(string dir, Pack pack)
+    {
+        string path = Path.Combine(dir, ProxyDllName);
+        if (!File.Exists(path))
+            return 0;
+        byte[] data = File.ReadAllBytes(path);
+        using (SHA256 sha = SHA256.Create())
+            if (pack.DllHash != null && EqualBytes(sha.ComputeHash(data), pack.DllHash))
+                return 1;
+        return IndexOf(data, ProxyMarker) >= 0 ? 2 : 3;
+    }
+
+    private static void InstallDll(string dir, Pack pack)
+    {
+        if (pack.Dll == null)
+            return;
+        string path = Path.Combine(dir, ProxyDllName);
+        if (DllState(dir, pack) == 3)
+            throw new InvalidOperationException("다른 프로그램의 " + ProxyDllName + " 이 있어 설치하지 않았습니다.");
+        File.WriteAllBytes(path + NewSuffix, pack.Dll);
+        if (File.Exists(path))
+            File.Delete(path);
+        File.Move(path + NewSuffix, path);
+        if (DllState(dir, pack) != 1)
+            throw new InvalidDataException(ProxyDllName + " 설치 후 해시가 맞지 않습니다.");
+        WriteOk(ProxyDllName + " 설치 완료 (실행 파일 속 문장 한국어화)");
+    }
+
+    private static bool RemoveDll(string dir, Pack pack)
+    {
+        string path = Path.Combine(dir, ProxyDllName);
+        int s = DllState(dir, pack);
+        if (s != 1 && s != 2)
+            return false;
+        File.Delete(path);
+        string log = Path.Combine(dir, "WO3U_KR_dll.log");
+        if (File.Exists(log))
+            File.Delete(log);
+        return true;
+    }
+
+    private static int IndexOf(byte[] data, byte[] pat)
+    {
+        for (int i = 0; i + pat.Length <= data.Length; i++)
+        {
+            int k = 0;
+            while (k < pat.Length && data[i + k] == pat[k])
+                k++;
+            if (k == pat.Length)
+                return i;
+        }
+        return -1;
     }
 
     private static void Confirm(bool automaticYes, string message)
@@ -1179,11 +1263,26 @@ internal static class WO3USteamPatch
         {
             if (Encoding.ASCII.GetString(ReadExactly(reader, 8)) != PackMagic)
                 throw new InvalidDataException("패치 데이터 형식이 올바르지 않습니다.");
-            if (reader.ReadInt32() != PackFormatVersion)
+            int format = reader.ReadInt32();
+            if (format != 1 && format != PackFormatVersion)
                 throw new InvalidDataException("지원하지 않는 패치 데이터 버전입니다.");
             pack.Version = Encoding.UTF8.GetString(ReadExactly(reader, reader.ReadUInt16()));
             pack.Files = ReadFileRecords(reader);
             pack.TargetIdx = ReadExactly(reader, checked((int)reader.ReadUInt32()));
+            if (format >= 2)
+            {
+                int extras = checked((int)reader.ReadUInt32());
+                for (int i = 0; i < extras; i++)
+                {
+                    string name = Encoding.UTF8.GetString(ReadExactly(reader, reader.ReadUInt16()));
+                    byte[] hash = ReadExactly(reader, 32);
+                    byte[] data = ReadExactly(reader, checked((int)reader.ReadUInt32()));
+                    using (SHA256 sha = SHA256.Create())
+                        if (!EqualBytes(sha.ComputeHash(data), hash))
+                            throw new InvalidDataException("팩 안의 " + name + " 해시가 맞지 않습니다.");
+                    if (name.Equals(ProxyDllName, StringComparison.OrdinalIgnoreCase)) { pack.Dll = data; pack.DllHash = hash; }
+                }
+            }
             if (pack.TargetIdx.Length != pack.Files[0].TargetSize)
                 throw new InvalidDataException("팩의 인덱스 크기가 올바르지 않습니다.");
             ReadBlobIndex(reader, pack.BlobOffsets, pack.BlobLengths, stream.Length);
