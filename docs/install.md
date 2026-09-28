@@ -1,17 +1,17 @@
 # 설치·갱신·복구
 
-대상은 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`), 기준 버전은 **v20260928b**입니다. Windows와 .NET Framework 4.x가 필요합니다.
+대상은 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`), 기준 버전은 **v20260928c**입니다. Windows와 .NET Framework 4.x가 필요합니다.
 
 ## 1. 준비와 다운로드
 
 1. Steam 라이브러리에서 게임을 우클릭 → **속성 → 언어**를 **简体中文(중국어 간체)** 로 바꿉니다. 다운로드가 끝날 때까지 기다립니다.
 2. 게임을 완전히 종료합니다.
-3. [WO3U_Steam_KR_v20260928b.zip](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260928b/WO3U_Steam_KR_v20260928b.zip)을 내려받아 압축을 풉니다.
+3. [WO3U_Steam_KR_v20260928c.zip](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260928c/WO3U_Steam_KR_v20260928c.zip)을 내려받아 압축을 풉니다.
 
 ZIP에는 `WO3U_Steam_KR_Patch.exe`, `WO3U_Steam_KR.pack`, `README_사용법.txt`, `SHA256SUMS.txt`가 들어 있습니다. 패치 데이터가 커서 EXE와 `.pack`을 나눠 두었으므로 **두 파일을 같은 폴더에 두고 실행**합니다.
 
 ```powershell
-Get-FileHash .\WO3U_Steam_KR_v20260928b.zip -Algorithm SHA256
+Get-FileHash .\WO3U_Steam_KR_v20260928c.zip -Algorithm SHA256
 ```
 
 예상 값은 [전체 해시 목록](hashes.md)을 참고하세요.
@@ -41,7 +41,15 @@ Get-FileHash .\WO3U_Steam_KR_v20260928b.zip -Algorithm SHA256
 
 Program Files 아래(Steam 기본 위치)에 설치했다면 쓰기 권한이 없어 **관리자 권한으로 다시 실행할지** 묻습니다. 작업 중 약 1.1GB의 여유 공간이 필요합니다.
 
-설치 폴더에 다른 프로그램의 `dinput8.dll`이 이미 있으면 덮어쓸지 묻습니다. 덮어쓰면 기존 파일을 `dinput8.dll.wo3u-orig`로 보관하고 [원본 복구] 때 되돌립니다. 건너뛰면 한국어 데이터만 적용하고, 실행 파일 속 문장 27개(언리미티드 모드 알림·전생 설명 등)는 깨져 보입니다. 명령줄 `--yes` 실행은 건너뛰며, `--overwrite-dll`을 주면 덮어씁니다. 이미 같은 버전이 적용되어 있으면 다시 쓰지 않습니다. 세이브·영상·음성·다른 언어 파일은 패처의 수정 대상이 아닙니다.
+설치 폴더에 다른 프로그램의 `dinput8.dll`(예: 60프레임 이상 주사율 그래픽 수정 패치)이 이미 있으면 처리 방법을 묻습니다.
+
+- **이어서 쓰기(기본)**: 기존 파일을 `dinput8_wo3u_chain.dll`로 옮기고, 한국어 패치의 `dinput8.dll`이 그 파일을 이어서 불러옵니다. 두 기능을 함께 씁니다.
+- **덮어쓰기**: 기존 파일을 `dinput8.dll.wo3u-orig`로 보관합니다. 그 프로그램의 기능은 꺼집니다.
+- **건너뛰기**: 한국어 데이터만 적용합니다. 실행 파일 속 문장 27개(언리미티드 모드 알림·전생 설명 등)는 깨져 보입니다.
+
+[원본 복구] 때 보관한 파일을 되돌립니다. 명령줄 `--yes`는 이어서 쓰기를 고르며, `--overwrite-dll` / `--skip-dll`로 바꿀 수 있습니다.
+
+한국어 패치를 먼저 설치한 뒤 다른 프로그램을 넣으면 그 프로그램이 `dinput8.dll`을 덮어씁니다. 이때는 패처를 다시 실행해 이어서 쓰기를 고르세요. 이미 같은 버전이 적용되어 있으면 다시 쓰지 않습니다. 세이브·영상·음성·다른 언어 파일은 패처의 수정 대상이 아닙니다.
 
 ## 4. 이전 버전에서 갱신
 

@@ -16,7 +16,7 @@ for id in 완성본 IDX의 사용 항목 (완성본 오프셋 순):
 0으로 완성본 파일 크기까지 채움
 ```
 
-바뀌지 않은 항목은 사용자의 게임 파일에서 복사하므로, 배포 팩에는 한국어로 바뀐 항목(v20260928b 기준 1,164개)과 `dinput8.dll`만 들어갑니다.
+바뀌지 않은 항목은 사용자의 게임 파일에서 복사하므로, 배포 팩에는 한국어로 바뀐 항목(v20260928c 기준 1,164개)과 `dinput8.dll`만 들어갑니다.
 
 ## 팩 형식: WO3USTM1
 
@@ -90,21 +90,24 @@ Windows SDK와 C 런타임 없이 MSVC `cl`·`lib`·`link`만으로 빌드합니
 
 팩 형식 2는 완성본 인덱스와 항목 목록 사이에 추가 파일 목록을 두고 `dinput8.dll`을 담습니다(위 팩 형식 참고). `build_steam_pack.py`는 DLL 표의 CRC가 빌드 인덱스와 다르면 팩을 만들지 않습니다.
 
-패처는 적용 뒤 DLL을 설치하고 해시를 확인하며, 원본 복구 때 지웁니다. 설치 폴더에 표식이 없는 다른 `dinput8.dll`이 있으면 사용자에게 묻습니다(GUI는 예/아니요/취소, 콘솔은 O/S/N).
+패처는 적용 뒤 DLL을 설치하고 해시를 확인하며, 원본 복구 때 지웁니다. 설치 폴더에 표식이 없는 다른 `dinput8.dll`이 있으면 사용자에게 묻습니다(GUI는 네 버튼, 콘솔은 C/O/S/N, Enter = C).
 
 | 선택 | 동작 |
 |---|---|
+| 이어서 쓰기(기본) | 기존 파일을 `dinput8_wo3u_chain.dll`로 옮기고 설치. 한국어 DLL이 이 파일을 불러와 모든 호출을 넘김. 원본 복구 때 되돌림 |
 | 덮어쓰기 | 기존 파일을 `dinput8.dll.wo3u-orig`로 옮기고 설치. 보관 파일이 이미 있으면 그것은 시각을 붙인 이름으로 남김. 원본 복구 때 되돌림 |
 | 건너뛰기 | 데이터만 적용하고 경고. 원본 복구 때도 그 파일은 건드리지 않음 |
 | 중단 | 아무것도 바꾸지 않음 |
 
-명령줄 `--yes`는 묻지 않고 건너뜁니다. `--overwrite-dll` / `--skip-dll`로 정할 수 있습니다. 시나리오 시험은 `patcher/test_scenarios_c.sh`.
+명령줄 `--yes`는 묻지 않고 이어서 씁니다. `--chain-dll` / `--overwrite-dll` / `--skip-dll`로 정할 수 있습니다. 시나리오 시험은 `patcher/test_scenarios_c.sh`, `test_scenarios_d.sh`.
+
+DLL 쪽 이어서 불러오기: 첫 호출 때 같은 폴더의 `dinput8_wo3u_chain.dll`을 불러오고, 있으면 모든 내보내기 호출을 그 DLL로 넘깁니다(없으면 `System32\dinput8.dll`). 이어서 불린 DLL이 이름만으로 `dinput8.dll`을 불러 한국어 DLL로 되돌아오는 경우에는 재진입 깊이로 감지해 시스템 DLL로 보냅니다. 로그에 `chained: dinput8_wo3u_chain.dll loaded`가 남습니다. 시험: `patcher/dll/chain_test/fake_mod.c`(이름으로 되돌아오는 최악의 경우를 흉내 내는 가짜 모드).
 
 ## 명령줄
 
 ```text
 WO3U_Steam_KR_Patch.exe [--folder <설치 폴더>] [--backup <백업 파일>]
-                        [--verify-only | --restore] [--yes] [--overwrite-dll | --skip-dll] [--no-pause]
+                        [--verify-only | --restore] [--yes] [--chain-dll | --overwrite-dll | --skip-dll] [--no-pause]
 ```
 
 `--folder`를 생략하면 Steam 설치 폴더를 자동으로 찾습니다. 종료 코드는 성공 0, 실패 1, 상태 검사에서 알 수 없는 상태 2입니다.

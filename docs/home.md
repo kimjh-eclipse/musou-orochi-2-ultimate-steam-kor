@@ -1,12 +1,12 @@
 # 무쌍 오로치 2 얼티메이트 Steam판 한국어 패치
 
-Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20260928b (2026-09-28)** 입니다.
+Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20260928c (2026-09-28)** 입니다.
 
-[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260928b) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
+[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260928c) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
 
 ## 이번 릴리즈
 
-v20260928b는 스토리 대사 42줄의 말투(격)를 인물 관계에 맞게 고치고, 다른 프로그램의 `dinput8.dll`이 있을 때 덮어쓸지 묻도록 패처를 바꿨습니다. v20260928은 전투 대사 창의 40글자 한도를 넘어 끝이 잘리던 대사 2,407개를 다듬고, 임무 결과의 ％ 표시와 전투 결과의 '최고 기록!' 위치를 고쳤습니다. 게임 실행 파일 안의 문장(언리미티드 모드 알림, 전생 도움말 등 27개)은 v20260927b부터 함께 설치되는 `dinput8.dll`이 한국어로 바꿉니다. `WO3U.exe` 파일은 수정하지 않습니다.
+v20260928c는 다른 프로그램의 `dinput8.dll`(60프레임 수정 패치 등)을 이어서 불러와 함께 쓸 수 있게 하고, 언리미티드 모드 진형기 이름을 HUD 3글자에 맞췄습니다. v20260928b는 스토리 대사 42줄의 말투(격)를 인물 관계에 맞게 고치고, 다른 프로그램의 `dinput8.dll`이 있을 때 덮어쓸지 묻도록 패처를 바꿨습니다. v20260928은 전투 대사 창의 40글자 한도를 넘어 끝이 잘리던 대사 2,407개를 다듬고, 임무 결과의 ％ 표시와 전투 결과의 '최고 기록!' 위치를 고쳤습니다. 게임 실행 파일 안의 문장(언리미티드 모드 알림, 전생 도움말 등 27개)은 v20260927b부터 함께 설치되는 `dinput8.dll`이 한국어로 바꿉니다. `WO3U.exe` 파일은 수정하지 않습니다.
 
 게임의 **중국어 간체(简体中文) 언어 슬롯**을 한국어로 바꿉니다. 대사·이벤트·메뉴·도움말·비기 카드 등 텍스트 전체와, 메뉴·스테이지 타이틀·무장 이름·로딩 화면·로고 등 글자가 들어간 이미지가 한국어로 표시됩니다.
 

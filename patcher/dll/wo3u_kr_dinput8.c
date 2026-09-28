@@ -3,7 +3,10 @@
  *
  * WO3U.exe keeps 27 Simplified Chinese message strings (unlimited mode notices, rebirth help, ...) in its own
  * .rdata. The exe file cannot be edited (SteamStub integrity check -> Steam error 51), so this proxy replaces
- * them in memory. All DirectInput calls are forwarded to the system dinput8.dll.
+ * them in memory. All DirectInput calls are forwarded to the system dinput8.dll, or, when the patcher kept
+ * another program's dinput8.dll as dinput8_wo3u_chain.dll next to this DLL, to that DLL (chain loading, so a
+ * mod that also ships dinput8.dll keeps working). A re-entrant call - the chained DLL loading "dinput8.dll" by
+ * name gets this module back - is sent to the system DLL instead, so the chain cannot loop.
  *
  * KR_MODE (compile-time, staged validation):
  *   0  forward only: log that the game loaded this DLL and called DirectInput8Create
@@ -65,7 +68,9 @@ DECL BOOL WINAPI ReadFile(HANDLE h, LPVOID buf, DWORD n, DWORD *read, void *ov);
 DECL BOOL WINAPI WriteFile(HANDLE h, LPCVOID buf, DWORD n, DWORD *written, void *ov);
 DECL BOOL WINAPI CloseHandle(HANDLE h);
 long _InterlockedExchange(long volatile *target, long value);
-#pragma intrinsic(_InterlockedExchange)
+long _InterlockedIncrement(long volatile *target);
+long _InterlockedDecrement(long volatile *target);
+#pragma intrinsic(_InterlockedExchange, _InterlockedIncrement, _InterlockedDecrement)
 
 #include "strings_table.h"
 
@@ -82,7 +87,10 @@ typedef struct {
     DWORD State, Protect, Type;
 } MEMINFO;
 
-static HMODULE g_real;
+static HMODULE g_sys;          /* system dinput8.dll */
+static HMODULE g_chain;        /* dinput8_wo3u_chain.dll (another program's dinput8), if present */
+static long volatile g_chain_tried;
+static long volatile g_depth;  /* > 0 while a call is inside the chained DLL */
 static HMODULE g_self;
 static long volatile g_done;
 
@@ -130,17 +138,47 @@ static void write_log(void)
     CloseHandle(h);
 }
 
-static HMODULE real_dll(void)
+static HMODULE sys_dll(void)
 {
-    if (!g_real) {
+    if (!g_sys) {
         char path[MAX_PATH];
         unsigned n = GetSystemDirectoryA(path, MAX_PATH);
         if (n == 0 || n > MAX_PATH - 16) return 0;
         path[n] = 0;
         cat(path, "\\dinput8.dll");
-        g_real = LoadLibraryA(path);
+        g_sys = LoadLibraryA(path);
     }
-    return g_real;
+    return g_sys;
+}
+
+static HMODULE chain_dll(void)
+{
+    if (!_InterlockedExchange(&g_chain_tried, 1)) {
+        char path[MAX_PATH];
+        int i = dir_of(g_self, path);
+        HANDLE h;
+        if (i < 0) return 0;
+        path[i] = 0;
+        cat(path, "dinput8_wo3u_chain.dll");
+        h = CreateFileA(path, GENERIC_READ, FILE_SHARE_READ, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+        if (h != INVALID_HANDLE_VALUE) {
+            CloseHandle(h);
+            _InterlockedIncrement(&g_depth);   /* its DllMain may already call dinput8 exports */
+            g_chain = LoadLibraryA(path);
+            _InterlockedDecrement(&g_depth);
+            if (g_chain == g_self) g_chain = 0;
+        }
+    }
+    return g_chain;
+}
+
+/* forwarding target: the chained DLL unless we are already inside it */
+static HMODULE real_dll(void)
+{
+    HMODULE m;
+    if (g_depth) return sys_dll();
+    m = chain_dll();
+    return m ? m : sys_dll();
 }
 
 static int readable(const unsigned char *p, unsigned n)
@@ -191,7 +229,9 @@ static void run_once(void)
     if (GetModuleFileNameA(g_self, path, MAX_PATH)) { lput("proxy: "); lput(path); lput("\r\n"); }
     if (GetModuleFileNameA(0, path, MAX_PATH)) { lput("host:  "); lput(path); lput("\r\n"); }
     lput("exe base "); lnum((unsigned long long)base, 16); lput("\r\n");
-    lput(real_dll() ? "system dinput8 loaded\r\n" : "system dinput8 NOT loaded\r\n");
+    lput(sys_dll() ? "system dinput8 loaded\r\n" : "system dinput8 NOT loaded\r\n");
+    if (chain_dll()) lput("chained: dinput8_wo3u_chain.dll loaded (calls go there)\r\n");
+    else if (g_chain_tried) lput("chain: none\r\n");
     if (KR_MODE == 0) { write_log(); return; }
 
     for (i = 0; i < KR_PATCH_COUNT; i++) {
@@ -228,39 +268,59 @@ static void run_once(void)
 HRESULT WINAPI DirectInput8Create(HMODULE inst, DWORD ver, LPCVOID riid, LPVOID *out, LPVOID outer)
 {
     PFN_DI8Create fn;
+    HRESULT r;
     run_once();
     fn = (PFN_DI8Create)GetProcAddress(real_dll(), "DirectInput8Create");
-    return fn ? fn(inst, ver, riid, out, outer) : E_FAIL;
+    if (!fn) return E_FAIL;
+    _InterlockedIncrement(&g_depth);
+    r = fn(inst, ver, riid, out, outer);
+    _InterlockedDecrement(&g_depth);
+    return r;
 }
 
 HRESULT WINAPI DllCanUnloadNow(void)
 {
     PFN_Void fn = (PFN_Void)GetProcAddress(real_dll(), "DllCanUnloadNow");
-    return fn ? fn() : S_FALSE;
+    HRESULT r;
+    if (!fn) return S_FALSE;
+    _InterlockedIncrement(&g_depth); r = fn(); _InterlockedDecrement(&g_depth);
+    return r;
 }
 
 HRESULT WINAPI DllGetClassObject(LPCVOID clsid, LPCVOID riid, LPVOID *out)
 {
     PFN_GetClassObject fn = (PFN_GetClassObject)GetProcAddress(real_dll(), "DllGetClassObject");
-    return fn ? fn(clsid, riid, out) : E_FAIL;
+    HRESULT r;
+    if (!fn) return E_FAIL;
+    _InterlockedIncrement(&g_depth); r = fn(clsid, riid, out); _InterlockedDecrement(&g_depth);
+    return r;
 }
 
 HRESULT WINAPI DllRegisterServer(void)
 {
     PFN_Void fn = (PFN_Void)GetProcAddress(real_dll(), "DllRegisterServer");
-    return fn ? fn() : E_FAIL;
+    HRESULT r;
+    if (!fn) return E_FAIL;
+    _InterlockedIncrement(&g_depth); r = fn(); _InterlockedDecrement(&g_depth);
+    return r;
 }
 
 HRESULT WINAPI DllUnregisterServer(void)
 {
     PFN_Void fn = (PFN_Void)GetProcAddress(real_dll(), "DllUnregisterServer");
-    return fn ? fn() : E_FAIL;
+    HRESULT r;
+    if (!fn) return E_FAIL;
+    _InterlockedIncrement(&g_depth); r = fn(); _InterlockedDecrement(&g_depth);
+    return r;
 }
 
 LPCVOID WINAPI GetdfDIJoystick(void)
 {
     PFN_GetdfDIJoystick fn = (PFN_GetdfDIJoystick)GetProcAddress(real_dll(), "GetdfDIJoystick");
-    return fn ? fn() : 0;
+    LPCVOID r;
+    if (!fn) return 0;
+    _InterlockedIncrement(&g_depth); r = fn(); _InterlockedDecrement(&g_depth);
+    return r;
 }
 
 BOOL WINAPI DllMain(HMODULE inst, DWORD reason, LPVOID reserved)
