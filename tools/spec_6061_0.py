@@ -46,18 +46,22 @@ labels.append({"box": bx[286], "ko": "캠페인 적용 중 NEW!", "font": SANS, 
 # gear strips: light words printed on gear icons
 rgb = np.asarray(im).astype(float)
 lit = (((rgb[..., :3] @ [0.299, 0.587, 0.114]) > 165) & (rgb[..., 3] > 100)).astype(np.uint8) * 255
-GEARS = {297: ["방어", "적 세력", "플레이어"], 298: ["공격", "이동", "효과음", "제3세력", "최고 기록!"],
+GEARS = {297: ["방어", "적 세력", "플레이어"], 298: ["공격", "이동", "효과음", "제3세력"],
          296: ["전장", "아군 세력", "능력"]}
 GEAR_BOXES = {296: [((3600, 1498, 3684, 1540), "전장"), ((3708, 1498, 3839, 1540), "아군 세력"), ((3866, 1498, 3947, 1540), "능력")],
               297: [((24, 1510, 108, 1558), "방어"), ((133, 1510, 263, 1558), "적 세력"), ((285, 1522, 372, 1566), "플레이어")],
               298: [((575, 1510, 660, 1560), "공격"), ((707, 1510, 792, 1560), "이동"), ((844, 1510, 924, 1560), "효과음"),
-                    ((951, 1506, 1082, 1582), "제3세력"), ((1086, 1506, 1240, 1582), "최고 기록!")]}
+                    ((951, 1506, 1082, 1582), "제3세력")]}
 for i, items in GEAR_BOXES.items():
     for w, ko in items:
         labels.append({"box": list(w), "ko": ko, "erase": "bright", "lum": 150, "ink_grow": 3, "kx": 8, "align": "center",
                        "font": SANS if ko.endswith("!") else r"C:\Windows\Fonts\NotoSerifKR-VF.ttf",
                        "style": {"grad": [[245, 245, 245]] * 8, "glow": [10, 10, 12], "glow_a": 0.6, "outline": [10, 10, 12],
                                  "has_outline": True, "fill_a": 1.0, "ink_h": int((w[3] - w[1]) * 0.8), "border": 2}})
+# result-screen "最高纪录!" badge: small gold italic ink at x 1090-1232, y 1541-1568 on the dark strip (not a gear word).
+# Keep the original ink height (28 px) and sample its gold gradient; a taller label overflows the sprite into the rows above.
+labels.append({"box": [1086, 1537, 1238, 1572], "ko": "최고 기록!", "erase": "bright", "lum": 150, "ink_grow": 2, "kx": 8,
+               "align": "center", "font": SANS, "shear": 0.14})
 p = ROOT / "mapping/images/06061.json"
 old = json.loads(p.read_text(encoding="utf-8"))["textures"] if p.exists() else []
 p.write_text(json.dumps({"entry": 6061, "textures": [x for x in old if x["tex"] != 0] + [{"tex": 0, "labels": labels}]},

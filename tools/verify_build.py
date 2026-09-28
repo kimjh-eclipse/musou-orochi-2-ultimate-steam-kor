@@ -30,15 +30,26 @@ matches = collections.defaultdict(dict)
 for l in (ROOT / "mapping/pc_match.jsonl").open(encoding="utf-8"):
     r = json.loads(l)
     matches[r["entry"]][tuple(r["path"])] = r
+overrides = {}  # same precedence as build_text.load_overrides: pc_ko_* rows win over PS3 matches
+for p in sorted((ROOT / "translation_memory").glob("pc_ko_*.jsonl")):
+    for l in p.open(encoding="utf-8"):
+        if l.strip():
+            o = json.loads(l)
+            overrides[o["jp"]] = o["ko"]
 ok = bad = 0
 examples = []
 for e in text_entries:
     for s in walk(new.read(e), "<"):
         r = matches[e].get(s.path)
-        if r and r["ko"] and r["level"] in ("exact_path", "entry_text", "global_text", "conflict", "global_fill"):
-            if decode(s.raw) == r["ko"]:
+        if not r:
+            continue
+        want = overrides.get(r["jp"])
+        if want is None and r["ko"] and r["level"] in ("exact_path", "entry_text", "global_text", "conflict", "global_fill"):
+            want = r["ko"]
+        if want:
+            if decode(s.raw) == want:
                 ok += 1
             else:
                 bad += 1
-                examples.append((e, s.path, r["ko"][:30], decode(s.raw)[:30]))
+                examples.append((e, s.path, want[:30], decode(s.raw)[:30]))
 print("korean readback ok", ok, "mismatch", bad, examples[:5])

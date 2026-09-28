@@ -6,9 +6,9 @@ Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(무쌍 오로치 2 �
 
 ## 최신 배포
 
-**v20260927b — 2026-09-27**
+**v20260928 — 2026-09-28**
 
-[패치 ZIP 다운로드](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260927b/WO3U_Steam_KR_v20260927b.zip) · [릴리즈 설명](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260927b) · [문서 사이트](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-steam-kor/)
+[패치 ZIP 다운로드](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260928/WO3U_Steam_KR_v20260928.zip) · [릴리즈 설명](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20260928) · [문서 사이트](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-steam-kor/)
 
 1. Steam 게임 속성 → 언어를 **简体中文(중국어 간체)** 로 바꾸고 게임을 종료합니다.
 2. ZIP을 풀고 `WO3U_Steam_KR_Patch.exe`를 실행합니다(`WO3U_Steam_KR.pack`과 같은 폴더). 데이터 두 파일을 교체하고 `dinput8.dll`을 추가합니다.
@@ -32,6 +32,7 @@ Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(무쌍 오로치 2 �
 | `tools/ko_charset.py` `ko_encode.py` `build_font.py` `bc3.py` | 한글 ↔ 중문 코드 대응, 폰트 아틀라스(BC3 4096×8192) 생성 |
 | `tools/match_tm.py` `ps3_tm.py` `build_text.py` | PS3 번역 대응, 텍스트 빌드 |
 | `tools/dump_queue.py` `merge_translations.py` `gen_ko_B_*.py` | 미번역 항목 추출, 번역 병합·검증(제어코드·서식·글리프) |
+| `tools/fit40_queue.py` `fit40_check.py` `fit40_audit.py` | 전투 대사 40글자 한도 초과 검출, 다듬은 번역 검사·병합 |
 | `tools/g1t_pc.py` `image_labels.py` `image_overpaint.py` `image_logo.py` `build_images.py` | G1T 디코드/인코드, 라벨·자막·로고 교체 |
 | `tools/spec_*.py` | 이미지별 교체 스펙 생성기 |
 | `mapping/images/*.json` | 이미지 교체 스펙(텍스처·영역·한국어) |
