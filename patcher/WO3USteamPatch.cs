@@ -34,6 +34,7 @@ internal static class WO3USteamPatch
     private const int BackupFormatVersion = 1;
     private const string BackupExtension = ".wo3u-backup";
     private const string NewSuffix = ".wo3u-new";
+    private const string ForeignDllSuffix = ".wo3u-orig";  // another program's dinput8.dll kept while ours is installed
     private const string OldSuffix = ".wo3u-old";
     private const uint AttachParentProcess = 0xFFFFFFFF;
     private static readonly string[] TargetNames = { "LINKIDX_CHS.BIN", "LINKFILE_CHS.BIN" };
@@ -99,6 +100,15 @@ internal static class WO3USteamPatch
         public bool VerifyOnly;
         public bool Restore;
         public bool Pause;
+        public ForeignDll Foreign;
+    }
+
+    // what to do with another program's dinput8.dll: ask (interactive console), overwrite (kept as .wo3u-orig), skip
+    private enum ForeignDll
+    {
+        Ask,
+        Overwrite,
+        Skip
     }
 
     private enum UiOperation
@@ -113,6 +123,7 @@ internal static class WO3USteamPatch
         public UiOperation Operation;
         public string TargetPath;
         public string BackupPath;
+        public ForeignDll Foreign;
     }
 
     private sealed class UiResult
@@ -512,6 +523,7 @@ internal static class WO3USteamPatch
                 }
             }
 
+            ForeignDll foreign = ForeignDll.Skip;
             if (operation == UiOperation.Patch)
             {
                 DialogResult answer = MessageBox.Show(this,
@@ -520,6 +532,14 @@ internal static class WO3USteamPatch
                     "패치 확인", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 if (answer != DialogResult.Yes)
                     return;
+                if (IsForeignDll(targetPath))
+                {
+                    DialogResult choice = MessageBox.Show(this, ForeignDllQuestion(targetPath),
+                        "다른 " + ProxyDllName + " 발견", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                    if (choice == DialogResult.Cancel)
+                        return;
+                    foreign = choice == DialogResult.Yes ? ForeignDll.Overwrite : ForeignDll.Skip;
+                }
             }
             else if (operation == UiOperation.Restore)
             {
@@ -533,7 +553,7 @@ internal static class WO3USteamPatch
             logBox.Clear();
             SetBusy(true, operation == UiOperation.Verify ? "상태 검사 중..." :
                 (operation == UiOperation.Patch ? "패치 적용 중..." : "원본 복구 중..."));
-            worker.RunWorkerAsync(new UiWorkItem { Operation = operation, TargetPath = targetPath, BackupPath = backupPath });
+            worker.RunWorkerAsync(new UiWorkItem { Operation = operation, TargetPath = targetPath, BackupPath = backupPath, Foreign = foreign });
         }
 
         private void WorkerDoWork(object sender, DoWorkEventArgs e)
@@ -555,6 +575,7 @@ internal static class WO3USteamPatch
                 options.VerifyOnly = work.Operation == UiOperation.Verify;
                 options.Restore = work.Operation == UiOperation.Restore;
                 options.Pause = false;
+                options.Foreign = work.Foreign;
                 result.ExitCode = Run(options);
             }
             catch (Exception ex)
@@ -751,6 +772,10 @@ internal static class WO3USteamPatch
                 options.VerifyOnly = true;
             else if (arg.Equals("--restore", StringComparison.OrdinalIgnoreCase))
                 options.Restore = true;
+            else if (arg.Equals("--overwrite-dll", StringComparison.OrdinalIgnoreCase))
+                options.Foreign = ForeignDll.Overwrite;
+            else if (arg.Equals("--skip-dll", StringComparison.OrdinalIgnoreCase))
+                options.Foreign = ForeignDll.Skip;
             else if (arg.Equals("--no-pause", StringComparison.OrdinalIgnoreCase) || arg.Equals("--headless", StringComparison.OrdinalIgnoreCase))
                 options.Pause = false;
             else if (arg.Equals("--backup", StringComparison.OrdinalIgnoreCase))
@@ -777,7 +802,7 @@ internal static class WO3USteamPatch
             options.FolderPath = FindSteamInstall();
             if (options.FolderPath == null)
                 throw new ArgumentException(
-                    "사용법: WO3U_Steam_KR_Patch.exe [--folder <설치 폴더>] [--backup <백업 파일>] [--verify-only | --restore] [--yes] [--no-pause]\r\n" +
+                    "사용법: WO3U_Steam_KR_Patch.exe [--folder <설치 폴더>] [--backup <백업 파일>] [--verify-only | --restore] [--yes] [--overwrite-dll | --skip-dll] [--no-pause]\r\n" +
                     "설치 폴더를 자동으로 찾지 못했습니다. --folder 로 지정하세요.");
         }
         options.FolderPath = ResolveGameDir(options.FolderPath);
@@ -937,14 +962,16 @@ internal static class WO3USteamPatch
         if (options.Restore)
             return RestoreMode(dir, pack, backup, backupPath, options.Yes);
 
+        bool overwriteForeign = false;
         if (pack.Dll != null && DllState(dir, pack) == 3)
-            throw new InvalidOperationException("설치 폴더에 다른 프로그램의 " + ProxyDllName + " 이 있습니다. 덮어쓰지 않고 중단합니다.\r\n" +
-                "다른 모드를 쓰는 중이라면 그 파일을 옮긴 뒤 다시 실행하세요: " + Path.Combine(dir, ProxyDllName));
+            overwriteForeign = DecideForeignDll(dir, options);
 
         if (state == FileState.Target && pack.Dll != null && DllState(dir, pack) != 1)
         {
-            InstallDll(dir, pack);
-            WriteOk("한국어 데이터는 이미 적용되어 있어 " + ProxyDllName + " 만 설치했습니다.");
+            if (InstallDll(dir, pack, overwriteForeign))
+                WriteOk("한국어 데이터는 이미 적용되어 있어 " + ProxyDllName + " 만 설치했습니다.");
+            else
+                WriteOk("한국어 데이터는 이미 적용되어 있습니다. " + ProxyDllName + " 은 건너뛰었습니다.");
             return 0;
         }
 
@@ -985,12 +1012,13 @@ internal static class WO3USteamPatch
         CreateBackup(dir, pack, backupPath);
         WriteOk((refreshing ? "기존 복구 백업 갱신 완료: " : "원상복구 백업 생성 완료: ") + backupPath);
 
+        bool dllInstalled = false;
         try
         {
             ApplyPack(dir, pack);
             if (DetectState(dir, pack.Files) != FileState.Target)
                 throw new InvalidDataException("패치 후 최종 해시가 일치하지 않습니다.");
-            InstallDll(dir, pack);
+            dllInstalled = InstallDll(dir, pack, overwriteForeign);
         }
         catch
         {
@@ -1013,7 +1041,8 @@ internal static class WO3USteamPatch
         }
 
         Console.WriteLine();
-        WriteOk("한국어 패치 적용 및 최종 해시 검증 완료 (" + pack.Version + ", 데이터 2/2" + (pack.Dll != null ? " + " + ProxyDllName : "") + ")");
+        WriteOk("한국어 패치 적용 및 최종 해시 검증 완료 (" + pack.Version + ", 데이터 2/2" +
+            (pack.Dll == null ? "" : dllInstalled ? " + " + ProxyDllName : ", " + ProxyDllName + " 건너뜀") + ")");
         Console.WriteLine("게임 언어를 중국어 간체(简体中文)로 설정하면 한국어로 표시됩니다.");
         Console.WriteLine("복구하려면: WO3U_Steam_KR_Patch.exe --restore --backup \"" + backupPath + "\" --folder \"" + dir + "\"");
         Console.WriteLine("복구 백업은 삭제하지 않는 것을 권장합니다: " + backupPath);
@@ -1048,12 +1077,23 @@ internal static class WO3USteamPatch
     private static void PrintState(FileState state, Pack pack, Backup backup, string dir)
     {
         Console.WriteLine();
+        if (File.Exists(Path.Combine(dir, ProxyDllName + ForeignDllSuffix)))
+            Console.WriteLine("[*] 다른 프로그램의 " + ProxyDllName + " 을 보관 중입니다: " + ProxyDllName + ForeignDllSuffix + " (원본 복구 때 되돌립니다)");
+        if (state != FileState.Target && pack.Dll != null && DllState(dir, pack) == 3)
+            Console.WriteLine("[*] 설치 폴더에 다른 프로그램의 " + ProxyDllName + " 이 있습니다. 패치 적용 때 덮어쓸지 묻습니다.");
         if (state == FileState.Source)
             WriteOk("원본 상태입니다. 한국어 패치(" + pack.Version + ")를 적용할 수 있습니다.");
         else if (state == FileState.Target)
         {
             WriteOk("한국어 패치(" + pack.Version + ")가 적용된 상태입니다.");
-            if (pack.Dll != null && DllState(dir, pack) != 1)
+            if (pack.Dll != null && DllState(dir, pack) == 3)
+            {
+                SetConsoleColor(ConsoleColor.Yellow);
+                Console.WriteLine("[!] 다른 프로그램의 " + ProxyDllName + " 이 있어 실행 파일 속 문장 27개(언리미티드 모드 알림·전생 설명 등)는 깨져 보입니다.");
+                Console.WriteLine("    패치 적용을 누르면 덮어쓸지 묻습니다.");
+                ResetConsoleColor();
+            }
+            else if (pack.Dll != null && DllState(dir, pack) != 1)
             {
                 SetConsoleColor(ConsoleColor.Yellow);
                 Console.WriteLine("[!] " + ProxyDllName + " 이 없거나 다른 버전입니다. 패치 적용을 누르면 설치합니다.");
@@ -1088,13 +1128,66 @@ internal static class WO3USteamPatch
         return IndexOf(data, ProxyMarker) >= 0 ? 2 : 3;
     }
 
-    private static void InstallDll(string dir, Pack pack)
+    private static bool IsForeignDll(string dir)
+    {
+        string path = Path.Combine(dir, ProxyDllName);
+        return File.Exists(path) && IndexOf(File.ReadAllBytes(path), ProxyMarker) < 0;
+    }
+
+    private static string ForeignDllQuestion(string dir)
+    {
+        return "설치 폴더에 다른 프로그램의 " + ProxyDllName + " 이 있습니다.\r\n" + Path.Combine(dir, ProxyDllName) + "\r\n\r\n" +
+            "예: 기존 파일을 " + ProxyDllName + ForeignDllSuffix + " 로 보관하고 한국어 패치의 " + ProxyDllName + " 로 교체합니다.\r\n" +
+            "    그 프로그램(모드)의 기능은 꺼집니다. [원본 복구] 때 기존 파일을 되돌립니다.\r\n\r\n" +
+            "아니요: " + ProxyDllName + " 은 건너뛰고 한국어 데이터만 적용합니다.\r\n" +
+            "    실행 파일 속 문장 27개(언리미티드 모드 알림·전생 설명 등)는 깨져 보입니다.\r\n\r\n" +
+            "취소: 아무것도 바꾸지 않고 중단합니다.";
+    }
+
+    // true = overwrite (keep the other file as .wo3u-orig), false = skip the dll
+    private static bool DecideForeignDll(string dir, Options options)
+    {
+        SetConsoleColor(ConsoleColor.Yellow);
+        Console.WriteLine("[!] 설치 폴더에 다른 프로그램의 " + ProxyDllName + " 이 있습니다: " + Path.Combine(dir, ProxyDllName));
+        ResetConsoleColor();
+        if (options.Foreign == ForeignDll.Overwrite)
+            return true;
+        if (options.Foreign == ForeignDll.Skip || options.Yes)
+        {
+            Console.WriteLine("    덮어쓰지 않고 건너뜁니다 (덮어쓰려면 --overwrite-dll). 실행 파일 속 문장 27개는 깨져 보입니다.");
+            return false;
+        }
+        Console.WriteLine(ForeignDllQuestion(dir).Replace("예:", "O:").Replace("아니요:", "S:").Replace("취소:", "N:"));
+        Console.Write("선택 [O=덮어쓰기 / S=건너뛰기 / N=중단]: ");
+        string answer = (Console.ReadLine() ?? "").Trim();
+        if (answer.Equals("O", StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (answer.Equals("S", StringComparison.OrdinalIgnoreCase))
+            return false;
+        throw new OperationCanceledException("사용자가 작업을 취소했습니다.");
+    }
+
+    // returns false when the dll was skipped (another program's dinput8.dll kept in place)
+    private static bool InstallDll(string dir, Pack pack, bool overwriteForeign)
     {
         if (pack.Dll == null)
-            return;
+            return false;
         string path = Path.Combine(dir, ProxyDllName);
         if (DllState(dir, pack) == 3)
-            throw new InvalidOperationException("다른 프로그램의 " + ProxyDllName + " 이 있어 설치하지 않았습니다.");
+        {
+            if (!overwriteForeign)
+            {
+                SetConsoleColor(ConsoleColor.Yellow);
+                Console.WriteLine("[!] 다른 프로그램의 " + ProxyDllName + " 이 있어 설치하지 않았습니다. 실행 파일 속 문장 27개는 깨져 보입니다.");
+                ResetConsoleColor();
+                return false;
+            }
+            string kept = path + ForeignDllSuffix;
+            if (File.Exists(kept))
+                File.Move(kept, path + "." + DateTime.Now.ToString("yyyyMMddHHmmss") + ForeignDllSuffix);
+            File.Move(path, kept);
+            WriteOk("기존 " + ProxyDllName + " 보관: " + kept);
+        }
         File.WriteAllBytes(path + NewSuffix, pack.Dll);
         if (File.Exists(path))
             File.Delete(path);
@@ -1102,18 +1195,32 @@ internal static class WO3USteamPatch
         if (DllState(dir, pack) != 1)
             throw new InvalidDataException(ProxyDllName + " 설치 후 해시가 맞지 않습니다.");
         WriteOk(ProxyDllName + " 설치 완료 (실행 파일 속 문장 한국어화)");
+        return true;
     }
 
     private static bool RemoveDll(string dir, Pack pack)
     {
         string path = Path.Combine(dir, ProxyDllName);
         int s = DllState(dir, pack);
+        string keptOnly = path + ForeignDllSuffix;
+        if (s == 0 && File.Exists(keptOnly))
+        {
+            File.Move(keptOnly, path);
+            WriteOk("보관해 둔 다른 프로그램의 " + ProxyDllName + " 을 되돌렸습니다.");
+            return false;
+        }
         if (s != 1 && s != 2)
             return false;
         File.Delete(path);
         string log = Path.Combine(dir, "WO3U_KR_dll.log");
         if (File.Exists(log))
             File.Delete(log);
+        string kept = path + ForeignDllSuffix;
+        if (File.Exists(kept))
+        {
+            File.Move(kept, path);
+            WriteOk("보관해 둔 다른 프로그램의 " + ProxyDllName + " 을 되돌렸습니다.");
+        }
         return true;
     }
 
