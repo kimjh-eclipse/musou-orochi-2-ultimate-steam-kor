@@ -22,7 +22,7 @@ NAMES = {
 def main():
     ov = {}
     for p in sorted(glob.glob(str(ROOT / "translation_memory/pc_ko_*.jsonl"))):
-        if p.endswith("pc_ko_F_skills.jsonl"):
+        if Path(p).name >= "pc_ko_F_skills.jsonl":   # only the overrides applied before this one
             continue
         for l in open(p, encoding="utf-8"):
             if l.strip():
