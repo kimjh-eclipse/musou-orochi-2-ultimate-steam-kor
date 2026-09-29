@@ -1,17 +1,17 @@
 # 설치·갱신·복구
 
-대상은 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`), 기준 버전은 **v20260929**입니다. Windows와 .NET Framework 4.x가 필요합니다.
+대상은 Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`), 기준 버전은 **v20260930**입니다. Windows와 .NET Framework 4.x가 필요합니다.
 
 ## 1. 준비와 다운로드
 
 1. Steam 라이브러리에서 게임을 우클릭 → **속성 → 언어**를 **简体中文(중국어 간체)** 로 바꿉니다. 다운로드가 끝날 때까지 기다립니다.
 2. 게임을 완전히 종료합니다.
-3. [WO3U_Steam_KR_v20260929.zip](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260929/WO3U_Steam_KR_v20260929.zip)을 내려받아 압축을 풉니다.
+3. [WO3U_Steam_KR_v20260930.zip](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20260930/WO3U_Steam_KR_v20260930.zip)을 내려받아 압축을 풉니다.
 
 ZIP에는 `WO3U_Steam_KR_Patch.exe`, `WO3U_Steam_KR.pack`, `README_사용법.txt`, `SHA256SUMS.txt`가 들어 있습니다. 패치 데이터가 커서 EXE와 `.pack`을 나눠 두었으므로 **두 파일을 같은 폴더에 두고 실행**합니다.
 
 ```powershell
-Get-FileHash .\WO3U_Steam_KR_v20260929.zip -Algorithm SHA256
+Get-FileHash .\WO3U_Steam_KR_v20260930.zip -Algorithm SHA256
 ```
 
 예상 값은 [전체 해시 목록](hashes.md)을 참고하세요.

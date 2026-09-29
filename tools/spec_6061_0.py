@@ -42,7 +42,11 @@ for ids, k in (((42, 47), 121), ((128, 142), 121), ((247, 257), 54)):
     labels.append({"box": union(*ids), "ko": NAME[k], "first_big": True, "pad": 1})
 for part, k in zip(split_on_gap(a, bx[267]), (130, 28)):
     labels.append({"box": part, "ko": NAME[k], "first_big": True, "pad": 1})
-labels.append({"box": bx[286], "ko": "캠페인 적용 중 NEW!", "font": SANS, "pad": 1})
+# The game samples the small 新! badge separately from the campaign caption.
+# Keep each translation inside its original UV rectangle: a single combined
+# label moved "NEW!" left, so the equipment popup displayed only "W!".
+labels.append({"box": [1390, 1506, 1671, 1549], "ko": "캠페인 적용 중", "font": SANS, "pad": 1})
+labels.append({"box": [1682, 1506, 1737, 1549], "ko": "신규", "font": SANS, "pad": 1})
 # gear strips: light words printed on gear icons
 rgb = np.asarray(im).astype(float)
 lit = (((rgb[..., :3] @ [0.299, 0.587, 0.114]) > 165) & (rgb[..., 3] > 100)).astype(np.uint8) * 255
