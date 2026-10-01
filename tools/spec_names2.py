@@ -20,6 +20,13 @@ for ti, ks in K.items():
     d, t, im = load(6051, ti)
     bx = boxes(np.asarray(im.getchannel("A")), gap=0.2)
     assert len(bx) == len(ks), (ti, len(bx), len(ks))
+    if ti == 6:
+        # The adjacent Nemea/Nata glyphs share one row. Component grouping
+        # split them horizontally as well as vertically, leaving their lower
+        # or upper Chinese strokes behind on the story-mode character card.
+        assert bx[23] == [658, 576, 839, 623] and bx[24] == [839, 624, 985, 669]
+        bx[23] = [658, 586, 838, 669]
+        bx[24] = [839, 586, 985, 669]
     labels = []
     for b, k in zip(bx, ks):
         nxt = [c for c in bx if abs(c[1] - b[1]) < 12 and c[0] > b[2]]

@@ -9,6 +9,7 @@ from pack_lang import write_part, sha256
 
 ROOT = Path(__file__).resolve().parents[1]
 FONT_ENTRY = 38
+sys.stdout.reconfigure(encoding="utf-8")
 
 
 def main(version):
