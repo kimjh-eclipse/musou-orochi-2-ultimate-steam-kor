@@ -42,8 +42,10 @@ def main():
         rel = api("POST", base + "/releases", dict(fields, draft=True))
         print("created draft", rel["id"])
     else:
+        if not rel["draft"]:
+            sys.exit(f"{tag} is already published ({rel['html_url']}); published releases are immutable - use a new tag")
         rel = api("PATCH", base + f"/releases/{rel['id']}", dict(fields, draft=rel["draft"]))
-        print("updated release", rel["id"], "draft" if rel["draft"] else "published")
+        print("updated draft", rel["id"])
     size = zip_path.stat().st_size
     have = {a["name"]: a for a in rel.get("assets", [])}
     if zip_path.name in have and have[zip_path.name]["size"] == size and have[zip_path.name]["state"] == "uploaded":

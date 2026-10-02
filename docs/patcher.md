@@ -16,7 +16,7 @@ for id in 완성본 IDX의 사용 항목 (완성본 오프셋 순):
 0으로 완성본 파일 크기까지 채움
 ```
 
-바뀌지 않은 항목은 사용자의 게임 파일에서 복사하므로, 배포 팩에는 한국어로 바뀐 항목(v20261002 기준 1,164개)과 `dinput8.dll`만 들어갑니다.
+바뀌지 않은 항목은 사용자의 게임 파일에서 복사하므로, 배포 팩에는 한국어로 바뀐 항목(v20261002b 기준 1,164개)과 `dinput8.dll`만 들어갑니다.
 
 ## 팩 형식: WO3USTM1
 
@@ -103,11 +103,23 @@ Windows SDK와 C 런타임 없이 MSVC `cl`·`lib`·`link`만으로 빌드합니
 
 DLL 쪽 이어서 불러오기: 첫 호출 때 같은 폴더의 `dinput8_wo3u_chain.dll`을 불러오고, 있으면 모든 내보내기 호출을 그 DLL로 넘깁니다(없으면 `System32\dinput8.dll`). 이어서 불린 DLL이 이름만으로 `dinput8.dll`을 불러 한국어 DLL로 되돌아오는 경우에는 재진입 깊이로 감지해 시스템 DLL로 보냅니다. 로그에 `chained: dinput8_wo3u_chain.dll loaded`가 남습니다. 시험: `patcher/dll/chain_test/fake_mod.c`(이름으로 되돌아오는 최악의 경우를 흉내 내는 가짜 모드).
 
+## 선택: 병사 공격성 강화
+
+GUI의 체크박스(설치 폴더의 현재 상태로 자동 체크) 또는 명령줄 `--soldier-ai` / `--no-soldier-ai`. 체크한 채 [한국어 패치 적용] = 적용, 해제한 채 적용 = 원래대로, [원본 복구] = 원래대로. 명령줄에서 둘 다 생략하면 지금 상태를 유지합니다.
+
+- 대상: 공통 데이터 `LINKFILE_000.BIN` 0x44CDA의 유닛 표(2,206 슬롯 × 40바이트). 슬롯의 +0은 이름 번호, +32(u16)는 AI 단계(병사 0 / 일반 무장 3 / 조작 무장 5 / 여포 7), +34는 유닛 분류(병사 0, 무장 1, 병기 15~19, 거점·수비병장 20, 백성 22 등), +35는 행동 유형입니다.
+- 바꾸는 것: 이름으로 고른 전투 병사 364 슬롯의 AI 단계를 1(일반)·3(오로치 병사, 십장·부장·거점병장·수비병장)으로 올리고, 그중 근접 병사 289 슬롯은 분류 1·행동 4(무장 AI)로 바꿉니다. 원거리 병사(분류 2·7 또는 행동 1·20·80·88) 75 슬롯은 분류·행동을 그대로 둡니다. 병기·백성·진지 가게·동물·전령·수송·보조형 닌자·술사·장수는 바꾸지 않습니다.
+- AI 단계만 올리면 병사가 빨리 다가오기만 하고 공격은 늘지 않았고, 분류·행동을 무장 값으로 바꾸자 공격이 늘었습니다(게임 화면 확인). 무장 AI 아래에서는 AI 단계가 높을수록 근접이 지나치게 적극적이어서 1/3으로 정했습니다.
+- 바뀌는 952바이트의 위치·원래 값·새 값과 표 전체의 원본/적용 SHA-256이 패처에 들어 있습니다. 원래 값이 패처 안에 있으므로 따로 백업하지 않고, 표 해시로 원본/적용/기타를 판별합니다. 기타(다른 유닛 모드)는 건드리지 않습니다.
+- 표 생성: `tools/soldier_ai3.py table` → `patcher/soldier_ai_table.txt` → `patcher/_edit_soldier_option.py`(소스의 `// <soldier-ai-table>` 블록 갱신). 대상 선택에 쓰는 이름 대응표(`mapping/pc_match.jsonl`)는 게임 원문을 담고 있어 저장소에 포함하지 않습니다. 시험: `patcher/test_scenarios_e.sh`.
+- 참고: 유닛 표 위치와 필드 구성은 PythWare의 [Kybernes-Tools](https://github.com/PythWare/Kybernes-Tools) WO3 Unit Editor, 분류·행동 값을 함께 바꾸는 방식은 같은 제작자의 넥서스 모드 Super Aggressive AI, 병사 AI 값 조사는 디시인사이드 진삼국무쌍8 갤러리 SPlT 님의 글을 참고했습니다. 이 도구들의 파일은 포함하지 않습니다.
+
 ## 명령줄
 
 ```text
 WO3U_Steam_KR_Patch.exe [--folder <설치 폴더>] [--backup <백업 파일>]
-                        [--verify-only | --restore] [--yes] [--chain-dll | --overwrite-dll | --skip-dll] [--no-pause]
+                        [--verify-only | --restore] [--yes] [--chain-dll | --overwrite-dll | --skip-dll]
+                        [--soldier-ai | --no-soldier-ai] [--no-pause]
 ```
 
 `--folder`를 생략하면 Steam 설치 폴더를 자동으로 찾습니다. 종료 코드는 성공 0, 실패 1, 상태 검사에서 알 수 없는 상태 2입니다.
