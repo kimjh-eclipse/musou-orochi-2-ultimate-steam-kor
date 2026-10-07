@@ -25,6 +25,7 @@ ROOT = HERE.parent
 MAGIC, FORMAT = b"WO3USTM1", 2
 DLL = HERE / "dll/out/mode3/dinput8.dll"
 DLL_TABLE = HERE / "dll/strings_table.h"
+COMMON003 = HERE / "out/LINKFILE_003.patch"
 NAMES = ("LINKIDX_CHS.BIN", "LINKFILE_CHS.BIN")
 
 
@@ -110,9 +111,12 @@ def main():
             nb = name.encode()
             f.write(struct.pack("<H", len(nb)) + nb + struct.pack("<Q", ssz) + ssh + struct.pack("<Q", tsz) + tsh)
         f.write(struct.pack("<I", len(ti_b)) + ti_b)
-        f.write(struct.pack("<I", 1))
-        nb = b"dinput8.dll"
-        f.write(struct.pack("<H", len(nb)) + nb + hashlib.sha256(dll).digest() + struct.pack("<I", len(dll)) + dll)
+        extras = [(b"dinput8.dll", dll)]
+        if COMMON003.exists():  # DLC costume source texts in the common part (tools/gen_common003.py)
+            extras.append((b"LINKFILE_003.patch", COMMON003.read_bytes()))
+        f.write(struct.pack("<I", len(extras)))
+        for nb, data in extras:
+            f.write(struct.pack("<H", len(nb)) + nb + hashlib.sha256(data).digest() + struct.pack("<I", len(data)) + data)
         f.write(struct.pack("<I", len(blobs)))
         for i in sorted(blobs):
             f.write(struct.pack("<IQ", i, len(blobs[i])) + blobs[i])
@@ -127,6 +131,7 @@ def main():
                            "target_sha256": d.hex().upper()} for n, a, b, c, d in files],
                 "dll": {"name": "dinput8.dll", "size": len(dll), "sha256": hashlib.sha256(dll).hexdigest().upper(),
                         "table_idx_crc32": f"{crc:08x}"},
+                "common003": {"size": COMMON003.stat().st_size, "sha256": sha(COMMON003).hex().upper()} if COMMON003.exists() else None,
                 "reconstruct_ok": ok}
     (out / "WO3U_Steam_KR.manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     print(json.dumps({k: v for k, v in manifest.items() if k != "files"}, indent=1))

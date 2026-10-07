@@ -9,7 +9,8 @@ P="$W/patcher/_cc/WO3U_Steam_KR_Patch.exe"
 B="$W/build/${BUILD:-test25}"
 GAME="/c/Program Files (x86)/Steam/steamapps/common/WARRIORS OROCHI 3 Ultimate"
 VANILLA=A6B62541DBE6CEF5
-TARGET=791E7F8135942A89
+TARGET=52AA2518F835E158
+OLD=791E7F8135942A89
 blk() { py -3.13 -c "import hashlib,sys;f=open(sys.argv[1],'rb');f.seek(0x44CDA);print(hashlib.sha256(f.read(88240)).hexdigest()[:16].upper())" "$T/LINKFILE_000.BIN"; }
 run() { "$P" --folder "$T" --no-pause "$@" | grep -E "\[OK\]|\[!\]|\[\*\]|\[실패\]|병사"; echo "  exit ${PIPESTATUS[0]}"; }
 expect() { [ "$(blk)" = "$1" ] && echo "  block $2: PASS" || echo "  block $2: FAIL ($(blk))"; }
@@ -35,4 +36,21 @@ echo "== 8 foreign unit mod: --soldier-ai skips, file untouched"
 py -3.13 -c "import sys;f=open(sys.argv[1],'r+b');f.seek(0x44CDA+32);f.write(b'\xff\xff')" "$T/LINKFILE_000.BIN"
 before=$(blk); run --yes --soldier-ai; [ "$(blk)" = "$before" ] && echo "  untouched: PASS" || echo "  untouched: FAIL"
 run --yes --no-soldier-ai; [ "$(blk)" = "$before" ] && echo "  untouched (off): PASS" || echo "  untouched (off): FAIL"
-echo "== 9 cleanup"; run --restore --yes >/dev/null; rm -f "$T/LINKFILE_000.BIN"; ls "$T" | grep -c LINKFILE_000 | sed 's/^0$/  removed: PASS/'
+echo "== 9 block written by v20261002b -> --soldier-ai upgrades, --no-soldier-ai reverts"
+oldblk() { py -3.13 - "$GAME" "$T" "$W/patcher/soldier_ai_table_v20261002b.txt" <<'EOF'
+import sys
+from pathlib import Path
+g, t, tab = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
+diff = tab.read_text(encoding="ascii").split()[3]
+blk = bytearray((g / "WO3U_soldier_ai.orig").read_bytes())
+for i in range(0, len(diff), 9):
+    blk[int(diff[i:i+5], 16)] = int(diff[i+7:i+9], 16)
+f = open(t / "LINKFILE_000.BIN", "r+b"); f.seek(0x44CDA); f.write(blk)
+EOF
+}
+oldblk; expect $OLD "old (v20261002b) applied"
+run --verify-only | grep -E "이전 버전"
+run --yes --soldier-ai; expect $TARGET "upgraded"
+oldblk; run --yes --no-soldier-ai; expect $VANILLA "old reverted"
+oldblk; run --restore --yes >/dev/null; expect $VANILLA "old reverted by restore"
+echo "== 10 cleanup"; run --restore --yes >/dev/null; rm -f "$T/LINKFILE_000.BIN"; ls "$T" | grep -c LINKFILE_000 | sed 's/^0$/  removed: PASS/'

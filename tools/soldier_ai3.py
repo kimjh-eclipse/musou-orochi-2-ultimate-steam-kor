@@ -29,6 +29,9 @@ OFFICER_AI = True
 NEW, OROCHI = 1, 3  # v6 (2026-10-02): v5 3/5 with officer AI was too eager to close in
 # ranged troops keep their own class/behaviour (archers class 2, throwers class 7, guns/archers/casters type 1/20/80/88)
 RANGED_CLASS, RANGED_TYPE = {2, 7}, {1, 20, 80, 88}
+# v8 (2026-10-07, GitHub issue #9): officer AI broke cavalry (behaviour 2: they stood still), raised ranged troops (bomb
+# throwers) attacked almost endlessly, and shield troops (behaviour 96) are kept as a breather - all three untouched.
+KEEP_TYPE = {2, 96}
 OFFICER_LEVEL = 0  # 0 = keep officers as they are (2026-10-02: user declined 7, it would also apply to allies). Set 7 to raise named officers
 OROCHI_NAMES = {"遠呂智兵", "玉藻前兵"}
 LEADER_NAMES = {"什長", "副将", "拠点兵長", "守備兵長"}  # 2026-10-02 user: leaders also 5
@@ -74,6 +77,9 @@ def targets(block):
     for i in range(COUNT):
         nid, model = struct.unpack_from("<HxxxxH", block, i * SIZE)
         n = names.get(nid, "")
+        beh = block[i * SIZE + BEHAVIOUR]
+        if beh in KEEP_TYPE or block[i * SIZE + CLASS] in RANGED_CLASS or beh in RANGED_TYPE:
+            continue  # v8: cavalry / shield / ranged troops are left exactly as they are
         if n in COMBAT_JP and struct.unpack_from("<H", block, i * SIZE + FIELD)[0] == 0:
             orochi = n in OROCHI_NAMES or n in LEADER_NAMES or model in OROCHI_MODELS
             out.append((i, n, OROCHI if orochi else NEW))
