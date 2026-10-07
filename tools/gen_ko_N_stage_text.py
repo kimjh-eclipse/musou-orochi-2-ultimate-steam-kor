@@ -3,8 +3,10 @@
 1. Stage-select description (33 [5, 7692..8148], 2 lines): the box shows about 24 glyphs per line (Japanese lines are
    at most 22 full-width). Lines are re-broken at a space so both lines are <= 24; texts longer than 2 x 24 use the
    hand-shortened Korean in MANUAL (translated from the Japanese, no MT).
-2. Mission messages (entries >= 5500, path [0, n], 2-digit prefix): the centre bar shows about 26 glyphs. Japanese
-   uses a literal "\\n" for its few long messages; Korean messages over 24 glyphs get the same break at a space.
+2. Mission messages (entries >= 5500, path [0, n], 2-digit prefix): ONE line of about 26 glyphs. There is no line
+   break in this bar - a literal "\\n" is drawn as "¥n" (v20261007 did that, issue #13). Messages over 26 glyphs use
+   the shortened Korean translated from the Japanese in translation_memory/msg26_parts/answer*.jsonl
+   (tools/msg26_queue.py -> msg26_check.py); any "\\n" is removed.
 3. 両兵衛 = 료베에 (Takenaka Hanbei + Kuroda Kanbei), issue #12.
 Applied after pc_ko_A..L; writes translation_memory/pc_ko_N_stage_text.jsonl. `--list` prints what still needs MANUAL.
 """
@@ -17,12 +19,12 @@ sys.stdout.reconfigure(encoding="utf-8")
 from ko_encode import can_encode
 
 DESC_RANGE, DESC_LINE = (7692, 8148), 24
-MSG_LINE = 24
+MSG_LINE = 26
+MSG_SHORT = ROOT / "translation_memory/msg26_parts"
 ESC = re.compile(r"\x1b[A-Z][0-9A-Z]?")
 BREAK = "\\n"   # literal backslash + n, as in the Japanese messages
 
 FIX = {  # (entry, path) of the first occurrence -> ko; every row with the same Japanese text gets it
-    (5506, (0, 1)): "00\u001bC1%s\u001bR·\u001bC1미나모토노 요시츠네\u001bR·\u001bC1가토 요시아키\u001bR와\\n합류해 \u001bC2슈텐도지\u001bR를 쳐라!",
     (34, (21529,)): "그때 \u001bC3동구\u001bR는 그분이 지켰지……\n재미있군요. 료베에가 함께 나서는 건가요?",
 }
 MANUAL = {  # stage description 33 [5, n] -> shortened Korean (2 lines of <= 24 glyphs), translated from the Japanese
@@ -108,6 +110,10 @@ def glyphs(s):
     return len(ESC.sub("", s))
 
 
+def msg_glyphs(s):
+    return len(ESC.sub("", s).replace("%s", "%%%%"))
+
+
 def rebreak(text, limit):
     """Join the lines and break once at the space that best balances two lines of <= limit glyphs."""
     flat = text.replace("\n", " ").replace("  ", " ").strip()
@@ -135,6 +141,12 @@ def main():
             if l.strip():
                 r = json.loads(l)
                 ov[r["jp"]] = r["ko"]
+    short = {}
+    for f in sorted(MSG_SHORT.glob("answer*.jsonl")):
+        for l in open(f, encoding="utf-8"):
+            if l.strip():
+                a = json.loads(l)
+                short[json.dumps(a["key"])] = a["ko"]
     out, todo, seen = {}, [], set()
     for l in (ROOT / "mapping/pc_match.jsonl").open(encoding="utf-8"):
         r = json.loads(l)
@@ -165,13 +177,12 @@ def main():
             continue
         if e >= 5500 and p[0] == 0 and len(p) == 2 and re.match(r"\d\d", jp):
             seen.add(jp)
-            body = ko[2:].replace("미나모토 요시츠네", "미나모토노 요시츠네").replace("양베에", "료베에")
-            if max(glyphs(x) for x in body.split(BREAK)) > MSG_LINE:
-                new = rebreak(body.replace(BREAK, " "), MSG_LINE)
-                if new:
-                    body = new.replace("\n", BREAK)
-                else:
-                    todo.append((p, jp, ko))
+            body = ko[2:].replace("미나모토 요시츠네", "미나모토노 요시츠네").replace("양베에", "료베에").replace(BREAK, " ")
+            key = json.dumps([e, p])
+            if key in short:
+                body = short[key][2:]
+            if msg_glyphs(body) > MSG_LINE:
+                todo.append((p, jp, ko))
             if ko[:2] + body != ko:
                 out[jp] = ko[:2] + body
     for jp, ko in out.items():
