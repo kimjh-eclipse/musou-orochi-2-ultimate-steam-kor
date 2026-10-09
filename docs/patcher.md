@@ -16,7 +16,7 @@ for id in 완성본 IDX의 사용 항목 (완성본 오프셋 순):
 0으로 완성본 파일 크기까지 채움
 ```
 
-바뀌지 않은 항목은 사용자의 게임 파일에서 복사하므로, 배포 팩에는 한국어로 바뀐 항목(v20261007b 기준 1,164개)과 `dinput8.dll`만 들어갑니다.
+바뀌지 않은 항목은 사용자의 게임 파일에서 복사하므로, 배포 팩에는 한국어로 바뀐 항목(v20261009 기준 1,164개)과 `dinput8.dll`만 들어갑니다.
 
 ## 팩 형식: WO3USTM1
 
@@ -113,6 +113,12 @@ GUI의 체크박스(기본 해제, 이미 적용된 폴더면 문구에 '[현재
 - 바뀌는 779바이트의 위치·원래 값·새 값과 표 전체의 원본/적용 SHA-256이 패처에 들어 있습니다. 원래 값이 패처 안에 있으므로 따로 백업하지 않고, 표 해시로 원본/적용/기타를 판별합니다. 기타(다른 유닛 모드)는 건드리지 않습니다.
 - 표 생성: `tools/soldier_ai3.py table` → `patcher/soldier_ai_table.txt` → `patcher/_edit_soldier_option.py`(소스의 `// <soldier-ai-table>` 블록 갱신). 대상 선택에 쓰는 이름 대응표(`mapping/pc_match.jsonl`)는 게임 원문을 담고 있어 저장소에 포함하지 않습니다. 시험: `patcher/test_scenarios_e.sh`.
 - 참고: 유닛 표 위치와 필드 구성은 PythWare의 [Kybernes-Tools](https://github.com/PythWare/Kybernes-Tools) WO3 Unit Editor, 분류·행동 값을 함께 바꾸는 방식은 같은 제작자의 넥서스 모드 Super Aggressive AI, 병사 AI 값 조사는 디시인사이드 진삼국무쌍8 갤러리 SPlT 님의 글을 참고했습니다. 이 도구들의 파일은 포함하지 않습니다.
+
+## 선택: 장수 공격성 한 단계 올리기
+
+GUI의 두 번째 체크박스(기본 해제) 또는 `--officer-ai` / `--no-officer-ai`. 같은 유닛 표에서 분류 1(무장)이고 AI 단계가 3 또는 5인 이름 있는 장수 1,560 슬롯의 AI 단계를 한 단계 올립니다(3→4, 5→6, 여포 7과 2P 슬롯은 그대로). 병사 옵션과 바이트가 겹치지 않아 따로 켜고 끕니다. 표: `tools/soldier_ai3.py officer-table` → `patcher/officer_ai_table.txt` → `patcher/_edit_officer_option.py`.
+
+두 옵션이 같은 표를 쓰므로 표 전체 해시 하나로는 상태를 알 수 없습니다. 옵션마다 바뀌는 바이트가 모두 원래 값/새 값인지로 적용 여부를 보고, 적용된 옵션(이전 판 병사 표 포함)을 모두 걷어낸 표가 원본 해시와 같을 때만 우리 변경으로 봅니다. 그렇지 않으면(다른 유닛 모드) 두 옵션 모두 건드리지 않습니다. 시험: `patcher/test_scenarios_g.sh`.
 
 ## 공통 데이터: DLC 의상 출전 문구
 

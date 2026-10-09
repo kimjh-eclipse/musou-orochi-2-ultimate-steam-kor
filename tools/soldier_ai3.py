@@ -156,6 +156,19 @@ def main():
         lines = [hashlib.sha256(base).hexdigest().upper(), hashlib.sha256(bytes(buf)).hexdigest().upper(), str(len(diff)), hexs]
         out.write_text("\n".join(lines) + "\n", encoding="ascii")
         print("table ->", out.name, len(diff), "bytes")
+    elif cmd == "officer-table":  # separate patcher option: every named officer one AI level up (3 -> 4, 5 -> 6)
+        buf = bytearray(base)
+        slots = officer_slots(base)
+        for i in slots:
+            v = struct.unpack_from("<H", base, i * SIZE + FIELD)[0]
+            struct.pack_into("<H", buf, i * SIZE + FIELD, v + 1)
+        diff = [k for k in range(len(buf)) if buf[k] != base[k]]
+        assert all(k % SIZE == FIELD for k in diff)
+        hexs = "".join(f"{k:05X}{base[k]:02X}{buf[k]:02X}" for k in diff)
+        out = Path(__file__).resolve().parents[1] / "patcher/officer_ai_table.txt"
+        lines = [hashlib.sha256(base).hexdigest().upper(), hashlib.sha256(bytes(buf)).hexdigest().upper(), str(len(diff)), hexs]
+        out.write_text("\n".join(lines) + "\n", encoding="ascii")
+        print("officer table ->", out.name, len(slots), "slots,", len(diff), "bytes")
     elif cmd == "restore":
         if not orig.exists():
             sys.exit("no saved original block")

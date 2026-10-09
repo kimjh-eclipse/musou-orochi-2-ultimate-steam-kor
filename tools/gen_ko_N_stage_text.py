@@ -25,7 +25,9 @@ ESC = re.compile(r"\x1b[A-Z][0-9A-Z]?")
 BREAK = "\\n"   # literal backslash + n, as in the Japanese messages
 
 FIX = {  # (entry, path) of the first occurrence -> ko; every row with the same Japanese text gets it
-    (34, (21529,)): "그때 \u001bC3동구\u001bR는 그분이 지켰지……\n재미있군요. 료베에가 함께 나서는 건가요?",
+    (33, (5, 11268)): "오십령",   # 五十鈴: equipment names use the Korean hanja reading (백호아, 현무갑 ...), user 2026-10-07
+    (33, (5, 11332)): "오십령",   # its reading in the sort list (イスズ), kept in step like 비룡옥 / ヒリュウギョク
+    (34, (21529,)):"그때 \u001bC3동구\u001bR는 그분이 지켰지……\n재미있군요. 료베에가 함께 나서는 건가요?",
 }
 MANUAL = {  # stage description 33 [5, n] -> shortened Korean (2 lines of <= 24 glyphs), translated from the Japanese
     7694: "오다와라성을 지키는 요사 토벌군을 도와\n아군 거점의 함락을 막아라!",

@@ -49,15 +49,21 @@ dinput8.dll 은 게임 실행 파일 안에 있는 문장(언리미티드 모드
 - 유닛 표 구조는 PythWare 의 WO3 Unit Editor / Super Aggressive AI, 병사 AI 값 조사는
   디시인사이드 진삼국무쌍8 갤러리 SPlT 님의 글을 참고했습니다.
 
+[선택: 장수 공격성 한 단계 올리기]
+패처의 '장수 공격성 한 단계 올리기'를 체크하고 [한국어 패치 적용]을 누르면 이름 있는 장수의 AI 단계를
+한 단계 올립니다(일반 장수 3→4, 무쌍 장수 5→6, 여포는 그대로). 병사 옵션과 따로 켜고 끌 수 있습니다.
+- 유닛 데이터에 아군·적군 구분이 없어 아군 장수에도 똑같이 적용됩니다.
+- 체크를 해제하고 [한국어 패치 적용]을 누르거나 [원본 복구]를 하면 원래대로 되돌립니다.
+
 [복구]
 - 패처의 [원본 복구] 또는 Steam '게임 파일 무결성 검사'로 원본에 돌아갈 수 있습니다.
-- 원본 복구는 dinput8.dll 도 함께 지우고, 병사 공격성 강화도 되돌립니다.
+- 원본 복구는 dinput8.dll 도 함께 지우고, 병사·장수 공격성 옵션도 되돌립니다.
 - Steam 무결성 검사나 게임 업데이트 뒤에는 데이터 파일이 원본으로 돌아가므로 패처를 다시 실행하세요.
 
 [명령줄]
   WO3U_Steam_KR_Patch.exe --verify-only
   WO3U_Steam_KR_Patch.exe --folder "D:\\SteamLibrary\\steamapps\\common\\WARRIORS OROCHI 3 Ultimate" --yes
-  WO3U_Steam_KR_Patch.exe --yes --soldier-ai        (병사 공격성 강화 적용, 해제는 --no-soldier-ai)
+  WO3U_Steam_KR_Patch.exe --yes --soldier-ai        (병사 공격성 강화 적용, 해제는 --no-soldier-ai / 장수는 --officer-ai, --no-officer-ai)
   WO3U_Steam_KR_Patch.exe --restore --backup "D:\\...\\WO3U_KR.wo3u-backup"
 
 패치 후 파일 SHA-256

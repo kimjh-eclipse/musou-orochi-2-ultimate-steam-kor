@@ -1,28 +1,32 @@
 # 무쌍 오로치 2 얼티메이트 Steam판 한국어 패치
 
-Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20261007b (2026-10-07)** 입니다.
+Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20261009 (2026-10-09)** 입니다.
 
-[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20261007b) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
+[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20261009) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
 
 <!-- release:start -->
 
-## 이번 버전 (v20261007b)
+## 이번 버전 (v20261009)
 
-- 전투 중 화면 가운데에 나오는 임무 메시지에 '¥n'이 글자로 보이던 문제를 고쳤습니다. v20261007에서 긴 메시지를 두 줄로 나누려 넣은 줄바꿈 기호를 이 메시지 창이 처리하지 못했습니다. 줄바꿈을 모두 없애고, 한 줄에 다 들어가지 않던 메시지 267개는 문장을 다듬어 한 줄 안에 맞췄습니다.
+- 패처에 선택 기능 '장수 공격성 한 단계 올리기'를 추가했습니다. 체크하면 이름 있는 장수의 AI 단계가 한 단계 올라갑니다(일반 장수 3→4, 무쌍 장수 5→6, 여포는 그대로). '병사 공격성 강화'와 따로 켜고 끌 수 있고, 기본은 해제입니다. 아군 장수에도 똑같이 적용됩니다.
+- 테도리가와 기교전 등에서 제어 장치·나무 상자 같은 오브젝트의 체력바 이름이 깨져 보이던 문제를 고쳤습니다.
+- '구로다 칸베에' 등 구로다 성씨를 '쿠로다'로, '카타쿠라 코주로'를 '카타쿠라 코쥬로'로 고쳤습니다(이미지 속 이름 포함).
+- 장비 아이템 '이스즈'(五十鈴)를 다른 장비 이름처럼 한자 읽기에 맞춰 '오십령'으로 고쳤습니다.
+- 1장 오다와라성에서 시마즈 요시히로가 하는 대사(키요모리 편에 걸어 크게 땄다는 노름 비유)를 자연스럽게 고쳤습니다.
 
 이전 버전에서 바뀐 것은 [변경 이력](changelog.md)에 있습니다.
 
 ## 다운로드
 
-아래 링크에서 WO3U_Steam_KR_v20261007b.zip을 받으세요.
+아래 링크에서 WO3U_Steam_KR_v20261009.zip을 받으세요.
 
-<https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20261007b/WO3U_Steam_KR_v20261007b.zip>
+<https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20261009/WO3U_Steam_KR_v20261009.zip>
 
-파일: WO3U_Steam_KR_v20261007b.zip
+파일: WO3U_Steam_KR_v20261009.zip
 
-크기: 278,394,867 바이트
+크기: 278,408,191 바이트
 
-SHA256: EA7ACBE57D381C0DBF9394ECD1D9B105823DEE6B7BD86909939191E42A5CA360
+SHA256: A776AFF00AECACAC955416927D5C3E8704C98515694EC101AFDC30D8ABBAB06B
 
 ZIP 안에는 패처 실행 파일, 패치 데이터(.pack), 사용법, 해시 목록이 있습니다. 게임 파일은 들어 있지 않습니다.
 
@@ -34,7 +38,7 @@ ZIP 안에는 패처 실행 파일, 패치 데이터(.pack), 사용법, 해시 �
 4. 설치 폴더가 자동으로 채워집니다. 비어 있으면 자동 찾기 또는 찾아보기로 steamapps\common\WARRIORS OROCHI 3 Ultimate 폴더를 지정합니다.
 5. 상태 검사 후 주의사항에 동의하고 한국어 패치 적용을 누릅니다.
 
-이전 버전(v20260927 ~ v20261007)을 쓰고 있었다면 그대로 새 패처를 실행하면 됩니다. 설치 폴더의 WO3U_KR.wo3u-backup으로 이전 버전을 원본으로 되돌린 뒤 새 버전을 적용합니다.
+이전 버전(v20260927 ~ v20261007b)을 쓰고 있었다면 그대로 새 패처를 실행하면 됩니다. 설치 폴더의 WO3U_KR.wo3u-backup으로 이전 버전을 원본으로 되돌린 뒤 새 버전을 적용합니다.
 
 설치 폴더의 LINKIDX_CHS.BIN, LINKFILE_CHS.BIN을 교체하고 dinput8.dll을 추가합니다. dinput8.dll은 실행 파일 안에 있는 문장(언리미티드 모드 알림, 전생 도움말, 전장 보너스 안내 등)을 게임 실행 중에 한국어로 바꿉니다. Program Files 아래에 설치했다면 관리자 권한으로 다시 실행할지 묻습니다. 작업 중 약 1.1GB의 여유 공간이 필요합니다.
 
@@ -43,7 +47,7 @@ ZIP 안에는 패처 실행 파일, 패치 데이터(.pack), 사용법, 해시 �
 ## 주의 사항
 
 - 게임 언어가 중국어 간체일 때만 한국어가 나옵니다.
-- 패처의 원본 복구는 데이터 파일을 원본으로 되돌리고 dinput8.dll도 지웁니다. DLC 의상 출전 문구와 병사 공격성 강화도 되돌립니다.
+- 패처의 원본 복구는 데이터 파일을 원본으로 되돌리고 dinput8.dll도 지웁니다. DLC 의상 출전 문구와 병사·장수 공격성 옵션도 되돌립니다.
 - 설치 폴더에 다른 프로그램의 dinput8.dll이 있으면 처리 방법을 묻습니다. 한국어 패치를 먼저 설치한 뒤 다른 프로그램을 넣었다면 패처를 다시 실행해 이어서 쓰기를 고르세요.
 - 언리미티드 모드 알림이나 전생 설명이 깨진 글자로 보이면 설치 폴더에 dinput8.dll이 있는지, 같은 폴더의 WO3U_KR_dll.log에 교체 결과가 기록됐는지 확인해 주세요.
 - Steam의 게임 파일 무결성 검사나 게임 업데이트 뒤에는 데이터 파일이 원본으로 돌아가므로 패처를 다시 실행하세요.
