@@ -1,32 +1,32 @@
 # 무쌍 오로치 2 얼티메이트 Steam판 한국어 패치
 
-Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20261009 (2026-10-09)** 입니다.
+Steam판 **WARRIORS OROCHI 3 Ultimate Definitive Edition**(App `1879330`)용 비공식 한국어 패치의 사용·기술 문서입니다. 문서 기준 릴리즈는 **v20261010 (2026-10-10)** 입니다.
 
-[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20261009) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
+[최신 배포물 받기](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/tag/v20261010) · [GitHub 저장소](https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor) · [PS3판 한국어 패치](https://kimjh-eclipse.github.io/musou-orochi-2-ultimate-kor/)
 
 <!-- release:start -->
 
-## 이번 버전 (v20261009)
+## 이번 버전 (v20261010)
 
-- 패처에 선택 기능 '장수 공격성 한 단계 올리기'를 추가했습니다. 체크하면 이름 있는 장수의 AI 단계가 한 단계 올라갑니다(일반 장수 3→4, 무쌍 장수 5→6, 여포는 그대로). '병사 공격성 강화'와 따로 켜고 끌 수 있고, 기본은 해제입니다. 아군 장수에도 똑같이 적용됩니다.
-- 테도리가와 기교전 등에서 제어 장치·나무 상자 같은 오브젝트의 체력바 이름이 깨져 보이던 문제를 고쳤습니다.
-- '구로다 칸베에' 등 구로다 성씨를 '쿠로다'로, '카타쿠라 코주로'를 '카타쿠라 코쥬로'로 고쳤습니다(이미지 속 이름 포함).
-- 장비 아이템 '이스즈'(五十鈴)를 다른 장비 이름처럼 한자 읽기에 맞춰 '오십령'으로 고쳤습니다.
-- 1장 오다와라성에서 시마즈 요시히로가 하는 대사(키요모리 편에 걸어 크게 땄다는 노름 비유)를 자연스럽게 고쳤습니다.
+- 지명과 인명 표기를 무쌍 오로치 3 한글판에 맞춰 통일했습니다. 이미지 속 이름도 함께 고쳤습니다.
+- 지명: 고마키 나가쿠테 → 코마키 나가쿠테, 가와나카지마 → 카와나카지마, 고시성 → 코시성, 규슈 → 큐슈, 교토 → 쿄토, 이쓰쿠시마 → 이츠쿠시마, 가네가사키 → 카네가사키
+- 인명: 우에스기 켄신 → 우에스기 겐신, 다케나카 한베에 → 타케나카 한베에, 초소카베 모토치카 → 쵸소카베 모토치카, 호조 → 호죠(우지야스 등), 도세쓰 → 도세츠
+- 오로치 쪽 무장: 도도메키 → 백백목귀, 슈텐도지 → 주탄동자, 규키 → 우귀
+- 일부에 남아 있던 데도리가와, 가이(카이히메) 표기도 테도리가와, 카이로 맞췄습니다.
 
 이전 버전에서 바뀐 것은 [변경 이력](changelog.md)에 있습니다.
 
 ## 다운로드
 
-아래 링크에서 WO3U_Steam_KR_v20261009.zip을 받으세요.
+아래 링크에서 WO3U_Steam_KR_v20261010.zip을 받으세요.
 
-<https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20261009/WO3U_Steam_KR_v20261009.zip>
+<https://github.com/kimjh-eclipse/musou-orochi-2-ultimate-steam-kor/releases/download/v20261010/WO3U_Steam_KR_v20261010.zip>
 
-파일: WO3U_Steam_KR_v20261009.zip
+파일: WO3U_Steam_KR_v20261010.zip
 
-크기: 278,408,191 바이트
+크기: 278,410,543 바이트
 
-SHA256: A776AFF00AECACAC955416927D5C3E8704C98515694EC101AFDC30D8ABBAB06B
+SHA256: 41E397D30BF0CC42DB54C3DEE27B898B6E0ABCBAAB61AB959EFBE559BB178329
 
 ZIP 안에는 패처 실행 파일, 패치 데이터(.pack), 사용법, 해시 목록이 있습니다. 게임 파일은 들어 있지 않습니다.
 
@@ -38,7 +38,7 @@ ZIP 안에는 패처 실행 파일, 패치 데이터(.pack), 사용법, 해시 �
 4. 설치 폴더가 자동으로 채워집니다. 비어 있으면 자동 찾기 또는 찾아보기로 steamapps\common\WARRIORS OROCHI 3 Ultimate 폴더를 지정합니다.
 5. 상태 검사 후 주의사항에 동의하고 한국어 패치 적용을 누릅니다.
 
-이전 버전(v20260927 ~ v20261007b)을 쓰고 있었다면 그대로 새 패처를 실행하면 됩니다. 설치 폴더의 WO3U_KR.wo3u-backup으로 이전 버전을 원본으로 되돌린 뒤 새 버전을 적용합니다.
+이전 버전(v20260927 ~ v20261009)을 쓰고 있었다면 그대로 새 패처를 실행하면 됩니다. 설치 폴더의 WO3U_KR.wo3u-backup으로 이전 버전을 원본으로 되돌린 뒤 새 버전을 적용합니다.
 
 설치 폴더의 LINKIDX_CHS.BIN, LINKFILE_CHS.BIN을 교체하고 dinput8.dll을 추가합니다. dinput8.dll은 실행 파일 안에 있는 문장(언리미티드 모드 알림, 전생 도움말, 전장 보너스 안내 등)을 게임 실행 중에 한국어로 바꿉니다. Program Files 아래에 설치했다면 관리자 권한으로 다시 실행할지 묻습니다. 작업 중 약 1.1GB의 여유 공간이 필요합니다.
 

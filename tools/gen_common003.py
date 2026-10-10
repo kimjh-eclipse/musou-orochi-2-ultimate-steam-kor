@@ -76,6 +76,8 @@ def main():
         assert can_encode(ko), ko
         chs = recs[3]
         new = encode(ko)
+        if chs.group(2) == new:  # the "original" hashes would be the Korean bytes (2026-10-10 incident: backup overwritten)
+            sys.exit(f"entry {e}: LINKFILE_003.BIN in {GAME} is already patched; the patch must be generated from the vanilla file")
         room = len(chs.group(2)) + len(chs.group(3)) - 1           # keep at least one terminating NUL
         if len(new) > room:
             sys.exit(f"entry {e}: {ko} needs {len(new)} bytes, room {room}")
